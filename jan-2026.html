@@ -3,102 +3,125 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CCL Master Intelligence — Jan 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<title>CCL Executive Intelligence — Jan 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 <style>
 :root {
-  --gold: #C9A84C; --gold-light: #F0D080; --dark: #1A1208; --dark2: #2C1F0A;
-  --green: #2D7A4F; --red: #C0392B; --gray: #6B6B6B; --bg: #FDFAF4; --white: #FFFFFF;
+  --cl-purple: #4F3267; --cl-purple-light: #6B4D84; --cl-bg: #F9F7FA;
+  --white: #FFFFFF; --gray: #6B6B6B; --green: #2D7A4F; --gold: #C9A84C; --shadow: 0 4px 24px rgba(79, 50, 103, 0.1);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--dark); }
+body { font-family: 'DM Sans', sans-serif; background: var(--cl-bg); color: var(--cl-purple); }
 
-.nav-tabs { display: flex; background: var(--dark2); justify-content: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--gold); overflow-x: auto; }
-.nav-tab { padding: 18px 25px; color: rgba(240,208,128,0.6); cursor: pointer; font-weight: 700; text-transform: uppercase; font-size: 11px; white-space: nowrap; transition: 0.3s; }
-.nav-tab.active { color: var(--gold-light); border-bottom: 3px solid var(--gold); background: rgba(255,255,255,0.05); }
+/* NAVIGATION */
+.nav-tabs { display: flex; background: var(--cl-purple); justify-content: center; position: sticky; top: 0; z-index: 1000; overflow-x: auto; }
+.nav-tab { padding: 18px 25px; color: rgba(255,255,255,0.6); cursor: pointer; font-weight: 700; text-transform: uppercase; font-size: 11px; white-space: nowrap; }
+.nav-tab.active { color: var(--white); background: rgba(255,255,255,0.1); border-bottom: 3px solid var(--white); }
 
 .main { padding: 30px; max-width: 1400px; margin: 0 auto; }
 .section { display: none; }
 .section.active { display: block; animation: fadeIn 0.4s ease; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-.controls { display: flex; gap: 15px; margin-bottom: 25px; align-items: center; flex-wrap: wrap; }
-.search-box { flex: 1; padding: 14px; border-radius: 10px; border: 1px solid #ddd; min-width: 250px; font-size: 14px; }
-.btn-action { background: var(--green); color: white; border: none; padding: 12px 20px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+/* WINNERS GALLERY */
+.winners-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px; }
+.winner-card { background: white; padding: 20px; border-radius: 12px; border: 1.5px solid #EEE; text-align: center; box-shadow: var(--shadow); }
+.winner-card.gold { border-color: var(--gold); background: #FFFDF5; }
+.winner-card.green { border-color: var(--green); background: #F5FAF6; }
 
-.table-wrap { background: white; border-radius: 15px; border: 1px solid #E8DCC8; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.05); overflow-x: auto; }
+/* CHARTS */
+.chart-card { background: white; padding: 30px; border-radius: 15px; height: 500px; display: flex; flex-direction: column; margin-bottom: 25px; box-shadow: var(--shadow); }
+.btn-save { background: var(--cl-purple); color: white; padding: 6px 12px; border-radius: 5px; font-size: 10px; cursor: pointer; border: none; align-self: flex-end; margin-bottom: 10px; }
+
+/* TABLES */
+.controls { display: flex; gap: 15px; margin-bottom: 20px; align-items: center; }
+.search-box { flex: 1; padding: 14px; border-radius: 10px; border: 1px solid #DDD; font-size: 14px; outline: none; }
+.table-wrap { background: white; border-radius: 15px; border: 1px solid #E6DDEB; overflow-x: auto; box-shadow: var(--shadow); }
 table { width: 100%; border-collapse: collapse; min-width: 1000px; }
-th { background: var(--dark2); color: var(--gold-light); padding: 18px; text-align: left; font-size: 10px; text-transform: uppercase; cursor: pointer; }
-td { padding: 16px 18px; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
-tr:hover { background: #fcfaf5; }
+th { background: #F4F0F7; color: var(--cl-purple); padding: 18px; text-align: left; font-size: 11px; text-transform: uppercase; cursor: pointer; }
+td { padding: 16px 18px; border-bottom: 1px solid #F4F0F7; font-size: 14px; }
 
-.chart-card { background: white; padding: 25px; border-radius: 15px; border: 1px solid #E8DCC8; height: 500px; display: flex; flex-direction: column; margin-bottom: 25px; box-shadow: 0 4px 24px rgba(0,0,0,0.05); }
-.btn-save { background: var(--dark); color: var(--gold-light); padding: 6px 12px; border-radius: 5px; font-size: 10px; cursor: pointer; border: none; margin-left: auto; margin-bottom: 10px; }
+.badge { padding: 6px 12px; border-radius: 20px; font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.badge-gold { background: #FFF9E6; color: #8A6200; }
+.badge-green { background: #E8F5EE; color: var(--green); }
 </style>
 </head>
 <body>
 
 <div class="nav-tabs">
-    <div class="nav-tab active" onclick="switchTab(event, 'summary')">Executive Summary</div>
-    <div class="nav-tab" onclick="switchTab(event, 'board')">Global Scoreboard</div>
-    <div class="nav-tab" onclick="switchTab(event, 'km_deep')">Kano Model (KM) Deep-Dive</div>
-    <div class="nav-tab" onclick="switchTab(event, 'nps_deep')">NPS Intelligence</div>
+    <div class="nav-tab active" onclick="switchTab(event, 'summary')">Insights</div>
+    <div class="nav-tab" onclick="switchTab(event, 'winners')">Winners 🏆</div>
+    <div class="nav-tab" onclick="switchTab(event, 'board')">Scoreboard</div>
+    <div class="nav-tab" onclick="switchTab(event, 'km')">KM Dive</div>
+    <div class="nav-tab" onclick="switchTab(event, 'nps')">NPS Dive</div>
 </div>
 
 <div class="main">
     <div id="tab-summary" class="section active">
         <div class="chart-card">
-            <button class="btn-save" onclick="saveChart('lineChart')">📸 Save Trends</button>
-            <div style="flex:1;"><canvas id="lineChart"></canvas></div>
+            <button class="btn-save" onclick="saveChart('trendChart')">📸 Save Trends</button>
+            <div style="flex:1;"><canvas id="trendChart"></canvas></div>
         </div>
         <div class="chart-card">
-            <button class="btn-save" onclick="saveChart('distChart')">📸 Save Distribution</button>
+            <button class="btn-save" onclick="saveChart('distChart')">📸 Save Dist</button>
             <div style="flex:1;"><canvas id="distChart"></canvas></div>
         </div>
     </div>
 
+    <div id="tab-winners" class="section">
+        <h2 style="margin-bottom:20px; font-size:18px;">🥇 Gold Winners (100% Score)</h2>
+        <div class="winners-grid" id="gold-winners"></div>
+        <h2 style="margin-bottom:20px; font-size:18px; margin-top:30px;">🌟 Excellence Stores (95%+)</h2>
+        <div class="winners-grid" id="green-winners"></div>
+    </div>
+
     <div id="tab-board" class="section">
         <div class="controls">
-            <input type="text" id="searchBoard" class="search-box" placeholder="Search Region, Store, or Code..." oninput="filterBoard()">
-            <button class="btn-action" onclick="exportData('board')">📥 Export Global CSV</button>
+            <input type="text" id="searchBoard" class="search-box" placeholder="Search Store, Region, or Code..." oninput="filterTable('Board')">
+            <button class="btn-save" onclick="exportCSV('Board')">📥 Export CSV</button>
         </div>
-        <div class="table-wrap"><table id="tableBoard"><thead></thead><tbody id="bodyBoard"></tbody></table></div>
+        <div class="table-wrap"><table><thead><tr><th onclick="sortData('Board', 0)">Rank</th><th>Store Name</th><th>Region</th><th>Score ↕</th><th>Status</th></tr></thead><tbody id="bodyBoard"></tbody></table></div>
     </div>
 
-    <div id="tab-km_deep" class="section">
+    <div id="tab-km" class="section">
         <div class="controls">
-            <input type="text" id="searchKM" class="search-box" placeholder="Filter KM Data by Region..." oninput="filterMetric('KM')">
-            <button class="btn-action" onclick="exportData('KM')">📥 Export KM Analytics</button>
+            <input type="text" id="searchKM" class="search-box" placeholder="Filter KM by Region..." oninput="filterTable('KM')">
+            <button class="btn-save" onclick="exportCSV('KM')">📥 Export CSV</button>
         </div>
-        <div class="table-wrap"><table><thead><tr><th onclick="sortMetric('KM', 0)">Rank</th><th>Store Name</th><th>Region</th><th onclick="sortMetric('KM', 4)">KM Score ↕</th><th>Status</th></tr></thead><tbody id="bodyKM"></tbody></table></div>
+        <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Store Name</th><th>Region</th><th>KM Score</th></tr></thead><tbody id="bodyKM"></tbody></table></div>
     </div>
 
-    <div id="tab-nps_deep" class="section">
+    <div id="tab-nps" class="section">
         <div class="controls">
-            <input type="text" id="searchNPS" class="search-box" placeholder="Filter NPS Data by Region..." oninput="filterMetric('NPS')">
-            <button class="btn-action" onclick="exportData('NPS')">📥 Export NPS Analytics</button>
+            <input type="text" id="searchNPS" class="search-box" placeholder="Filter NPS by Region..." oninput="filterTable('NPS')">
+            <button class="btn-save" onclick="exportCSV('NPS')">📥 Export CSV</button>
         </div>
-        <div class="table-wrap"><table><thead><tr><th onclick="sortMetric('NPS', 0)">Rank</th><th>Store Name</th><th>Region</th><th onclick="sortMetric('NPS', 4)">NPS Score ↕</th><th>Status</th></tr></thead><tbody id="bodyNPS"></tbody></table></div>
+        <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Store Name</th><th>Region</th><th>NPS Score</th></tr></thead><tbody id="bodyNPS"></tbody></table></div>
     </div>
 </div>
 
 <script>
 Chart.register(ChartDataLabels);
 
-// --- PASTE YOUR FULL 350+ STORE DATASET HERE ---
+// --- PASTE YOUR FULL 350+ DATASET HERE ---
 const MASTER_DATA = [
     ["CFKNGDSR","KNGDSR","Kangra-Dharamshala","NPJK",100,25,25,20,15,true],
     ["CFKTNJBR","KTNJBR","KTN-Jabalpur Road","WMP",100,25,25,20,15,true],
     ["CRPATCCM","PATCCM","PAT City Center","EBJ",100,25,25,20,null,true],
     ["CLMUMMLD","MUMMLD","MUM-Mulund","WMUM1",99,25,25,19,15,true]
-    // ... PASTE REMAINING ROWS ...
+    // ... PASTE REMAINING 346 ROWS ...
 ];
 
-let filteredBoard = [...MASTER_DATA];
-let filteredKM = [...MASTER_DATA];
-let filteredNPS = [...MASTER_DATA];
+const REGION_TRENDS = [
+    {r:"SAP", jan:93, dec:90, nov:84}, {r:"EBJ", jan:87, dec:74, nov:66},
+    {r:"EOC", jan:87, dec:79, nov:76}, {r:"NPJK", jan:85, dec:82, nov:83},
+    {r:"NUP2", jan:84, dec:80, nov:68}
+    // ... ADD ALL 23 REGIONS ...
+];
+
+let state = { Board: [...MASTER_DATA], KM: [...MASTER_DATA], NPS: [...MASTER_DATA] };
 
 function switchTab(e, id) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
@@ -108,72 +131,78 @@ function switchTab(e, id) {
     if(id === 'summary') initCharts();
 }
 
-// METRIC FILTERING LOGIC
-function filterMetric(type) {
-    const q = document.getElementById('search'+type).value.toLowerCase();
-    const data = MASTER_DATA.filter(s => s[3].toLowerCase().includes(q) || s[2].toLowerCase().includes(q));
-    if(type === 'KM') { filteredKM = data; renderMetric('KM', 8); }
-    else { filteredNPS = data; renderMetric('NPS', 5); }
+function filterTable(key) {
+    const q = document.getElementById('search'+key).value.toLowerCase();
+    state[key] = MASTER_DATA.filter(s => s[2].toLowerCase().includes(q) || s[3].toLowerCase().includes(q));
+    renderTables();
 }
 
-function renderMetric(type, colIndex) {
-    const body = document.getElementById('body'+type);
-    const data = type === 'KM' ? filteredKM : filteredNPS;
-    // Sort High to Low by default
-    data.sort((a,b) => (b[colIndex]||0) - (a[colIndex]||0));
-    body.innerHTML = data.map((s,i) => `
+function renderTables() {
+    // Board
+    document.getElementById('bodyBoard').innerHTML = state.Board.map((s,i) => `
         <tr><td>${i+1}</td><td><strong>${s[2]}</strong></td><td>${s[3]}</td>
-        <td style="font-weight:900; color:var(--green);">${s[colIndex]||'NA'}</td>
-        <td>${s[colIndex] >= (colIndex===8?14:24)?'🌟 Top Performer':'✅ Eligible'}</td></tr>`).join('');
+        <td style="font-weight:700;">${s[4]}</td>
+        <td><span class="badge ${s[4]>=100?'badge-gold':'badge-green'}">${s[4]>=100?'Gold':'Green'}</span></td></tr>`).join('');
+    
+    // KM
+    document.getElementById('bodyKM').innerHTML = state.KM.sort((a,b) => (b[8]||0)-(a[8]||0)).map((s,i) => `
+        <tr><td>${i+1}</td><td>${s[2]}</td><td>${s[3]}</td><td style="color:var(--green); font-weight:700;">${s[8]||'NA'}</td></tr>`).join('');
+
+    // Winners
+    const gold = MASTER_DATA.filter(s => s[4] >= 100);
+    const green = MASTER_DATA.filter(s => s[4] >= 95 && s[4] < 100);
+    document.getElementById('gold-winners').innerHTML = gold.map(s => `<div class="winner-card gold"><strong>${s[2]}</strong><br><small>${s[3]}</small></div>`).join('');
+    document.getElementById('green-winners').innerHTML = green.map(s => `<div class="winner-card green"><strong>${s[2]}</strong><br><small>${s[3]}</small></div>`).join('');
 }
 
-// Fix Chart Alignment & Labels
 function initCharts() {
     const opts = {
         responsive: true, maintainAspectRatio: false,
-        layout: { padding: { top: 30 } }, // Give room for labels
-        plugins: {
-            datalabels: {
-                display: true, color: '#1A1208', font: { weight: 'bold', size: 11 },
-                offset: 5, align: 'top', anchor: 'end' // Perfect top alignment
-            }
-        }
+        layout: { padding: { top: 40, right: 20 } },
+        plugins: { datalabels: { display: true, color: '#4F3267', font: { weight: 'bold', size: 11 }, align: 'top', anchor: 'end', offset: 2 } }
     };
-    new Chart(document.getElementById('lineChart'), {
+
+    new Chart(document.getElementById('trendChart'), {
         type: 'line',
-        data: { labels: ['SAP','EBJ','EOC','NPJK','NUP2'], datasets: [{ label:'Jan', data:[93,87,87,85,84], borderColor:'#C9A84C', tension:0.3 }] },
+        data: {
+            labels: REGION_TRENDS.map(r => r.r),
+            datasets: [
+                { label: 'Jan', data: REGION_TRENDS.map(r => r.jan), borderColor: '#4F3267', fill: false },
+                { label: 'Dec', data: REGION_TRENDS.map(r => r.dec), borderColor: '#C9A84C', borderDash: [5,5] },
+                { label: 'Nov', data: REGION_TRENDS.map(r => r.nov), borderColor: '#AAA', borderDash: [2,2] }
+            ]
+        },
         options: opts
     });
+
     new Chart(document.getElementById('distChart'), {
         type: 'bar',
-        data: { labels: ['>90%','80-89%','70-79%','60-69%','<60%'], datasets: [{ label:'%', data:[29,25,21,13,12], backgroundColor:'#2D7A4F' }] },
+        data: {
+            labels: ['>90%', '80-89%', '70-79%', '60-69%', '<60%'],
+            datasets: [{ label: '% Stores', data: [29, 25, 21, 13, 12], backgroundColor: '#2D7A4F' }]
+        },
         options: opts
     });
 }
 
-function exportData(type) {
+function exportCSV(key) {
     let csv = "Rank,Store,Region,Score\n";
-    const data = type==='board' ? filteredBoard : (type==='KM' ? filteredKM : filteredNPS);
-    data.forEach((s,i) => { csv += `${i+1},"${s[2]}",${s[3]},${s[4]}\n`; });
+    state[key].forEach((s,i) => { csv += `${i+1},"${s[2]}",${s[3]},${s[4]}\n`; });
     const blob = new Blob([csv], { type: 'text/csv' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `CCL_Jan_${type}.csv`;
+    a.download = `CCL_Jan26_${key}.csv`;
     a.click();
 }
 
 function saveChart(id) {
     const a = document.createElement('a');
     a.href = document.getElementById(id).toDataURL('image/png');
-    a.download = "CCL_Insight.png";
+    a.download = "CCL_Report.png";
     a.click();
 }
 
-window.onload = () => { 
-    renderMetric('KM', 8); 
-    renderMetric('NPS', 5);
-    initCharts(); 
-};
+window.onload = () => { renderTables(); initCharts(); };
 </script>
 </body>
 </html>

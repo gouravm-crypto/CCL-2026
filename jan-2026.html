@@ -9,8 +9,8 @@
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 <style>
 :root {
-  --cl-purple: #4F3267; --cl-purple-light: #6B4D84; --cl-bg: #F9F7FA;
-  --white: #FFFFFF; --gray: #6B6B6B; --green: #2D7A4F; --gold: #C9A84C; --shadow: 0 4px 24px rgba(79, 50, 103, 0.1);
+  --cl-purple: #4F3267; --cl-bg: #F9F7FA; --white: #FFFFFF; --gray: #6B6B6B;
+  --green: #2D7A4F; --gold: #C9A84C; --red: #C0392B; --shadow: 0 4px 24px rgba(79, 50, 103, 0.1);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'DM Sans', sans-serif; background: var(--cl-bg); color: var(--cl-purple); }
@@ -25,27 +25,27 @@ body { font-family: 'DM Sans', sans-serif; background: var(--cl-bg); color: var(
 .section.active { display: block; animation: fadeIn 0.4s ease; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-/* WINNERS GALLERY */
-.winners-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px; }
-.winner-card { background: white; padding: 20px; border-radius: 12px; border: 1.5px solid #EEE; text-align: center; box-shadow: var(--shadow); }
-.winner-card.gold { border-color: var(--gold); background: #FFFDF5; }
-.winner-card.green { border-color: var(--green); background: #F5FAF6; }
+/* WINNERS CARDS */
+.winners-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-bottom: 40px; }
+.winner-card { background: white; padding: 20px; border-radius: 12px; border: 1.5px solid #EEE; text-align: center; box-shadow: var(--shadow); position: relative; }
+.winner-card.gold { border-color: var(--gold); border-width: 2px; }
+.winner-card.green { border-color: var(--green); border-width: 2px; }
+.winner-card .score { font-size: 24px; font-weight: 900; color: var(--cl-purple); margin: 10px 0; }
 
-/* CHARTS */
-.chart-card { background: white; padding: 30px; border-radius: 15px; height: 500px; display: flex; flex-direction: column; margin-bottom: 25px; box-shadow: var(--shadow); }
-.btn-save { background: var(--cl-purple); color: white; padding: 6px 12px; border-radius: 5px; font-size: 10px; cursor: pointer; border: none; align-self: flex-end; margin-bottom: 10px; }
-
-/* TABLES */
+/* CHARTS & TABLES */
+.chart-card { background: white; padding: 35px; border-radius: 15px; height: 500px; display: flex; flex-direction: column; margin-bottom: 25px; box-shadow: var(--shadow); }
 .controls { display: flex; gap: 15px; margin-bottom: 20px; align-items: center; }
 .search-box { flex: 1; padding: 14px; border-radius: 10px; border: 1px solid #DDD; font-size: 14px; outline: none; }
 .table-wrap { background: white; border-radius: 15px; border: 1px solid #E6DDEB; overflow-x: auto; box-shadow: var(--shadow); }
-table { width: 100%; border-collapse: collapse; min-width: 1000px; }
+table { width: 100%; border-collapse: collapse; min-width: 1100px; }
 th { background: #F4F0F7; color: var(--cl-purple); padding: 18px; text-align: left; font-size: 11px; text-transform: uppercase; cursor: pointer; }
 td { padding: 16px 18px; border-bottom: 1px solid #F4F0F7; font-size: 14px; }
 
+/* BADGES */
 .badge { padding: 6px 12px; border-radius: 20px; font-size: 10px; font-weight: 800; text-transform: uppercase; }
 .badge-gold { background: #FFF9E6; color: #8A6200; }
 .badge-green { background: #E8F5EE; color: var(--green); }
+.badge-gray { background: #F0F0F0; color: #666; }
 </style>
 </head>
 <body>
@@ -53,53 +53,50 @@ td { padding: 16px 18px; border-bottom: 1px solid #F4F0F7; font-size: 14px; }
 <div class="nav-tabs">
     <div class="nav-tab active" onclick="switchTab(event, 'summary')">Insights</div>
     <div class="nav-tab" onclick="switchTab(event, 'winners')">Winners 🏆</div>
-    <div class="nav-tab" onclick="switchTab(event, 'board')">Scoreboard</div>
-    <div class="nav-tab" onclick="switchTab(event, 'km')">KM Dive</div>
-    <div class="nav-tab" onclick="switchTab(event, 'nps')">NPS Dive</div>
+    <div class="nav-tab" onclick="switchTab(event, 'board')">Full Scoreboard</div>
+    <div class="nav-tab" onclick="switchTab(event, 'km')">KM Analysis</div>
+    <div class="nav-tab" onclick="switchTab(event, 'nps')">NPS Analysis</div>
 </div>
 
 <div class="main">
     <div id="tab-summary" class="section active">
         <div class="chart-card">
-            <button class="btn-save" onclick="saveChart('trendChart')">📸 Save Trends</button>
+            <button style="align-self: flex-end; cursor: pointer; padding: 5px 10px;" onclick="saveChart('trendChart')">📸 Save Trends</button>
             <div style="flex:1;"><canvas id="trendChart"></canvas></div>
         </div>
         <div class="chart-card">
-            <button class="btn-save" onclick="saveChart('distChart')">📸 Save Dist</button>
+            <button style="align-self: flex-end; cursor: pointer; padding: 5px 10px;" onclick="saveChart('distChart')">📸 Save Dist</button>
             <div style="flex:1;"><canvas id="distChart"></canvas></div>
         </div>
     </div>
 
     <div id="tab-winners" class="section">
-        <h2 style="margin-bottom:20px; font-size:18px;">🥇 Gold Winners (100% Score)</h2>
+        <h2 style="margin-bottom:20px; font-size:18px;">🏆 GOLD CHAMPIONS (100% Score)</h2>
         <div class="winners-grid" id="gold-winners"></div>
-        <h2 style="margin-bottom:20px; font-size:18px; margin-top:30px;">🌟 Excellence Stores (95%+)</h2>
+        
+        <h2 style="margin-bottom:20px; font-size:18px; margin-top:40px;">🌟 EXCELLENCE STORES (95% - 99%)</h2>
         <div class="winners-grid" id="green-winners"></div>
     </div>
 
     <div id="tab-board" class="section">
         <div class="controls">
-            <input type="text" id="searchBoard" class="search-box" placeholder="Search Store, Region, or Code..." oninput="filterTable('Board')">
-            <button class="btn-save" onclick="exportCSV('Board')">📥 Export CSV</button>
+            <input type="text" id="searchBoard" class="search-box" placeholder="Search Region, Store, or Code..." oninput="filterTable('Board')">
+            <button style="background:var(--green); color:white; padding:12px 20px; border:none; border-radius:8px; cursor:pointer;" onclick="exportCSV()">📥 Download Data (CSV)</button>
         </div>
-        <div class="table-wrap"><table><thead><tr><th onclick="sortData('Board', 0)">Rank</th><th>Store Name</th><th>Region</th><th>Score ↕</th><th>Status</th></tr></thead><tbody id="bodyBoard"></tbody></table></div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="sortData(0)">Rank</th><th>Store Name</th><th>Region</th><th>Code</th><th onclick="sortData(4)">Score ↕</th><th>NPS</th><th>Rev</th><th>Ops</th><th>KM</th><th>Eligibility</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyBoard"></tbody>
+            </table>
+        </div>
     </div>
 
-    <div id="tab-km" class="section">
-        <div class="controls">
-            <input type="text" id="searchKM" class="search-box" placeholder="Filter KM by Region..." oninput="filterTable('KM')">
-            <button class="btn-save" onclick="exportCSV('KM')">📥 Export CSV</button>
-        </div>
-        <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Store Name</th><th>Region</th><th>KM Score</th></tr></thead><tbody id="bodyKM"></tbody></table></div>
-    </div>
-
-    <div id="tab-nps" class="section">
-        <div class="controls">
-            <input type="text" id="searchNPS" class="search-box" placeholder="Filter NPS by Region..." oninput="filterTable('NPS')">
-            <button class="btn-save" onclick="exportCSV('NPS')">📥 Export CSV</button>
-        </div>
-        <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Store Name</th><th>Region</th><th>NPS Score</th></tr></thead><tbody id="bodyNPS"></tbody></table></div>
-    </div>
+    <div id="tab-km" class="section"><div class="table-wrap"><table><thead><tr><th>Store</th><th>Region</th><th>KM Score</th></tr></thead><tbody id="bodyKM"></tbody></table></div></div>
+    <div id="tab-nps" class="section"><div class="table-wrap"><table><thead><tr><th>Store</th><th>Region</th><th>NPS Score</th></tr></thead><tbody id="bodyNPS"></tbody></table></div></div>
 </div>
 
 <script>
@@ -110,49 +107,73 @@ const MASTER_DATA = [
     ["CFKNGDSR","KNGDSR","Kangra-Dharamshala","NPJK",100,25,25,20,15,true],
     ["CFKTNJBR","KTNJBR","KTN-Jabalpur Road","WMP",100,25,25,20,15,true],
     ["CRPATCCM","PATCCM","PAT City Center","EBJ",100,25,25,20,null,true],
-    ["CLMUMMLD","MUMMLD","MUM-Mulund","WMUM1",99,25,25,19,15,true]
-    // ... PASTE REMAINING 346 ROWS ...
+    ["CLMUMMLD","MUMMLD","MUM-Mulund","WMUM1",99,25,25,19,15,true],
+    ["CFPNPMDT","PNPMDT","PNP-Panipat","NRH",99,25,25,20,15,true],
+    ["CFMUMDMV","MUMDMV","MUM-Dombivali","WMUM1",99,25,25,20,null,true],
+    ["CFTRPABR","TRPABR","TRP-Tirupati","SAP",98,23,25,20,15,true],
+    ["CFGYASWP","GYASWP","GYA - SWARAJPURI","EBJ",74,10,25,12,14,true],
+    ["CFJHSCVL","JHSCVL","Jhansi-CivilLines","NUP1",31,0,10,16,0,true]
+    // ... ADD THE REST ...
 ];
 
-const REGION_TRENDS = [
+const REGIONS = [
     {r:"SAP", jan:93, dec:90, nov:84}, {r:"EBJ", jan:87, dec:74, nov:66},
     {r:"EOC", jan:87, dec:79, nov:76}, {r:"NPJK", jan:85, dec:82, nov:83},
     {r:"NUP2", jan:84, dec:80, nov:68}
-    // ... ADD ALL 23 REGIONS ...
 ];
 
-let state = { Board: [...MASTER_DATA], KM: [...MASTER_DATA], NPS: [...MASTER_DATA] };
+let currentBoard = [...MASTER_DATA];
 
 function switchTab(e, id) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
     document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
     document.getElementById('tab-'+id).classList.add('active');
-    e.target.classList.add('active');
+    if(e) e.target.classList.add('active');
     if(id === 'summary') initCharts();
 }
 
 function filterTable(key) {
-    const q = document.getElementById('search'+key).value.toLowerCase();
-    state[key] = MASTER_DATA.filter(s => s[2].toLowerCase().includes(q) || s[3].toLowerCase().includes(q));
-    renderTables();
+    const q = document.getElementById('searchBoard').value.toLowerCase();
+    currentBoard = MASTER_DATA.filter(s => s[2].toLowerCase().includes(q) || s[3].toLowerCase().includes(q));
+    renderBoard();
 }
 
-function renderTables() {
-    // Board
-    document.getElementById('bodyBoard').innerHTML = state.Board.map((s,i) => `
-        <tr><td>${i+1}</td><td><strong>${s[2]}</strong></td><td>${s[3]}</td>
-        <td style="font-weight:700;">${s[4]}</td>
-        <td><span class="badge ${s[4]>=100?'badge-gold':'badge-green'}">${s[4]>=100?'Gold':'Green'}</span></td></tr>`).join('');
-    
-    // KM
-    document.getElementById('bodyKM').innerHTML = state.KM.sort((a,b) => (b[8]||0)-(a[8]||0)).map((s,i) => `
-        <tr><td>${i+1}</td><td>${s[2]}</td><td>${s[3]}</td><td style="color:var(--green); font-weight:700;">${s[8]||'NA'}</td></tr>`).join('');
+function renderBoard() {
+    // Scoreboard with Eligibility Logic
+    document.getElementById('bodyBoard').innerHTML = currentBoard.map((s,i) => {
+        let status = s[4] >= 100 ? 'GOLD' : (s[4] >= 95 ? 'EXCELLENCE' : 'ELIGIBLE');
+        if(s[4] < 70) status = 'NON-ELIGIBLE';
+        let badgeClass = s[4] >= 100 ? 'badge-gold' : (s[4] >= 95 ? 'badge-green' : 'badge-gray');
+        
+        return `<tr>
+            <td>${i+1}</td><td><strong>${s[2]}</strong></td><td>${s[3]}</td><td>${s[1]}</td>
+            <td style="font-weight:900;">${s[4]}</td><td>${s[5]||0}</td><td>${s[6]||0}</td>
+            <td>${s[7]||0}</td><td>${s[8]||0}</td>
+            <td><span class="badge ${badgeClass}">${status}</span></td>
+        </tr>`;
+    }).join('');
 
-    // Winners
+    // Winners Tab Logic
     const gold = MASTER_DATA.filter(s => s[4] >= 100);
     const green = MASTER_DATA.filter(s => s[4] >= 95 && s[4] < 100);
-    document.getElementById('gold-winners').innerHTML = gold.map(s => `<div class="winner-card gold"><strong>${s[2]}</strong><br><small>${s[3]}</small></div>`).join('');
-    document.getElementById('green-winners').innerHTML = green.map(s => `<div class="winner-card green"><strong>${s[2]}</strong><br><small>${s[3]}</small></div>`).join('');
+    
+    document.getElementById('gold-winners').innerHTML = gold.map(s => `
+        <div class="winner-card gold">
+            <div class="mc-badge" style="background:var(--gold); color:white; font-size:9px; border-radius:10px; padding:2px 8px; position:absolute; top:10px; right:10px;">GOLD</div>
+            <strong>${s[2]}</strong><br><small>${s[3]}</small><div class="score">${s[4]}%</div>
+        </div>`).join('');
+        
+    document.getElementById('green-winners').innerHTML = green.map(s => `
+        <div class="winner-card green">
+            <div class="mc-badge" style="background:var(--green); color:white; font-size:9px; border-radius:10px; padding:2px 8px; position:absolute; top:10px; right:10px;">95%+</div>
+            <strong>${s[2]}</strong><br><small>${s[3]}</small><div class="score">${s[4]}%</div>
+        </div>`).join('');
+
+    // KM & NPS Lists
+    document.getElementById('bodyKM').innerHTML = [...MASTER_DATA].sort((a,b) => (b[8]||0)-(a[8]||0)).map(s => 
+        `<tr><td>${s[2]}</td><td>${s[3]}</td><td style="color:var(--green); font-weight:700;">${s[8]||0}</td></tr>`).join('');
+    document.getElementById('bodyNPS').innerHTML = [...MASTER_DATA].sort((a,b) => (b[5]||0)-(a[5]||0)).map(s => 
+        `<tr><td>${s[2]}</td><td>${s[3]}</td><td style="color:var(--cl-purple); font-weight:700;">${s[5]||0}</td></tr>`).join('');
 }
 
 function initCharts() {
@@ -161,20 +182,17 @@ function initCharts() {
         layout: { padding: { top: 40, right: 20 } },
         plugins: { datalabels: { display: true, color: '#4F3267', font: { weight: 'bold', size: 11 }, align: 'top', anchor: 'end', offset: 2 } }
     };
-
     new Chart(document.getElementById('trendChart'), {
         type: 'line',
         data: {
-            labels: REGION_TRENDS.map(r => r.r),
+            labels: REGIONS.map(r => r.r),
             datasets: [
-                { label: 'Jan', data: REGION_TRENDS.map(r => r.jan), borderColor: '#4F3267', fill: false },
-                { label: 'Dec', data: REGION_TRENDS.map(r => r.dec), borderColor: '#C9A84C', borderDash: [5,5] },
-                { label: 'Nov', data: REGION_TRENDS.map(r => r.nov), borderColor: '#AAA', borderDash: [2,2] }
+                { label: 'Jan', data: REGIONS.map(r => r.jan), borderColor: '#4F3267', tension:0.3 },
+                { label: 'Dec', data: REGIONS.map(r => r.dec), borderColor: '#C9A84C', borderDash: [5,5], tension:0.3 }
             ]
         },
         options: opts
     });
-
     new Chart(document.getElementById('distChart'), {
         type: 'bar',
         data: {
@@ -185,16 +203,6 @@ function initCharts() {
     });
 }
 
-function exportCSV(key) {
-    let csv = "Rank,Store,Region,Score\n";
-    state[key].forEach((s,i) => { csv += `${i+1},"${s[2]}",${s[3]},${s[4]}\n`; });
-    const blob = new Blob([csv], { type: 'text/csv' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `CCL_Jan26_${key}.csv`;
-    a.click();
-}
-
 function saveChart(id) {
     const a = document.createElement('a');
     a.href = document.getElementById(id).toDataURL('image/png');
@@ -202,7 +210,7 @@ function saveChart(id) {
     a.click();
 }
 
-window.onload = () => { renderTables(); initCharts(); };
+window.onload = () => { renderBoard(); initCharts(); };
 </script>
 </body>
 </html>

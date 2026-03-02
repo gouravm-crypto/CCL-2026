@@ -3,99 +3,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CCL — Executive Command Center</title>
+<title>CaratLane Champions League — Executive Hub</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root { --cl-purple: #4F3267; --cl-bg: #F9F7FA; --white: #FFFFFF; --green: #2D7A4F; --red: #C0392B; --gold: #C9A84C; --shadow: 0 8px 30px rgba(79, 50, 103, 0.12); }
+:root {
+  --cl-purple: #4F3267; --cl-bg: #F9F7FA; --white: #FFFFFF; --gray: #6B6B6B;
+  --green: #2D7A4F; --red: #C0392B; --gold: #C9A84C; --shadow: 0 8px 30px rgba(79, 50, 103, 0.12);
+}
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'DM Sans', sans-serif; background: var(--cl-bg); color: var(--cl-purple); }
+body { font-family: 'DM Sans', sans-serif; background: var(--cl-bg); color: var(--cl-purple); min-height: 100vh; }
 
-.header { background: var(--white); padding: 30px; text-align: center; border-bottom: 1px solid #EEE; box-shadow: var(--shadow); }
-.logo-text { font-size: 28px; font-weight: 700; letter-spacing: 2px; }
-.tata-tag { font-size: 10px; letter-spacing: 3px; color: var(--gray); opacity: 0.7; }
+/* BRAND HEADER */
+.header { background: var(--white); padding: 25px 20px; text-align: center; border-bottom: 1px solid #EEE; box-shadow: var(--shadow); }
+.header-title { font-size: 22px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-top: 10px; }
+.logo-main { font-size: 32px; font-weight: 800; letter-spacing: -1px; }
 
-.hub-body { max-width: 1300px; margin: 0 auto; padding: 40px 20px; }
+.hub-container { max-width: 1300px; margin: 0 auto; padding: 40px 20px; }
 
 /* 10/10 ACTION ALERTS */
-.action-panel { background: linear-gradient(135deg, #4F3267, #6B498C); color: white; padding: 25px; border-radius: 16px; margin-bottom: 40px; box-shadow: var(--shadow); }
+.action-banner { background: linear-gradient(135deg, #4F3267, #7B5C96); color: white; padding: 25px; border-radius: 20px; margin-bottom: 40px; box-shadow: var(--shadow); }
 .action-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 15px; }
-.alert-item { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; border-left: 4px solid #FFD700; }
+.alert-card { background: rgba(255,255,255,0.15); padding: 15px; border-radius: 12px; border-left: 5px solid #FFD700; font-size: 14px; }
 
-.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
-.kpi-card { background: white; padding: 25px; border-radius: 16px; border-top: 6px solid var(--cl-purple); box-shadow: var(--shadow); transition: 0.3s; }
+/* KPI CARDS */
+.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px; }
+.kpi-card { background: white; padding: 30px; border-radius: 20px; border-top: 6px solid var(--cl-purple); box-shadow: var(--shadow); transition: 0.3s; }
 .kpi-card:hover { transform: translateY(-5px); }
-.kpi-val { font-size: 36px; font-weight: 700; margin: 5px 0; }
+.kpi-val { font-size: 38px; font-weight: 700; margin: 5px 0; }
+.kpi-label { font-size: 11px; font-weight: 700; color: var(--gray); text-transform: uppercase; letter-spacing: 1px; }
 
-.table-wrap { background: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid #EEE; }
+/* MONTHLY ROADMAP */
+.section-title { font-size: 20px; font-weight: 700; margin-bottom: 25px; display: flex; align-items: center; gap: 10px; }
+.section-title::before { content: ''; width: 5px; height: 25px; background: var(--cl-purple); border-radius: 3px; }
+.months-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 50px; }
+
+.month-card { background: white; border-radius: 20px; padding: 30px; cursor: pointer; transition: 0.4s; box-shadow: var(--shadow); border: 1px solid transparent; position: relative; overflow: hidden; }
+.month-card.live:hover { border-color: var(--cl-purple); transform: scale(1.02); }
+.month-card.live::after { content: 'LIVE'; position: absolute; top: 15px; right: -30px; background: var(--green); color: white; padding: 5px 40px; transform: rotate(45deg); font-size: 10px; font-weight: 800; }
+
+.month-card.upcoming { opacity: 0.6; cursor: not-allowed; background: #F1EFF2; filter: grayscale(1); }
+.month-card.upcoming::after { content: 'COMING SOON'; position: absolute; bottom: 0; left: 0; width: 100%; background: #DDD; color: #777; text-align: center; padding: 5px; font-size: 10px; font-weight: 700; }
+
+.mc-name { font-size: 24px; font-weight: 700; margin-bottom: 5px; }
+.mc-status { font-size: 12px; font-weight: 700; color: var(--gray); }
+
+/* HEATMAP */
+.table-wrap { background: white; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid #EEE; }
 table { width: 100%; border-collapse: collapse; }
-th { background: #F4F0F7; padding: 18px; font-size: 11px; text-transform: uppercase; text-align: left; }
-td { padding: 18px; border-bottom: 1px solid #F4F0F7; }
+th { background: #F4F0F7; padding: 20px; text-align: left; font-size: 11px; text-transform: uppercase; color: var(--cl-purple); }
+td { padding: 18px 20px; border-bottom: 1px solid #F4F0F7; font-size: 14px; }
 
-.viewer-section { display: none; position: fixed; inset: 0; z-index: 9999; background: white; flex-direction: column; }
-.viewer-section.open { display: flex; }
-.close-btn { background: var(--cl-purple); color: white; border: none; padding: 12px 25px; border-radius: 8px; font-weight: 700; cursor: pointer; }
-iframe { flex: 1; border: none; }
+/* FULLSCREEN VIEWER */
+.viewer-overlay { display: none; position: fixed; inset: 0; z-index: 10000; background: var(--cl-bg); flex-direction: column; }
+.viewer-overlay.active { display: flex; }
+.viewer-nav { background: var(--cl-purple); color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+iframe { flex: 1; border: none; background: white; }
 </style>
 </head>
 <body>
 
 <div class="header">
-    <div class="logo-text">CARATLANE</div>
-    <div class="tata-tag">A TATA PRODUCT</div>
+    <div class="logo-main">CARATLANE</div>
+    <div style="font-size:10px; letter-spacing:3px; opacity:0.6;">A TATA PRODUCT</div>
+    <div class="header-title">Champions League Executive Hub</div>
 </div>
 
-<div class="hub-body">
-    <div class="action-panel">
-        <h2 style="font-size:18px;">🚀 Executive Priority Actions (March 2026)</h2>
-        <div class="action-grid" id="actionGrid">
-            </div>
+<div class="hub-container">
+    <div class="action-banner">
+        <h2 style="font-size:18px;">📢 Intelligence Alerts for Leadership</h2>
+        <div class="action-grid" id="actionGrid"></div>
     </div>
 
     <div class="kpi-row">
-        <div class="kpi-card" style="border-top-color:var(--green)"><div class="kpi-label">🏆 TOP REGION</div><div class="kpi-val">SAP</div><div style="color:var(--green); font-weight:700;">Score: 93.0</div></div>
-        <div class="kpi-card" style="border-top-color:var(--red)"><div class="kpi-label">⚠️ PRIORITY FIX</div><div class="kpi-val">ENE</div><div style="color:var(--red); font-weight:700;">Score: 77.0</div></div>
-        <div class="kpi-card"><div class="kpi-label">💎 QUALITY WINNERS</div><div class="kpi-val">38</div><div style="color:var(--gold); font-weight:700;">Stores > 95%</div></div>
+        <div class="kpi-card" style="border-top-color:var(--green)"><div class="kpi-label">🏆 TOP REGION (JAN)</div><div class="kpi-val">SAP</div><div style="color:var(--green); font-weight:700;">Avg: 93.0</div></div>
+        <div class="kpi-card" style="border-top-color:var(--red)"><div class="kpi-label">⚠️ PRIORITY FIX</div><div class="kpi-val">ENE</div><div style="color:var(--red); font-weight:700;">Drop: -11.0</div></div>
+        <div class="kpi-card"><div class="kpi-label">💎 NATIONAL GROWTH</div><div class="kpi-val">+4.2%</div><div style="color:var(--cl-purple); font-weight:700;">Month-over-Month</div></div>
     </div>
 
+    <div class="section-title">2026 Monthly Roadmap</div>
+    <div class="months-grid" id="monthsGrid"></div>
+
+    <div class="section-title">Regional Performance Heatmap (3-Month Variance)</div>
     <div class="table-wrap">
         <table>
-            <thead><tr><th>Region</th><th>Nov '25</th><th>Dec '25</th><th>Jan '26</th><th>Growth</th></tr></thead>
+            <thead><tr><th>Region Cluster</th><th>Nov '25</th><th>Dec '25</th><th>Jan '26</th><th>Variance</th><th>Management Status</th></tr></thead>
             <tbody id="heatBody"></tbody>
         </table>
     </div>
-
-    <button class="btn-dl" style="margin-top:40px; padding:20px; width:100%; background:var(--cl-purple); color:white; border:none; border-radius:12px; font-size:18px; font-weight:700; cursor:pointer;" onclick="openJan()">
-        OPEN JANUARY 2026 FULL INTELLIGENCE REPORT →
-    </button>
 </div>
 
-<div class="viewer-section" id="viewer">
-    <div style="padding:15px; background:#EEE; display:flex; justify-content:space-between; align-items:center;">
-        <span style="font-weight:700;">CCL Dashboard Viewer</span>
-        <button class="close-btn" onclick="document.getElementById('viewer').classList.remove('open')">✕ CLOSE</button>
+<div class="viewer-overlay" id="viewer">
+    <div class="viewer-nav">
+        <span style="font-weight:700; letter-spacing:1px;" id="vTitle">REPORT VIEWER</span>
+        <button onclick="closeReport()" style="background:white; color:var(--cl-purple); border:none; padding:10px 20px; border-radius:8px; font-weight:700; cursor:pointer;">✕ CLOSE REPORT</button>
     </div>
-    <iframe id="ifr" src=""></iframe>
+    <iframe id="reportFrame" src=""></iframe>
 </div>
 
 <script>
-const DATA = [
-    {r:"SAP", n:84, d:90, j:93}, {r:"EBJ", n:66, d:74, j:87},
-    {r:"EOC", n:76, d:79, j:87}, {r:"ENE", n:75, d:66, j:77}
+// FULL SYNCED DATASET
+const REGIONS = [
+  {r:"SAP", n:84, d:90, j:93}, {r:"EBJ", n:66, d:74, j:87}, {r:"EOC", n:76, d:79, j:87},
+  {r:"NPJK", n:83, d:82, j:85}, {r:"NUP2", n:68, d:80, j:84}, {r:"ENE", n:75, d:66, j:77}
+];
+
+const MONTHS = [
+  {id:"jan", name:"January", score:79.2, status:"live", file:"jan-2026.html"},
+  {id:"feb", name:"February", score:"--", status:"upcoming", file:""},
+  {id:"mar", name:"March", score:"--", status:"upcoming", file:""},
+  {id:"apr", name:"April", score:"--", status:"upcoming", file:""},
+  {id:"may", name:"May", score:"--", status:"upcoming", file:""},
+  {id:"jun", name:"June", score:"--", status:"upcoming", file:""},
+  {id:"jul", name:"July", score:"--", status:"upcoming", file:""},
+  {id:"aug", name:"August", score:"--", status:"upcoming", file:""},
+  {id:"sep", name:"September", score:"--", status:"upcoming", file:""},
+  {id:"oct", name:"October", score:"--", status:"upcoming", file:""},
+  {id:"nov", name:"November", score:"--", status:"upcoming", file:""},
+  {id:"dec", name:"December", score:"--", status:"upcoming", file:""}
 ];
 
 function init() {
-    document.getElementById('heatBody').innerHTML = DATA.map(rd => {
+    // Build Roadmap
+    document.getElementById('monthsGrid').innerHTML = MONTHS.map(m => `
+        <div class="month-card ${m.status}" onclick="${m.status==='live'?`openReport('${m.file}','${m.name}')`:''}">
+            <div class="mc-name">${m.name}</div>
+            <div class="mc-status">${m.status==='live'?'Report Finalized':'Data Processing...'}</div>
+            <div style="margin-top:15px; font-weight:700; font-size:18px;">Avg: ${m.score}</div>
+            ${m.status==='live'?'<div style="color:var(--green); font-size:11px; margin-top:10px; font-weight:700;">Click for Insights →</div>':''}
+        </div>
+    `).join('');
+
+    // Build Heatmap
+    document.getElementById('heatBody').innerHTML = REGIONS.map(rd => {
         const v = (rd.j - rd.d).toFixed(1);
-        return `<tr><td><strong>${rd.r}</strong></td><td>${rd.n}</td><td>${rd.d}</td><td style="font-weight:700">${rd.j}</td>
-        <td style="color:${v>=0?'var(--green)':'var(--red)'}">${v>=0?'▲':'▼'} ${Math.abs(v)}</td></tr>`;
+        const color = v >= 0 ? 'var(--green)' : 'var(--red)';
+        return `<tr><td><strong>${rd.r} Cluster</strong></td><td>${rd.n}</td><td>${rd.d}</td><td style="font-weight:700;">${rd.j}</td>
+        <td style="color:${color}; font-weight:700;">${v>=0?'▲':'▼'} ${Math.abs(v)}</td>
+        <td><span style="font-size:10px; font-weight:800; color:${color}">${v>=0?'MOMENTUM':'ACTION REQ'}</span></td></tr>`;
     }).join('');
 
-    const low = DATA.filter(rd => (rd.j - rd.d) < 0);
-    document.getElementById('actionGrid').innerHTML = low.map(rd => `
-        <div class="alert-item"><strong>Region ${rd.r}:</strong> Performance drop detected. Schedule NPS audit immediately.</div>
-    `).join('') || '<div class="alert-item" style="border-color:var(--green)">All regions showing positive momentum.</div>';
+    // Build Action Alerts
+    const alertRegions = REGIONS.filter(rd => (rd.j - rd.d) < 0);
+    document.getElementById('actionGrid').innerHTML = alertRegions.map(rd => `
+        <div class="alert-card"><strong>REGION ${rd.r}:</strong> Significant drop of ${(rd.d-rd.j).toFixed(1)} points. Immediate audit required.</div>
+    `).join('') || '<div class="alert-card" style="border-color:var(--green)">All regions currently showing growth or stability.</div>';
 }
-function openJan() { document.getElementById('ifr').src='jan-2026.html'; document.getElementById('viewer').classList.add('open'); }
+
+function openReport(file, name) {
+    document.getElementById('vTitle').innerText = `${name.toUpperCase()} 2026 PERFORMANCE REPORT`;
+    document.getElementById('reportFrame').src = file;
+    document.getElementById('viewer').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeReport() {
+    document.getElementById('viewer').classList.remove('active');
+    document.getElementById('reportFrame').src = '';
+    document.body.style.overflow = 'auto';
+}
+
 window.onload = init;
 </script>
 </body>

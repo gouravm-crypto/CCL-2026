@@ -75,10 +75,15 @@ iframe { flex: 1; border: none; }
 </div>
 
 <script>
-const DATA = [
+const REGIONS = [
   {r:"SAP", n:84, d:90, j:93}, {r:"EBJ", n:66, d:74, j:87}, {r:"EOC", n:76, d:79, j:87},
   {r:"NPJK", n:83, d:82, j:85}, {r:"NUP2", n:68, d:80, j:84}, {r:"ENE", n:75, d:66, j:77},
-  {r:"STNK", n:72, d:81, j:83}, {r:"EWB", n:63, d:78, j:83}, {r:"STN", n:73, d:82, j:82}
+  {r:"STNK", n:72, d:81, j:83}, {r:"EWB", n:63, d:78, j:83}, {r:"STN", n:73, d:82, j:82},
+  {r:"WMUM1", n:65, d:77, j:80}, {r:"NNCR2", n:70, d:76, j:81}, {r:"NRH", n:68, d:72, j:80},
+  {r:"WMUM2", n:70, d:81, j:79}, {r:"NNCR3", n:70, d:79, j:78}, {r:"WMP", n:60, d:70, j:77},
+  {r:"NNCR1", n:68, d:77, j:76}, {r:"NUP1", n:61, d:66, j:76}, {r:"WGJ", n:65, d:76, j:76},
+  {r:"SKA2", n:60, d:67, j:75}, {r:"STG", n:51, d:71, j:72}, {r:"WROM2", n:55, d:62, j:72},
+  {r:"WROM1", n:66, d:67, j:71}, {r:"SKA1", n:59, d:63, j:70}
 ];
 
 const MONTHS = [
@@ -96,18 +101,18 @@ function init() {
         </div>
     `).join('');
 
-    document.getElementById('heatBody').innerHTML = DATA.map(rd => {
+    document.getElementById('heatBody').innerHTML = REGIONS.map(rd => {
         const v = (rd.j - rd.d).toFixed(1);
         const color = v >= 0 ? 'var(--green)' : 'var(--red)';
-        return `<tr><td><strong>${rd.r} Cluster</strong></td><td>${rd.n}</td><td>${rd.d}</td><td style="font-weight:700">${rd.j}</td>
-        <td style="color:${color}; font-weight:700;">${v>=0?'▲':'▼'} ${Math.abs(v)}</td>
-        <td><span style="font-size:10px; font-weight:800; color:${color}">${v>=0?'MOMENTUM':'ACTION REQ'}</span></td></tr>`;
+        return `<tr><td><strong>${rd.r} Cluster</strong></td><td>${rd.n}</td><td>${rd.d}</td><td style="font-weight:700;">${rd.j}</td>
+        <td style="color:${color}; font-weight:700;">${v >= 0 ? '▲' : '▼'} ${Math.abs(v)}</td>
+        <td><span style="font-size:10px; font-weight:800; color:${color}">${v >= 0 ? 'MOMENTUM' : 'ACTION REQ'}</span></td></tr>`;
     }).join('');
 
-    const alerts = DATA.filter(rd => (rd.j - rd.d) < 0);
+    const alerts = REGIONS.filter(rd => (rd.j - rd.d) < 0);
     document.getElementById('alertGrid').innerHTML = alerts.map(rd => `
-        <div class="alert-item"><strong>REGION ${rd.r}:</strong> Drop detected. Immediate review required.</div>
-    `).join('') || '<div class="alert-item" style="border-color:var(--green)">All regions currently stable.</div>';
+        <div class="alert-item"><strong>REGION ${rd.r}:</strong> Performance drop detected. Immediate review required.</div>
+    `).join('') || '<div class="alert-item" style="border-color:var(--green)">All regions currently showing growth or stability.</div>';
 }
 
 function openViewer(file) {
@@ -126,3 +131,4 @@ window.onload = init;
 </script>
 </body>
 </html>
+

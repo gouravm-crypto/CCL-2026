@@ -7,32 +7,43 @@
 <style>
 :root { --gold: #C9A84C; --gold-lt: #F0D080; --dark: #1A1208; --dark2: #2C1F0A; --green: #2D7A4F; --red: #C0392B; --white: #FFFFFF; --shadow: 0 12px 40px rgba(26,18,8,0.18); }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'DM Sans', sans-serif; background: #FDFAF4; color: var(--dark); }
+body { font-family: 'DM Sans', sans-serif; background: #FDFAF4; color: var(--dark); line-height: 1.6; }
 
-/* LUXURY BRANDING */
-.header { background: linear-gradient(135deg, #1A1208 0%, #2C1F0A 100%); padding: 40px 20px; text-align: center; border-bottom: 3px solid var(--gold); }
-.logo { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 900; color: var(--gold-lt); letter-spacing: 4px; }
-.tata-tag { font-size: 11px; letter-spacing: 5px; color: var(--gold-lt); text-transform: uppercase; margin-top: 8px; opacity: 0.7; }
+/* BRANDED HEADER */
+.header { background: linear-gradient(135deg, #1A1208 0%, #2C1F0A 100%); padding: 45px 20px; text-align: center; border-bottom: 3px solid var(--gold); position: relative; }
+.logo { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 900; color: var(--gold-lt); letter-spacing: 5px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+.tata-tag { font-size: 12px; letter-spacing: 6px; color: var(--gold-lt); text-transform: uppercase; margin-top: 10px; opacity: 0.8; font-weight: 300; }
 
-.container { max-width: 1300px; margin: 0 auto; padding: 50px 25px; }
+.container { max-width: 1400px; margin: 0 auto; padding: 40px 25px; }
 
-/* DYNAMIC KPI CARDS */
-.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 50px; }
-.kpi-card { background: var(--white); padding: 35px; border-radius: 15px; border: 1px solid #E8DCC8; box-shadow: var(--shadow); position: relative; }
+/* EXECUTIVE PRIORITY ALERTS */
+.alert-strip { background: var(--dark2); color: var(--gold-lt); padding: 25px; border-radius: 15px; margin-bottom: 40px; border-left: 6px solid var(--gold); box-shadow: var(--shadow); }
+.alert-title { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+.alert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
+.alert-item { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; border: 1px solid rgba(240,208,128,0.2); font-size: 14px; }
+
+/* KPI CARDS */
+.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 50px; }
+.kpi-card { background: var(--white); padding: 35px; border-radius: 20px; border: 1px solid #E8DCC8; box-shadow: var(--shadow); transition: 0.4s; position: relative; overflow: hidden; }
+.kpi-card:hover { transform: translateY(-8px); border-color: var(--gold); }
 .kpi-label { font-size: 11px; font-weight: 700; color: #8A8A8A; text-transform: uppercase; letter-spacing: 2px; }
-.kpi-val { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 900; margin: 10px 0; }
+.kpi-val { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 900; margin: 10px 0; color: var(--dark); }
 
-/* HEATMAP */
-.table-wrap { background: var(--white); border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid #E8DCC8; }
+/* TABLES */
+.section-title { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; margin-bottom: 30px; border-left: 6px solid var(--gold); padding-left: 20px; }
+.table-wrap { background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid #E8DCC8; margin-bottom: 60px; }
 table { width: 100%; border-collapse: collapse; }
-th { background: var(--dark); color: var(--gold-lt); padding: 22px; text-align: left; font-size: 12px; text-transform: uppercase; }
+th { background: var(--dark); color: var(--gold-lt); padding: 22px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
 td { padding: 20px; border-bottom: 1px solid #F3EDE2; font-size: 15px; }
 
+/* ROADMAP GRID */
+.roadmap-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; }
+
 /* VIEWER */
-.viewer-overlay { display: none; position: fixed; inset: 0; z-index: 10000; background: rgba(26,18,8,0.95); flex-direction: column; backdrop-filter: blur(10px); }
+.viewer-overlay { display: none; position: fixed; inset: 0; z-index: 10000; background: rgba(26,18,8,0.98); flex-direction: column; backdrop-filter: blur(15px); }
 .viewer-overlay.active { display: flex; }
-iframe { flex: 1; border: none; background: var(--white); margin: 20px; border-radius: 10px; }
-.close-btn { background: var(--gold); color: var(--dark); border: none; padding: 12px 30px; border-radius: 5px; font-weight: 700; cursor: pointer; }
+iframe { flex: 1; border: none; background: var(--white); margin: 25px; border-radius: 15px; box-shadow: 0 0 50px rgba(0,0,0,0.5); }
+.close-btn { background: var(--gold); color: var(--dark); border: none; padding: 15px 40px; border-radius: 8px; font-weight: 900; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
 </style>
 </head>
 <body>
@@ -43,53 +54,48 @@ iframe { flex: 1; border: none; background: var(--white); margin: 20px; border-r
 </div>
 
 <div class="container">
+    <div class="alert-strip">
+        <div class="alert-title">💎 Executive Intelligence Priority</div>
+        <div class="alert-grid" id="alertGrid"></div>
+    </div>
+
     <div class="kpi-row">
-        <div class="kpi-card" style="border-top: 5px solid var(--green)">
+        <div class="kpi-card" style="border-top: 6px solid var(--green)">
             <div class="kpi-label">🏆 Top Performing Cluster</div>
-            <div class="kpi-val">SAP</div>
-            <div style="color:var(--green); font-weight:700;">Score: 93.0% (Elite)</div>
+            <div class="kpi-val" id="top-name">SAP</div>
+            <div id="top-score" style="color:var(--green); font-weight:700;">Score: 93.0% (Elite)</div>
         </div>
-        <div class="kpi-card" style="border-top: 5px solid var(--red)">
+        <div class="kpi-card" style="border-top: 6px solid var(--red)">
             <div class="kpi-label">⚠️ Priority Action Cluster</div>
-            <div class="kpi-val">SKA1</div>
-            <div style="color:var(--red); font-weight:700;">Score: 70.0% (Action Req)</div>
+            <div class="kpi-val" id="worst-name">SKA1</div>
+            <div id="worst-score" style="color:var(--red); font-weight:700;">Score: 70.0% (Action Required)</div>
         </div>
-        <div class="kpi-card" style="border-top: 5px solid var(--gold)">
-            <div class="kpi-label">📈 National Average</div>
+        <div class="kpi-card" style="border-top: 6px solid var(--gold)">
+            <div class="kpi-label">📈 National Performance</div>
             <div class="kpi-val">79.2%</div>
-            <div style="color:var(--gold); font-weight:700;">Jan '26 Final Release</div>
+            <div style="color:var(--gold); font-weight:700;">January 2026 Snapshot</div>
         </div>
     </div>
 
-    <h2 style="font-family:'Playfair Display'; margin-bottom:25px;">Regional Comparison Tracking</h2>
+    <div class="section-title">Regional Performance Trends (Jan '26)</div>
     <div class="table-wrap">
         <table>
-            <thead><tr><th>Cluster</th><th>Nov '25</th><th>Dec '25</th><th>Jan '26</th><th>Variance</th><th>% Stores >90%</th></tr></thead>
+            <thead><tr><th>Region Cluster</th><th>Nov '25</th><th>Dec '25</th><th>Jan '26</th><th>Variance</th><th>% Stores >90%</th></tr></thead>
             <tbody id="heatBody"></tbody>
         </table>
     </div>
 
-    <h2 style="font-family:'Playfair Display'; margin-top:50px; margin-bottom:25px;">2026 Monthly Reports</h2>
-    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:25px;">
-        <div class="kpi-card" onclick="openViewer('jan-2026.html')" style="cursor:pointer; border-left: 5px solid var(--gold);">
-            <div style="font-family:'Playfair Display'; font-size:22px; font-weight:700;">January 2026</div>
-            <div style="margin-top:10px; color:var(--green); font-weight:700;">REPORT LIVE →</div>
-        </div>
-        <div class="kpi-card" style="opacity:0.5; cursor:not-allowed;">
-            <div style="font-family:'Playfair Display'; font-size:22px; font-weight:700;">February 2026</div>
-            <div style="margin-top:10px; color:#888;">PROCESSING...</div>
-        </div>
-    </div>
+    <div class="section-title">2026 Monthly roadmap Trajectory</div>
+    <div class="roadmap-grid" id="roadmapGrid"></div>
 </div>
 
 <div class="viewer-overlay" id="viewer">
-    <div style="padding:20px 40px; display:flex; justify-content:space-between; align-items:center; color:var(--gold-lt);">
-        <span style="font-family:'Playfair Display'; font-size:20px; font-weight:700;">PERFORMANCE INTELLIGENCE REPORT</span>
-        <button class="close-btn" onclick="closeViewer()">✕ CLOSE</button>
+    <div style="padding:25px 50px; display:flex; justify-content:space-between; align-items:center;">
+        <span style="font-family:'Playfair Display'; font-size:24px; color:var(--gold-lt); font-weight:900;">PLATINUM PERFORMANCE VIEWER</span>
+        <button class="close-btn" onclick="closeViewer()">✕ Close Report</button>
     </div>
     <iframe id="reportFrame" src=""></iframe>
 </div>
-
 <script>
 // ACTUAL DATA FROM OFFICIAL RELEASE
 const REGIONS = [
@@ -103,7 +109,7 @@ const REGIONS = [
     {r:"SKA1", n:59.0, d:63.0, j:70.0, p:"48%"}
 ];
 
-// FULL 12-MONTH ROADMAP DATA
+// FULL 12-MONTH ROADMAP Trajectory
 const MONTHS = [
     {name:"January", score:79.2, status:"live", file:"jan-2026.html"},
     {name:"February", score:"--", status:"upcoming"},
@@ -120,35 +126,17 @@ const MONTHS = [
 ];
 
 function init() {
-    // 1. DYNAMIC TOP/WORST KPI CARDS
+    // 1. AUTO-SORT BEST/WORST FOR KPI CARDS
     const sorted = [...REGIONS].sort((a, b) => b.j - a.j);
     const top = sorted[0];
     const worst = sorted[sorted.length - 1];
 
-    // These IDs must match your HTML elements
-    if(document.getElementById('top-name')) {
-        document.getElementById('top-name').innerText = top.r;
-        document.getElementById('top-score').innerText = `Elite Average: ${top.j.toFixed(1)}%`;
-        document.getElementById('worst-name').innerText = worst.r;
-        document.getElementById('worst-score').innerText = `Urgent Focus: ${worst.j.toFixed(1)}%`;
-    }
+    document.getElementById('top-name').innerText = top.r;
+    document.getElementById('top-score').innerText = `Elite Average: ${top.j.toFixed(1)}%`;
+    document.getElementById('worst-name').innerText = worst.r;
+    document.getElementById('worst-score').innerText = `Priority Focus: ${worst.j.toFixed(1)}%`;
 
-    // 2. RENDER THE 12-MONTH ROADMAP
-    const roadmapContainer = document.getElementById('roadmapGrid') || document.getElementById('monthsGrid');
-    if(roadmapContainer) {
-        roadmapContainer.innerHTML = MONTHS.map(m => `
-            <div class="kpi-card" style="cursor:${m.status === 'live' ? 'pointer' : 'not-allowed'}; opacity:${m.status === 'live' ? '1' : '0.5'}; border-left: 5px solid ${m.status === 'live' ? 'var(--gold)' : '#DDD'};" 
-                 onclick="${m.status === 'live' ? `openViewer('${m.file}')` : ''}">
-                <div style="font-family:'Playfair Display'; font-size:22px; font-weight:700;">${m.name} 2026</div>
-                <div style="margin:15px 0; font-weight:700; color:var(--gold);">Avg Score: ${m.score}%</div>
-                <div style="font-size:10px; font-weight:700; color:${m.status === 'live' ? 'var(--green)' : '#AAA'}">
-                    ${m.status === 'live' ? 'REPORT FINALIZED →' : 'DATA PROCESSING...'}
-                </div>
-            </div>
-        `).join('');
-    }
-
-    // 3. RENDER THE HEATMAP TABLE
+    // 2. RENDER THE REGIONAL TREND TABLE
     document.getElementById('heatBody').innerHTML = REGIONS.map(rd => {
         const v = (rd.j - rd.d).toFixed(1);
         const color = v >= 0 ? 'var(--green)' : 'var(--red)';
@@ -159,10 +147,38 @@ function init() {
             <td><span style="background:#F0F0F0; padding:5px 12px; border-radius:20px; font-size:12px; font-weight:700;">${rd.p}</span></td>
         </tr>`;
     }).join('');
+
+    // 3. RENDER THE 12-MONTH ROADMAP
+    document.getElementById('roadmapGrid').innerHTML = MONTHS.map(m => `
+        <div class="kpi-card" style="cursor:${m.status === 'live' ? 'pointer' : 'not-allowed'}; opacity:${m.status === 'live' ? '1' : '0.5'}; border-left: 5px solid ${m.status === 'live' ? 'var(--gold)' : '#DDD'};" 
+             onclick="${m.status === 'live' ? `openViewer('${m.file}')` : ''}">
+            <div style="font-family:'Playfair Display'; font-size:22px; font-weight:700;">${m.name} 2026</div>
+            <div style="margin:15px 0; font-weight:700; color:var(--gold);">Avg Score: ${m.score}%</div>
+            <div style="font-size:10px; font-weight:700; color:${m.status === 'live' ? 'var(--green)' : '#AAA'}">
+                ${m.status === 'live' ? 'ACCESS INTELLIGENCE REPORT →' : 'DATA PENDING...'}
+            </div>
+        </div>
+    `).join('');
+
+    // 4. RENDER EXECUTIVE PRIORITY ALERTS
+    const drops = REGIONS.filter(rd => (rd.j - rd.d) < 0);
+    document.getElementById('alertGrid').innerHTML = drops.map(rd => `
+        <div class="alert-item"><strong>CLUSTER ${rd.r}:</strong> Monthly drop detected. Trainer intervention required.</div>
+    `).join('') || '<div class="alert-item" style="border-color:var(--green)">All regions currently showing growth or stability.</div>';
 }
 
-function openViewer(f) { document.getElementById('reportFrame').src = f; document.getElementById('viewer').classList.add('active'); document.body.style.overflow = 'hidden'; }
-function closeViewer() { document.getElementById('viewer').classList.remove('active'); document.getElementById('reportFrame').src = ''; document.body.style.overflow = 'auto'; }
+function openViewer(f) { 
+    document.getElementById('reportFrame').src = f; 
+    document.getElementById('viewer').classList.add('active'); 
+    document.body.style.overflow = 'hidden'; 
+}
+
+function closeViewer() { 
+    document.getElementById('viewer').classList.remove('active'); 
+    document.getElementById('reportFrame').src = ''; 
+    document.body.style.overflow = 'auto'; 
+}
+
 window.onload = init;
 </script>
 </body>

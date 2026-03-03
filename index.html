@@ -7,12 +7,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --gold:#C9A84C; --gold-lt:#E8C96A; --gold-pale:rgba(201,168,76,0.08);
+  --gold:#C9A84C; --gold-lt:#E8C96A; --gold-pale:rgba(201,168,76,0.09);
   --ink:#0F0A04; --ink2:#1A1005; --ink3:#251808;
   --surface:#F8F5EE; --surface2:#EEE8D8;
   --green:#1A5C35; --green-lt:#C8E6D4;
   --red:#9B2111; --red-lt:#F5DADA;
-  --border:#E2D8C4; --border2:rgba(226,216,196,0.6);
+  --border:#E2D8C4;
   --text-muted:#8A7A62;
   --shadow-sm:0 1px 3px rgba(15,10,4,.06),0 4px 20px rgba(15,10,4,.07);
   --shadow:0 2px 8px rgba(15,10,4,.08),0 14px 48px rgba(15,10,4,.10);
@@ -25,347 +25,234 @@ body{font-family:'Outfit',sans-serif;background:var(--surface);color:var(--ink);
 /* ─── HEADER ─── */
 .header{
   background:var(--ink2);
-  padding:60px 48px 50px;
+  padding:56px 48px 50px;
   text-align:center;
   position:relative;overflow:hidden;
 }
 .header::before{
   content:'';position:absolute;inset:0;
   background:
-    radial-gradient(ellipse 90% 60% at 50% -10%,rgba(201,168,76,.22) 0%,transparent 60%),
-    radial-gradient(ellipse 40% 30% at 20% 110%,rgba(201,168,76,.06) 0%,transparent 60%),
-    radial-gradient(ellipse 40% 30% at 80% 110%,rgba(201,168,76,.06) 0%,transparent 60%);
+    radial-gradient(ellipse 85% 55% at 50% -10%, rgba(201,168,76,.22) 0%, transparent 62%),
+    radial-gradient(ellipse 30% 25% at 15% 100%, rgba(201,168,76,.05) 0%, transparent 70%),
+    radial-gradient(ellipse 30% 25% at 85% 100%, rgba(201,168,76,.05) 0%, transparent 70%);
   pointer-events:none;
 }
-/* subtle texture */
-.header::after{
-  content:'';position:absolute;inset:0;
-  background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  pointer-events:none;opacity:.4;
-}
 .header-inner{position:relative;z-index:1;}
-.brand-diamond{
-  display:inline-flex;align-items:center;gap:18px;
-  margin-bottom:18px;
-}
-.brand-diamond-gem{
-  width:32px;height:32px;opacity:.6;
-}
-.brand-name{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(44px,7vw,80px);font-weight:700;
-  letter-spacing:10px;color:var(--gold-lt);
-  line-height:1;text-transform:uppercase;
-}
+
+/* tata tag — now clearly visible */
 .brand-tata{
-  font-size:10px;letter-spacing:6px;text-transform:uppercase;
-  color:rgba(232,201,106,.32);margin-top:10px;font-weight:300;
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:10px;letter-spacing:5px;text-transform:uppercase;
+  color:rgba(232,201,106,.55);
+  font-weight:500;margin-bottom:20px;
 }
+.brand-tata-dot{width:3px;height:3px;border-radius:50%;background:rgba(232,201,106,.4);}
+
+/* main title — "CaratLane Champions League" together */
+.brand-main{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:700;line-height:1;
+  color:var(--gold-lt);
+  text-transform:uppercase;letter-spacing:3px;
+}
+.brand-main-sub{
+  font-size:clamp(13px,1.6vw,17px);
+  letter-spacing:8px;
+  color:rgba(232,201,106,.5);
+  font-weight:300;
+  display:block;margin-top:4px;
+}
+.brand-name-line{
+  font-size:clamp(38px,5.5vw,68px);
+  display:block;
+}
+
+/* decorative rule */
 .brand-rule{
   display:flex;align-items:center;gap:14px;
-  width:280px;margin:24px auto;
+  width:240px;margin:24px auto 22px;
 }
-.brand-rule-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.45));}
-.brand-rule-line.r{background:linear-gradient(90deg,rgba(201,168,76,.45),transparent);}
-.brand-rule-gem{font-size:10px;color:rgba(201,168,76,.55);}
-.brand-sub{
+.brand-rule-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.4));}
+.brand-rule-line.r{background:linear-gradient(270deg,transparent,rgba(201,168,76,.4));}
+.brand-rule-gem{font-size:9px;color:rgba(201,168,76,.5);letter-spacing:2px;}
+
+.brand-tagline{
   font-family:'Cormorant Garamond',serif;
-  font-size:clamp(15px,2vw,20px);font-style:italic;font-weight:400;
-  color:rgba(232,201,106,.48);letter-spacing:1.5px;
+  font-size:clamp(13px,1.8vw,18px);font-style:italic;font-weight:400;
+  color:rgba(232,201,106,.40);letter-spacing:1px;
 }
 
 /* ─── KPI STRIP ─── */
 .kpi-strip{
   display:grid;grid-template-columns:repeat(3,1fr);
-  background:#fff;
-  border-bottom:1px solid var(--border);
+  background:#fff;border-bottom:1px solid var(--border);
 }
 @media(max-width:640px){.kpi-strip{grid-template-columns:1fr;}}
-.kpi-cell{
-  padding:32px 40px;
-  border-right:1px solid var(--border);
-  position:relative;transition:background .2s;
-}
+.kpi-cell{padding:30px 40px;border-right:1px solid var(--border);transition:background .2s;}
 .kpi-cell:last-child{border-right:none;}
 .kpi-cell:hover{background:#FDFAF4;}
-.kpi-indicator{
-  display:flex;align-items:center;gap:8px;
-  font-size:9.5px;font-weight:700;letter-spacing:3px;
-  text-transform:uppercase;color:var(--text-muted);
-  margin-bottom:12px;
-}
+.kpi-indicator{display:flex;align-items:center;gap:7px;font-size:9.5px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--text-muted);margin-bottom:11px;}
 .dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
 .dot-green{background:var(--green);}
 .dot-gold{background:var(--gold);}
 .dot-red{background:var(--red);}
-.kpi-val{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(28px,3.5vw,48px);font-weight:600;
-  color:var(--ink);line-height:1;margin-bottom:6px;
-}
-.kpi-sub{font-size:12px;font-weight:600;letter-spacing:.3px;}
+.kpi-val{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,48px);font-weight:600;color:var(--ink);line-height:1;margin-bottom:6px;}
+.kpi-sub{font-size:12px;font-weight:600;}
 .kpi-sub.green{color:var(--green);}
 .kpi-sub.red{color:var(--red);}
 .kpi-sub.gold{color:var(--gold);}
 
 /* ─── MAIN ─── */
-.main{max-width:1400px;margin:0 auto;padding:56px 44px 80px;}
+.main{max-width:1280px;margin:0 auto;padding:56px 44px 80px;}
 @media(max-width:700px){.main{padding:36px 20px 64px;}}
-.section-eyebrow{
-  font-size:9.5px;font-weight:700;letter-spacing:3.5px;
-  text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;
-}
-.section-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(26px,3vw,36px);font-weight:600;
-  color:var(--ink);margin-bottom:36px;letter-spacing:-.3px;
-}
+.section-eyebrow{font-size:9.5px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3vw,36px);font-weight:600;color:var(--ink);margin-bottom:36px;}
 
 /* ─── MONTHS GRID ─── */
-.months-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(195px,1fr));
-  gap:14px;margin-bottom:72px;
-}
+.months-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px;margin-bottom:72px;}
 .month-card{
   background:#fff;border:1px solid var(--border);
-  border-radius:18px;padding:28px 24px 24px;
+  border-radius:18px;padding:28px 22px 22px;
   position:relative;overflow:hidden;
-  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+  transition:transform .22s,box-shadow .22s,border-color .22s;
 }
 .month-card.locked{opacity:.38;cursor:default;}
-.month-card.live{
-  cursor:pointer;
-  border-color:rgba(201,168,76,.4);
-  background:linear-gradient(150deg,#FFFFFF 0%,#FFFEF8 100%);
-}
-.month-card.live::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,#B8922A,var(--gold-lt),#B8922A);
-}
-.month-card.live:hover{
-  transform:translateY(-6px);
-  box-shadow:var(--shadow-lg);
-  border-color:var(--gold);
-}
-.month-live-badge{
-  position:absolute;top:16px;right:16px;
-  background:var(--gold);color:var(--ink);
-  font-size:8px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;
-  padding:3px 9px;border-radius:4px;
-  box-shadow:0 2px 8px rgba(201,168,76,.4);
-}
-.month-number{
-  font-size:9.5px;font-weight:700;letter-spacing:2.5px;
-  text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;
-}
-.month-name{
-  font-family:'Cormorant Garamond',serif;
-  font-size:24px;font-weight:600;color:var(--ink);
-  margin-bottom:18px;line-height:1;
-}
-.month-score-val{
-  font-family:'Cormorant Garamond',serif;
-  font-size:40px;font-weight:700;color:var(--gold);line-height:1;
-}
-.month-score-label{
-  font-size:9.5px;text-transform:uppercase;letter-spacing:1.5px;
-  color:var(--text-muted);margin-top:4px;font-weight:600;
-}
+.month-card.live{cursor:pointer;border-color:rgba(201,168,76,.4);background:linear-gradient(150deg,#fff 0%,#FFFEF8 100%);}
+.month-card.live::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#B8922A,var(--gold-lt),#B8922A);}
+.month-card.live:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--gold);}
+.month-live-badge{position:absolute;top:16px;right:16px;background:var(--gold);color:var(--ink);font-size:8px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:3px 9px;border-radius:4px;box-shadow:0 2px 8px rgba(201,168,76,.35);}
+.month-number{font-size:9.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;}
+.month-name{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--ink);margin-bottom:18px;line-height:1;}
+.month-score-val{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:var(--gold);line-height:1;}
+.month-score-label{font-size:9.5px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-muted);margin-top:4px;font-weight:600;}
 .month-pending{font-size:13px;color:#C4BAA8;margin-top:10px;font-style:italic;}
-.month-cta{
-  margin-top:20px;display:flex;align-items:center;gap:7px;
-  font-size:10px;font-weight:700;letter-spacing:2px;
-  text-transform:uppercase;color:var(--gold);
-  transition:gap .2s;
-}
-.month-card.live:hover .month-cta{gap:11px;}
+.month-cta{margin-top:20px;display:flex;align-items:center;gap:7px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);transition:gap .2s;}
+.month-card.live:hover .month-cta{gap:12px;}
 .month-cta svg{width:13px;height:13px;stroke:var(--gold);stroke-width:2.5;fill:none;flex-shrink:0;}
 
-/* ─── REGION TABLE ─── */
-.table-wrap{
-  background:#fff;border:1px solid var(--border);
-  border-radius:20px;overflow:hidden;
+/* ─── REGION ACCORDION ─── */
+.region-list{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:20px;
+  overflow:hidden;
   box-shadow:var(--shadow-sm);
 }
-.table-scroll{overflow-x:auto;}
-table{width:100%;border-collapse:collapse;min-width:680px;}
-thead tr{background:var(--ink2);}
-th{
-  padding:15px 22px;
-  font-size:9px;font-weight:700;letter-spacing:2.5px;
+
+/* header row */
+.region-list-header{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;
+  background:var(--ink2);
+  padding:14px 24px;
+}
+.region-list-header span{
+  font-size:9px;font-weight:700;letter-spacing:2px;
   text-transform:uppercase;color:rgba(232,201,106,.55);
-  text-align:left;white-space:nowrap;
 }
-td{padding:0;border-bottom:1px solid rgba(242,237,224,.8);}
-tbody tr:last-child td{border-bottom:none;}
 
-/* clickable rows */
+/* each region item */
+.region-item{border-bottom:1px solid rgba(226,216,196,.7);}
+.region-item:last-child{border-bottom:none;}
+
 .region-row{
-  display:contents;cursor:pointer;
-}
-.region-row td{
-  padding:17px 22px;
-  transition:background .15s;
-}
-.region-row:hover td{background:#FDFAF4;}
-.region-row:hover .region-name-cell::after{
-  opacity:1;transform:translateX(0);
-}
-
-.region-name-cell{
-  display:flex;align-items:center;gap:10px;
-  font-weight:700;color:var(--ink);font-size:14.5px;
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;
+  align-items:center;
+  padding:18px 24px;
+  cursor:pointer;
+  transition:background .18s;
   position:relative;
 }
-.region-name-cell::after{
-  content:'View stores →';
-  font-size:10px;font-weight:600;letter-spacing:1px;
-  color:var(--gold);
-  opacity:0;transform:translateX(-6px);
-  transition:all .2s;white-space:nowrap;
-}
-.region-click-hint{
-  width:22px;height:22px;border-radius:6px;
-  background:var(--gold-pale);border:1px solid rgba(201,168,76,.2);
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;
-  transition:background .15s;
-}
-.region-row:hover .region-click-hint{background:rgba(201,168,76,.18);}
-.region-click-hint svg{width:10px;height:10px;stroke:var(--gold);stroke-width:2.5;fill:none;}
+.region-row:hover{background:#FDFAF4;}
+.region-row.expanded{background:rgba(201,168,76,.04);}
 
-.score-fig{
-  font-family:'Cormorant Garamond',serif;
-  font-size:20px;font-weight:600;color:var(--ink);
+.region-row-name{
+  display:flex;align-items:center;gap:12px;
+  font-weight:700;font-size:15px;color:var(--ink);
 }
+.region-chevron{
+  width:26px;height:26px;border-radius:7px;
+  background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.18);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;transition:all .25s;
+}
+.region-chevron svg{width:11px;height:11px;stroke:var(--gold);stroke-width:2.5;fill:none;transition:transform .25s;}
+.region-row.expanded .region-chevron{background:var(--gold);border-color:var(--gold);}
+.region-row.expanded .region-chevron svg{stroke:var(--ink);transform:rotate(90deg);}
+
+.score-fig{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--ink);}
 .var-up{color:var(--green);font-weight:700;font-size:13px;}
 .var-dn{color:var(--red);font-weight:700;font-size:13px;}
-.pct-pill{
-  display:inline-flex;align-items:center;justify-content:center;
-  padding:4px 13px;border-radius:20px;
-  font-size:11.5px;font-weight:700;
-  background:var(--surface2);color:var(--text-muted);
-  min-width:52px;
-}
+.pct-pill{display:inline-flex;align-items:center;justify-content:center;padding:4px 13px;border-radius:20px;font-size:11.5px;font-weight:700;background:var(--surface2);color:var(--text-muted);min-width:50px;}
 .pct-pill.hi{background:var(--green-lt);color:var(--green);}
 .pct-pill.lo{background:var(--red-lt);color:var(--red);}
 
-/* ─── REGION DRILL-DOWN PANEL ─── */
-.region-panel{
+/* ── STORE DRAWER ── */
+.store-drawer{
   display:none;
-  background:#fff;border:1px solid rgba(201,168,76,.3);
-  border-radius:20px;margin-top:2px;
-  box-shadow:var(--shadow);
+  border-top:1px solid rgba(226,216,196,.8);
+  background:rgba(248,245,238,.5);
+  padding:0;
   overflow:hidden;
-  animation:panelIn .28s ease;
 }
-.region-panel.open{display:block;}
-@keyframes panelIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+.store-drawer.open{display:block;animation:drawerIn .25s ease;}
+@keyframes drawerIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
 
-.panel-header{
-  background:var(--ink3);
-  padding:20px 28px;
-  display:flex;align-items:center;justify-content:space-between;
-}
-.panel-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:22px;font-weight:600;color:var(--gold-lt);
-  display:flex;align-items:center;gap:12px;
-}
-.panel-region-badge{
-  background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.25);
-  color:var(--gold-lt);font-family:'Outfit',sans-serif;
-  font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
-  padding:4px 12px;border-radius:6px;
-}
-.panel-close{
-  background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.18);
-  color:rgba(232,201,106,.7);
-  padding:7px 16px;border-radius:7px;
-  font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
-  cursor:pointer;font-family:'Outfit',sans-serif;transition:all .18s;
-}
-.panel-close:hover{background:rgba(201,168,76,.2);color:var(--gold-lt);}
-
-.panel-stats{
+.drawer-summary{
   display:flex;gap:0;
-  border-bottom:1px solid var(--border);
+  padding:16px 24px;
+  border-bottom:1px solid rgba(226,216,196,.6);
+  background:#fff;
 }
-.panel-stat{
-  padding:16px 24px;border-right:1px solid var(--border);
-  flex:1;min-width:0;
-}
-.panel-stat:last-child{border-right:none;}
-.panel-stat-val{
-  font-family:'Cormorant Garamond',serif;
-  font-size:26px;font-weight:700;color:var(--ink);line-height:1;
-}
-.panel-stat-label{font-size:10px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-top:3px;}
+.drawer-stat{padding:0 28px 0 0;margin-right:28px;border-right:1px solid var(--border);}
+.drawer-stat:last-child{border-right:none;margin-right:0;padding-right:0;}
+.drawer-stat-val{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:var(--ink);line-height:1;}
+.drawer-stat-label{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-top:3px;}
 
-.panel-stores-grid{
+.stores-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-  gap:12px;padding:20px 24px 24px;
-  max-height:420px;overflow-y:auto;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  gap:10px;
+  padding:16px 24px 20px;
+  max-height:380px;
+  overflow-y:auto;
 }
-.panel-stores-grid::-webkit-scrollbar{width:5px;}
-.panel-stores-grid::-webkit-scrollbar-track{background:transparent;}
-.panel-stores-grid::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px;}
+.stores-grid::-webkit-scrollbar{width:4px;}
+.stores-grid::-webkit-scrollbar-track{background:transparent;}
+.stores-grid::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px;}
 
-.store-mini{
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:12px;padding:14px 16px;
-  display:flex;align-items:center;gap:12px;
-  transition:background .15s;
+.store-card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:11px;padding:12px 14px;
+  display:flex;align-items:center;gap:11px;
+  transition:all .15s;
 }
-.store-mini:hover{background:#FDFAF4;}
-.store-mini-rank{
-  font-size:10px;font-weight:700;color:var(--text-muted);
-  width:22px;flex-shrink:0;text-align:center;
-}
-.store-mini-info{flex:1;min-width:0;}
-.store-mini-name{font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.store-mini-score{
-  font-family:'Cormorant Garamond',serif;
-  font-size:20px;font-weight:700;flex-shrink:0;
-}
-.score-s{color:var(--gold);}
-.score-d{color:#5B8DD9;}
-.score-g{color:#2E9E6B;}
-.score-sv{color:#7A7A8C;}
-.score-c{color:#C26A2A;}
+.store-card:hover{background:var(--surface);border-color:rgba(201,168,76,.3);}
+.store-card-rank{font-size:10px;font-weight:700;color:var(--text-muted);width:22px;text-align:center;flex-shrink:0;}
+.store-card-info{flex:1;min-width:0;}
+.store-card-name{font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.store-card-tier{font-size:10px;color:var(--text-muted);margin-top:2px;font-weight:500;}
+.store-card-score{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700;flex-shrink:0;}
+.sc-s{color:#C9A84C;} .sc-d{color:#5B8DD9;} .sc-g{color:#2E9E6B;} .sc-sv{color:#7A7A8C;} .sc-c{color:#C26A2A;}
 
-.panel-open-full{
+.drawer-footer{
   display:flex;align-items:center;justify-content:center;
-  padding:14px;border-top:1px solid var(--border);
-  gap:8px;font-size:11px;font-weight:700;letter-spacing:1.5px;
-  text-transform:uppercase;color:var(--gold);cursor:pointer;
-  transition:background .15s;
+  padding:13px 24px;border-top:1px solid rgba(226,216,196,.6);
+  gap:8px;font-size:10.5px;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--gold);
+  cursor:pointer;transition:background .15s;background:#fff;
 }
-.panel-open-full:hover{background:var(--gold-pale);}
-.panel-open-full svg{width:12px;height:12px;stroke:var(--gold);stroke-width:2.5;fill:none;}
+.drawer-footer:hover{background:rgba(201,168,76,.06);}
+.drawer-footer svg{width:12px;height:12px;stroke:var(--gold);stroke-width:2.5;fill:none;}
 
-/* ─── VIEWER OVERLAY ─── */
+/* ─── VIEWER ─── */
 .viewer{display:none;position:fixed;inset:0;z-index:9999;background:rgba(10,6,1,.97);flex-direction:column;}
-.viewer.open{display:flex;animation:vfade .22s ease;}
+.viewer.open{display:flex;animation:vfade .2s ease;}
 @keyframes vfade{from{opacity:0}to{opacity:1}}
-.viewer-bar{
-  flex-shrink:0;padding:18px 32px;
-  display:flex;justify-content:space-between;align-items:center;
-  border-bottom:1px solid rgba(201,168,76,.12);
-}
-.viewer-title{
-  font-family:'Cormorant Garamond',serif;
-  font-size:19px;font-weight:600;color:var(--gold-lt);letter-spacing:.5px;
-}
-.viewer-close{
-  background:rgba(201,168,76,.10);color:var(--gold-lt);
-  border:1px solid rgba(201,168,76,.22);
-  padding:9px 22px;border-radius:8px;
-  font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
-  cursor:pointer;font-family:'Outfit',sans-serif;transition:all .18s;
-}
+.viewer-bar{flex-shrink:0;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(201,168,76,.12);}
+.viewer-title{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--gold-lt);}
+.viewer-close{background:rgba(201,168,76,.10);color:var(--gold-lt);border:1px solid rgba(201,168,76,.22);padding:9px 22px;border-radius:8px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .18s;}
 .viewer-close:hover{background:var(--gold);color:var(--ink);}
 iframe{flex:1;border:none;background:#fff;margin:18px 24px 24px;border-radius:14px;}
 </style>
@@ -375,14 +262,21 @@ iframe{flex:1;border:none;background:#fff;margin:18px 24px 24px;border-radius:14
 <!-- ─── HEADER ─── -->
 <header class="header">
   <div class="header-inner">
-    <div class="brand-name">CaratLane</div>
-    <div class="brand-tata">A Tata Product</div>
+    <div class="brand-tata">
+      <span class="brand-tata-dot"></span>
+      A Tata Product
+      <span class="brand-tata-dot"></span>
+    </div>
+    <div class="brand-main">
+      <span class="brand-name-line">CaratLane</span>
+      <span class="brand-main-sub">Champions League</span>
+    </div>
     <div class="brand-rule">
       <div class="brand-rule-line"></div>
-      <div class="brand-rule-gem">◆</div>
+      <div class="brand-rule-gem">✦ 2026 ✦</div>
       <div class="brand-rule-line r"></div>
     </div>
-    <div class="brand-sub">Champions League — 2026</div>
+    <div class="brand-tagline">Performance · Excellence · Recognition</div>
   </div>
 </header>
 
@@ -413,42 +307,22 @@ iframe{flex:1;border:none;background:#fff;margin:18px 24px 24px;border-radius:14
   <div class="section-title">Monthly Reports</div>
   <div class="months-grid" id="monthsGrid"></div>
 
-  <!-- REGIONAL -->
+  <!-- REGIONS -->
   <div class="section-eyebrow">Regional Intelligence</div>
   <div class="section-title">Regional Performance Trends</div>
-  <div class="table-wrap">
-    <div class="table-scroll">
-      <table id="regionTable">
-        <thead>
-          <tr>
-            <th>Region</th>
-            <th>Nov '25</th>
-            <th>Dec '25</th>
-            <th>Jan '26</th>
-            <th>Variance</th>
-            <th>Stores ≥90%</th>
-          </tr>
-        </thead>
-        <tbody id="regionBody"></tbody>
-      </table>
-    </div>
-  </div>
 
-  <!-- DRILL-DOWN PANEL -->
-  <div class="region-panel" id="regionPanel">
-    <div class="panel-header">
-      <div class="panel-title">
-        <span id="panelRegionName">Region</span>
-        <span class="panel-region-badge" id="panelRegionCode">—</span>
-      </div>
-      <button class="panel-close" onclick="closePanel()">Close ✕</button>
+  <div class="region-list">
+    <!-- column headers -->
+    <div class="region-list-header">
+      <span>Region</span>
+      <span>Nov '25</span>
+      <span>Dec '25</span>
+      <span>Jan '26</span>
+      <span>Variance</span>
+      <span>Stores ≥90%</span>
     </div>
-    <div class="panel-stats" id="panelStats"></div>
-    <div class="panel-stores-grid" id="panelStores"></div>
-    <div class="panel-open-full" onclick="openFullReport()">
-      View full Jan '26 scoreboard filtered to this region
-      <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </div>
+    <!-- rows injected here -->
+    <div id="regionList"></div>
   </div>
 
 </main>
@@ -463,7 +337,6 @@ iframe{flex:1;border:none;background:#fff;margin:18px 24px 24px;border-radius:14
 </div>
 
 <script>
-// ── STORE DATA (from jan-2026) ──
 const STORE_DATA=[
 [1,"Kangra-Dharamshala Road","NPJK",100],[2,"KTN-Jabalpur Road","WMP",100],
 [3,"GZB-Indirapuram Aditya Mall","NNCR2",100],[4,"PAT City Center Mall","EBJ",100],
@@ -661,20 +534,13 @@ const MONTHS=[
   {n:12,name:"December",live:false}
 ];
 
-let activeRegion=null;
-let pendingRegionFilter=null;
-
-// ── TIER ──
 function getTier(s){
-  if(s>=100) return 's';
-  if(s>=95)  return 'd';
-  if(s>=90)  return 'g';
-  if(s>=85)  return 'sv';
-  return 'c';
+  if(s>=100) return 's'; if(s>=95) return 'd';
+  if(s>=90)  return 'g'; if(s>=85) return 'sv'; return 'c';
 }
-function tierLabel(s){
-  return {s:'Solitaire',d:'Diamond',g:'Gold',sv:'Silver',c:'Copper'}[getTier(s)];
-}
+const TIER_NAMES={s:'Solitaire',d:'Diamond',g:'Gold',sv:'Silver',c:'Copper'};
+
+let openRegion=null;
 
 window.onload=function(){
   // KPIs
@@ -707,87 +573,93 @@ window.onload=function(){
       </div>`;
   }).join('');
 
-  // Region table
-  document.getElementById('regionBody').innerHTML=REGIONS.map(r=>{
+  // Regions
+  document.getElementById('regionList').innerHTML=REGIONS.map(r=>{
     const v=(r.j-r.d).toFixed(1);
     const isUp=parseFloat(v)>=0;
     const pClass=r.p>=90?'hi':r.p<70?'lo':'';
-    return `<tr class="region-row" onclick="openRegionPanel('${r.r}')">
-      <td>
-        <div class="region-name-cell">
-          <div class="region-click-hint">
+    return `
+    <div class="region-item" id="item-${r.r}">
+      <div class="region-row" id="row-${r.r}" onclick="toggleRegion('${r.r}')">
+        <div class="region-row-name">
+          <div class="region-chevron">
             <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </div>
           ${r.r}
         </div>
-      </td>
-      <td><span class="score-fig">${r.n}%</span></td>
-      <td><span class="score-fig">${r.d}%</span></td>
-      <td><span class="score-fig">${r.j}%</span></td>
-      <td><span class="${isUp?'var-up':'var-dn'}">${isUp?'▲':'▼'} ${Math.abs(v)}%</span></td>
-      <td><span class="pct-pill ${pClass}">${r.p}%</span></td>
-    </tr>`;
+        <div><span class="score-fig">${r.n}%</span></div>
+        <div><span class="score-fig">${r.d}%</span></div>
+        <div><span class="score-fig">${r.j}%</span></div>
+        <div><span class="${isUp?'var-up':'var-dn'}">${isUp?'▲':'▼'} ${Math.abs(v)}%</span></div>
+        <div><span class="pct-pill ${pClass}">${r.p}%</span></div>
+      </div>
+      <div class="store-drawer" id="drawer-${r.r}"></div>
+    </div>`;
   }).join('');
 };
 
-// ── REGION PANEL ──
-function openRegionPanel(code){
-  if(activeRegion===code){closePanel();return;}
-  activeRegion=code;
+function toggleRegion(code){
+  const row=document.getElementById('row-'+code);
+  const drawer=document.getElementById('drawer-'+code);
+
+  // if already open — close it
+  if(openRegion===code){
+    row.classList.remove('expanded');
+    drawer.classList.remove('open');
+    drawer.innerHTML='';
+    openRegion=null;
+    return;
+  }
+
+  // close any previously open
+  if(openRegion){
+    document.getElementById('row-'+openRegion).classList.remove('expanded');
+    const prev=document.getElementById('drawer-'+openRegion);
+    prev.classList.remove('open');
+    prev.innerHTML='';
+  }
+
+  openRegion=code;
+  row.classList.add('expanded');
 
   const stores=STORE_DATA.filter(s=>s[2]===code).sort((a,b)=>b[3]-a[3]);
   const scores=stores.map(s=>s[3]);
   const avg=scores.length?(scores.reduce((a,b)=>a+b,0)/scores.length).toFixed(1):0;
-  const best=scores.length?Math.max(...scores):0;
+  const topScore=scores.length?Math.max(...scores):0;
   const above90=stores.filter(s=>s[3]>=90).length;
 
-  document.getElementById('panelRegionName').textContent=code+' Region';
-  document.getElementById('panelRegionCode').textContent=code;
-
-  document.getElementById('panelStats').innerHTML=`
-    <div class="panel-stat"><div class="panel-stat-val">${stores.length}</div><div class="panel-stat-label">Stores</div></div>
-    <div class="panel-stat"><div class="panel-stat-val">${avg}%</div><div class="panel-stat-label">Region Avg</div></div>
-    <div class="panel-stat"><div class="panel-stat-val">${best}%</div><div class="panel-stat-label">Top Score</div></div>
-    <div class="panel-stat"><div class="panel-stat-val">${above90}</div><div class="panel-stat-label">Stores ≥90%</div></div>`;
-
-  document.getElementById('panelStores').innerHTML=stores.map(s=>{
-    const t=getTier(s[3]);
-    return `<div class="store-mini">
-      <div class="store-mini-rank">#${s[0]}</div>
-      <div class="store-mini-info">
-        <div class="store-mini-name">${s[1]}</div>
-        <div style="font-size:10px;color:var(--text-muted);margin-top:2px;">${tierLabel(s[3])}</div>
-      </div>
-      <div class="store-mini-score score-${t}">${s[3]}%</div>
+  drawer.innerHTML=`
+    <div class="drawer-summary">
+      <div class="drawer-stat"><div class="drawer-stat-val">${stores.length}</div><div class="drawer-stat-label">Total Stores</div></div>
+      <div class="drawer-stat"><div class="drawer-stat-val">${avg}%</div><div class="drawer-stat-label">Region Avg</div></div>
+      <div class="drawer-stat"><div class="drawer-stat-val">${topScore}%</div><div class="drawer-stat-label">Top Score</div></div>
+      <div class="drawer-stat"><div class="drawer-stat-val">${above90}</div><div class="drawer-stat-label">Stores ≥90%</div></div>
+    </div>
+    <div class="stores-grid">
+      ${stores.map(s=>{
+        const t=getTier(s[3]);
+        return `<div class="store-card">
+          <div class="store-card-rank">#${s[0]}</div>
+          <div class="store-card-info">
+            <div class="store-card-name">${s[1]}</div>
+            <div class="store-card-tier">${TIER_NAMES[t]}</div>
+          </div>
+          <div class="store-card-score sc-${t}">${s[3]}%</div>
+        </div>`;
+      }).join('')}
+    </div>
+    <div class="drawer-footer" onclick="openFullReport('${code}')">
+      View full Jan '26 scoreboard for this region
+      <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
     </div>`;
-  }).join('');
 
-  // highlight active row
-  document.querySelectorAll('.region-row').forEach(r=>r.style.background='');
-  const rows=document.querySelectorAll('.region-row');
-  rows.forEach(row=>{
-    if(row.querySelector('.region-name-cell')?.textContent.includes(code)){
-      row.querySelectorAll('td').forEach(td=>td.style.background='rgba(201,168,76,0.06)');
-    }
-  });
-
-  const panel=document.getElementById('regionPanel');
-  panel.classList.add('open');
-  pendingRegionFilter=code;
-  setTimeout(()=>panel.scrollIntoView({behavior:'smooth',block:'nearest'}),50);
+  drawer.classList.add('open');
+  setTimeout(()=>row.scrollIntoView({behavior:'smooth',block:'start'}),80);
 }
 
-function closePanel(){
-  document.getElementById('regionPanel').classList.remove('open');
-  document.querySelectorAll('.region-row td').forEach(td=>td.style.background='');
-  activeRegion=null;
-}
-
-function openFullReport(){
-  if(!pendingRegionFilter) return;
-  const src=`jan-2026.html?region=${encodeURIComponent(pendingRegionFilter)}`;
-  document.getElementById('viewerTitle').textContent=pendingRegionFilter+' Region — January 2026 Report';
-  document.getElementById('reportFrame').src=src;
+function openFullReport(code){
+  document.getElementById('viewerTitle').textContent=code+' Region — January 2026';
+  document.getElementById('reportFrame').src=`jan-2026.html?region=${encodeURIComponent(code)}`;
   document.getElementById('viewer').classList.add('open');
   document.body.style.overflow='hidden';
 }

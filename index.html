@@ -97,7 +97,6 @@ iframe { flex: 1; border: none; background: var(--white); margin: 25px; border-r
     <iframe id="reportFrame" src=""></iframe>
 </div>
 <script>
-// ACTUAL DATA FROM OFFICIAL RELEASE
 const REGIONS = [
     {r:"SAP", n:84.2, d:90.1, j:93.0, p:"95%"},
     {r:"EBJ", n:66.5, d:74.3, j:87.2, p:"94%"},
@@ -109,7 +108,6 @@ const REGIONS = [
     {r:"SKA1", n:59.0, d:63.0, j:70.0, p:"48%"}
 ];
 
-// FULL 12-MONTH ROADMAP Trajectory
 const MONTHS = [
     {name:"January", score:79.2, status:"live", file:"jan-2026.html"},
     {name:"February", score:"--", status:"upcoming"},
@@ -126,61 +124,42 @@ const MONTHS = [
 ];
 
 function init() {
-    // 1. AUTO-SORT BEST/WORST FOR KPI CARDS
     const sorted = [...REGIONS].sort((a, b) => b.j - a.j);
-    const top = sorted[0];
-    const worst = sorted[sorted.length - 1];
+    document.getElementById('top-name').innerText = sorted[0].r;
+    document.getElementById('top-score').innerText = "Elite Average: " + sorted[0].j.toFixed(1) + "%";
+    document.getElementById('worst-name').innerText = sorted[sorted.length-1].r;
+    document.getElementById('worst-score').innerText = "Priority Focus: " + sorted[sorted.length-1].j.toFixed(1) + "%";
 
-    document.getElementById('top-name').innerText = top.r;
-    document.getElementById('top-score').innerText = `Elite Average: ${top.j.toFixed(1)}%`;
-    document.getElementById('worst-name').innerText = worst.r;
-    document.getElementById('worst-score').innerText = `Priority Focus: ${worst.j.toFixed(1)}%`;
-
-    // 2. RENDER THE REGIONAL TREND TABLE
     document.getElementById('heatBody').innerHTML = REGIONS.map(rd => {
         const v = (rd.j - rd.d).toFixed(1);
         const color = v >= 0 ? 'var(--green)' : 'var(--red)';
-        return `<tr>
-            <td><strong>${rd.r} Cluster</strong></td>
-            <td>${rd.n}%</td><td>${rd.d}%</td><td style="font-weight:700">${rd.j}%</td>
-            <td style="color:${color}; font-weight:700;">${v >= 0 ? '▲' : '▼'} ${Math.abs(v)}%</td>
-            <td><span style="background:#F0F0F0; padding:5px 12px; border-radius:20px; font-size:12px; font-weight:700;">${rd.p}</span></td>
-        </tr>`;
+        return "<tr><td><strong>" + rd.r + " Cluster</strong></td><td>" + rd.n + "%</td><td>" + rd.d + "%</td><td style='font-weight:700'>" + rd.j + "%</td><td style='color:" + color + "; font-weight:700;'>" + (v>=0?'▲':'▼') + " " + Math.abs(v) + "%</td><td><span style='background:#F0F0F0; padding:5px 12px; border-radius:20px; font-size:12px; font-weight:700;'>" + rd.p + "</span></td></tr>";
     }).join('');
 
-    // 3. RENDER THE 12-MONTH ROADMAP
-    document.getElementById('roadmapGrid').innerHTML = MONTHS.map(m => `
-        <div class="kpi-card" style="cursor:${m.status === 'live' ? 'pointer' : 'not-allowed'}; opacity:${m.status === 'live' ? '1' : '0.5'}; border-left: 5px solid ${m.status === 'live' ? 'var(--gold)' : '#DDD'};" 
-             onclick="${m.status === 'live' ? `openViewer('${m.file}')` : ''}">
-            <div style="font-family:'Playfair Display'; font-size:22px; font-weight:700;">${m.name} 2026</div>
-            <div style="margin:15px 0; font-weight:700; color:var(--gold);">Avg Score: ${m.score}%</div>
-            <div style="font-size:10px; font-weight:700; color:${m.status === 'live' ? 'var(--green)' : '#AAA'}">
-                ${m.status === 'live' ? 'ACCESS INTELLIGENCE REPORT →' : 'DATA PENDING...'}
-            </div>
-        </div>
-    `).join('');
+    document.getElementById('roadmapGrid').innerHTML = MONTHS.map(m => {
+        const isLive = m.status === 'live';
+        return "<div class='kpi-card' style='cursor:" + (isLive ? 'pointer' : 'not-allowed') + "; opacity:" + (isLive ? '1' : '0.5') + "; border-left: 5px solid " + (isLive ? 'var(--gold)' : '#DDD') + ";' onclick=\"" + (isLive ? "openViewer('" + m.file + "')" : "") + "\"><div style='font-family:\"Playfair Display\"; font-size:22px; font-weight:700;'>" + m.name + " 2026</div><div style='margin:15px 0; font-weight:700; color:var(--gold);'>Avg Score: " + m.score + "%</div><div style='font-size:10px; font-weight:700; color:" + (isLive ? 'var(--green)' : '#AAA') + "'>" + (isLive ? 'ACCESS INTELLIGENCE REPORT →' : 'DATA PENDING...') + "</div></div>";
+    }).join('');
 
-    // 4. RENDER EXECUTIVE PRIORITY ALERTS
     const drops = REGIONS.filter(rd => (rd.j - rd.d) < 0);
-    document.getElementById('alertGrid').innerHTML = drops.map(rd => `
-        <div class="alert-item"><strong>CLUSTER ${rd.r}:</strong> Monthly drop detected. Trainer intervention required.</div>
-    `).join('') || '<div class="alert-item" style="border-color:var(--green)">All regions currently showing growth or stability.</div>';
+    document.getElementById('alertGrid').innerHTML = drops.map(rd => "<div class='alert-item'><strong>CLUSTER " + rd.r + ":</strong> Monthly drop detected. Trainer intervention required.</div>").join('') || "<div class='alert-item' style='border-color:var(--green)'>All regions currently showing growth or stability.</div>";
 }
 
-function openViewer(f) { 
-    document.getElementById('reportFrame').src = f; 
-    document.getElementById('viewer').classList.add('active'); 
-    document.body.style.overflow = 'hidden'; 
+function openViewer(f) {
+    document.getElementById('reportFrame').src = f;
+    document.getElementById('viewer').classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
-function closeViewer() { 
-    document.getElementById('viewer').classList.remove('active'); 
-    document.getElementById('reportFrame').src = ''; 
-    document.body.style.overflow = 'auto'; 
+function closeViewer() {
+    document.getElementById('viewer').classList.remove('active');
+    document.getElementById('reportFrame').src = '';
+    document.body.style.overflow = 'auto';
 }
 
 window.onload = init;
 </script>
 </body>
 </html>
+
 

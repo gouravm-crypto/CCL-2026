@@ -784,6 +784,22 @@ let chartsInited=false;
 window.onload=function(){
   buildRegionSelect();
   buildStats();
+  // check for ?region= param (when launched from index region panel)
+  const params=new URLSearchParams(window.location.search);
+  const regionParam=params.get('region');
+  if(regionParam){
+    document.getElementById('regionSel').value=regionParam;
+    activeTierFilter='';
+    doFilter();
+    showPage('scoreboard',null);
+    setTimeout(()=>{
+      const banner=document.getElementById('filterBanner');
+      const txt=document.getElementById('filterBannerText');
+      banner.style.background='rgba(201,168,76,.12)';
+      txt.textContent=`Showing: ${regionParam} Region — January 2026`;
+      banner.classList.add('show');
+    },80);
+  }
   renderTable();
   buildHallOfFame();
   setTimeout(initCharts,120);

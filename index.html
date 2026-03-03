@@ -4,703 +4,503 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CaratLane Champions League 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --gold:#C9A84C; --gold-lt:#E8C96A; --gold-pale:rgba(201,168,76,0.09);
-  --ink:#0F0A04; --ink2:#1A1005; --ink3:#251808;
-  --surface:#F8F5EE; --surface2:#EEE8D8;
-  --green:#1A5C35; --green-lt:#C8E6D4;
-  --red:#9B2111; --red-lt:#F5DADA;
-  --border:#E2D8C4;
-  --text-muted:#8A7A62;
-  --shadow-sm:0 1px 3px rgba(15,10,4,.06),0 4px 20px rgba(15,10,4,.07);
-  --shadow:0 2px 8px rgba(15,10,4,.08),0 14px 48px rgba(15,10,4,.10);
-  --shadow-lg:0 4px 20px rgba(15,10,4,.13),0 28px 72px rgba(15,10,4,.20);
+  --mag:#C8005A; --mag-lt:#F0006E; --mag-dk:#8A003E; --mag-vivid:#FF1A7A;
+  --mag-pale:#FFF0F6; --mag-mist:rgba(200,0,90,.06); --mag-glow:rgba(200,0,90,.28);
+  --gold:#B8860B; --gold-lt:#E8B840; --gold-pale:#FFFBF0; --gold-glow:rgba(184,134,11,.35);
+  --t-sol:#B8860B; --t-sol-bg:#FFFBEE; --t-sol-br:#E8C840;
+  --t-dia:#0284C7; --t-dia-bg:#EFF9FF; --t-dia-br:#7DD3FC;
+  --t-gld:#D97706; --t-gld-bg:#FFFBF0; --t-gld-br:#FCD34D;
+  --t-slv:#64748B; --t-slv-bg:#F8FAFC; --t-slv-br:#CBD5E1;
+  --t-cop:#C2410C; --t-cop-bg:#FFF7ED; --t-cop-br:#FCA587;
+  --ink:#0F0A10; --ink2:#1E0E1A;
+  --body:#FAFAF8; --surface:#FFFFFF; --surface2:#FDF5F9;
+  --bdr:#EEE4EC; --bdr2:#E0CCD8;
+  --txt:#1A0818; --txt2:#5A3048; --txt3:#9A7085; --txt4:#C4A8B8;
+  --green:#0F7B4B; --green-bg:#EDFAF3; --green-br:#6EE7B7;
+  --red:#BE123C; --red-bg:#FFF1F4; --red-br:#FCA5A5;
+  --sh-xs:0 1px 3px rgba(15,10,16,.06);
+  --sh-sm:0 2px 8px rgba(15,10,16,.08),0 1px 3px rgba(15,10,16,.05);
+  --sh-md:0 4px 16px rgba(15,10,16,.10),0 2px 6px rgba(15,10,16,.06);
+  --sh-lg:0 8px 32px rgba(15,10,16,.12),0 4px 12px rgba(15,10,16,.08);
+  --sh-xl:0 20px 60px rgba(15,10,16,.14),0 8px 24px rgba(15,10,16,.10);
+  --sh-mag:0 8px 32px rgba(200,0,90,.20),0 2px 8px rgba(200,0,90,.12);
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:'Outfit',sans-serif;background:var(--surface);color:var(--ink);-webkit-font-smoothing:antialiased;}
+body{font-family:'DM Sans',sans-serif;background:var(--body);color:var(--txt);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
 
-/* ─── HEADER ─── */
-.header{
-  background:var(--ink2);
-  padding:56px 48px 50px;
-  text-align:center;
-  position:relative;overflow:hidden;
-}
-.header::before{
-  content:'';position:absolute;inset:0;
+/* ══ HERO ══ */
+.hero{position:relative;background:#fff;overflow:hidden;}
+.hero-bg{
+  position:absolute;inset:0;pointer-events:none;
   background:
-    radial-gradient(ellipse 85% 55% at 50% -10%, rgba(201,168,76,.22) 0%, transparent 62%),
-    radial-gradient(ellipse 30% 25% at 15% 100%, rgba(201,168,76,.05) 0%, transparent 70%),
-    radial-gradient(ellipse 30% 25% at 85% 100%, rgba(201,168,76,.05) 0%, transparent 70%);
-  pointer-events:none;
+    radial-gradient(ellipse 120% 90% at 50% -5%, rgba(200,0,90,.09) 0%, transparent 55%),
+    radial-gradient(ellipse 55% 45% at 5%  95%, rgba(184,134,11,.07) 0%, transparent 60%),
+    radial-gradient(ellipse 55% 45% at 95% 95%, rgba(200,0,90,.05) 0%, transparent 60%),
+    linear-gradient(180deg,#fff 0%,#FFF8FB 55%,#FFF3F8 100%);
 }
-.header-inner{position:relative;z-index:1;}
-
-/* tata tag — now clearly visible */
-.brand-tata{
-  display:inline-flex;align-items:center;gap:8px;
-  font-size:10px;letter-spacing:5px;text-transform:uppercase;
-  color:rgba(232,201,106,.55);
-  font-weight:500;margin-bottom:20px;
+.hero-grid{
+  position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(200,0,90,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(200,0,90,.04) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 75% 65% at 50% 50%,black 20%,transparent 100%);
 }
-.brand-tata-dot{width:3px;height:3px;border-radius:50%;background:rgba(232,201,106,.4);}
+#heroCanvas{position:absolute;inset:0;pointer-events:none;z-index:1;}
+.hero-scan{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:hidden;}
+.hero-scan::after{
+  content:'';position:absolute;left:0;right:0;height:200px;
+  background:linear-gradient(180deg,transparent 0%,rgba(200,0,90,.04) 40%,rgba(200,0,90,.07) 50%,rgba(200,0,90,.04) 60%,transparent 100%);
+  top:-200px;animation:scan 9s ease-in-out infinite;
+}
+@keyframes scan{0%{top:-200px;opacity:0;}8%{opacity:1;}92%{opacity:.4;}100%{top:100%;opacity:0;}}
 
-/* main title — "CaratLane Champions League" together */
-.brand-main{
+.hero-inner{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center;padding:76px 40px 68px;text-align:center;}
+
+.hero-topbar{display:flex;align-items:center;gap:0;width:100%;max-width:680px;margin-bottom:44px;opacity:0;animation:up .9s ease .05s forwards;}
+.htb-seg{flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(200,0,90,.22),transparent);}
+.htb-dot{width:4px;height:4px;border-radius:50%;background:var(--mag);box-shadow:0 0 8px var(--mag-glow);margin:0 8px;flex-shrink:0;}
+
+.hero-title{
   font-family:'Cormorant Garamond',serif;
-  font-weight:700;line-height:1;
-  color:var(--gold-lt);
-  text-transform:uppercase;letter-spacing:3px;
+  font-size:clamp(64px,10vw,128px);
+  font-weight:800;letter-spacing:-2px;line-height:.88;
+  color:var(--ink);
+  opacity:0;animation:up .9s ease .18s forwards;
+  position:relative;display:inline-block;
 }
-.brand-main-sub{
-  font-size:clamp(13px,1.6vw,17px);
-  letter-spacing:8px;
-  color:rgba(232,201,106,.5);
+.hero-title::after{
+  content:'';
+  position:absolute;bottom:-8px;left:10%;right:10%;height:3px;
+  background:linear-gradient(90deg,transparent,var(--mag),var(--gold-lt),var(--mag),transparent);
+  background-size:200% 100%;
+  animation:shimmer 3.2s linear infinite;
+  border-radius:2px;
+}
+@keyframes shimmer{0%{background-position:0%}100%{background-position:200%}}
+
+.hero-cl{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(15px,2.2vw,26px);
   font-weight:300;
-  display:block;margin-top:4px;
-}
-.brand-name-line{
-  font-size:clamp(38px,5.5vw,68px);
-  display:block;
-}
-
-/* decorative rule */
-.brand-rule{
-  display:flex;align-items:center;gap:14px;
-  width:240px;margin:24px auto 22px;
-}
-.brand-rule-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.4));}
-.brand-rule-line.r{background:linear-gradient(270deg,transparent,rgba(201,168,76,.4));}
-.brand-rule-gem{font-size:9px;color:rgba(201,168,76,.5);letter-spacing:2px;}
-
-.brand-tagline{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(13px,1.8vw,18px);font-style:italic;font-weight:400;
-  color:rgba(232,201,106,.40);letter-spacing:1px;
+  letter-spacing:clamp(7px,2vw,20px);
+  text-transform:uppercase;
+  color:var(--mag);
+  margin-top:20px;
+  opacity:0;animation:up .9s ease .33s forwards;
 }
 
-/* ─── KPI STRIP ─── */
-.kpi-strip{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  background:#fff;border-bottom:1px solid var(--border);
+.hero-div{display:flex;align-items:center;gap:14px;margin:28px 0 20px;opacity:0;animation:up .9s ease .48s forwards;}
+.hdiv-line{width:72px;height:1px;background:linear-gradient(90deg,transparent,rgba(184,134,11,.42));}
+.hdiv-line.r{background:linear-gradient(270deg,transparent,rgba(184,134,11,.42));}
+.hdiv-gems{display:flex;align-items:center;gap:5px;}
+.hdiv-gem{width:6px;height:6px;transform:rotate(45deg);background:var(--gold);box-shadow:0 0 10px var(--gold-glow);animation:gpulse 2.2s ease-in-out infinite;}
+.hdiv-gem.sm{width:3px;height:3px;background:var(--mag);box-shadow:0 0 6px var(--mag-glow);animation-delay:.6s;}
+@keyframes gpulse{0%,100%{box-shadow:0 0 8px var(--gold-glow);}50%{box-shadow:0 0 18px var(--gold-glow),0 0 34px rgba(184,134,11,.18);}}
+
+.hero-tata{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:9.5px;font-weight:600;letter-spacing:4.5px;text-transform:uppercase;
+  color:var(--txt3);
+  opacity:0;animation:up .9s ease .6s forwards;
 }
-@media(max-width:640px){.kpi-strip{grid-template-columns:1fr;}}
-.kpi-cell{padding:30px 40px;border-right:1px solid var(--border);transition:background .2s;}
+.tata-ln{width:22px;height:1px;background:var(--bdr2);}
+
+.hero-year{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:20px;padding:7px 22px;
+  border:1.5px solid var(--bdr2);border-radius:30px;
+  font-size:9px;font-weight:700;letter-spacing:4px;text-transform:uppercase;
+  color:var(--txt3);background:rgba(255,255,255,.85);box-shadow:var(--sh-xs);
+  opacity:0;animation:up .9s ease .72s forwards;
+}
+@keyframes up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+.hero-border{position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent 0%,var(--mag-dk) 10%,var(--mag) 28%,var(--gold-lt) 50%,var(--mag) 72%,var(--mag-dk) 90%,transparent 100%);background-size:200% 100%;animation:shimmer 3.5s linear infinite;}
+
+/* ══ KPI STRIP ══ */
+.kpi-strip{display:grid;grid-template-columns:repeat(3,1fr);background:var(--surface);border-bottom:1.5px solid var(--bdr);box-shadow:var(--sh-sm);position:relative;z-index:2;}
+@media(max-width:600px){.kpi-strip{grid-template-columns:1fr;}}
+.kpi-cell{padding:38px 20px 34px;text-align:center;border-right:1.5px solid var(--bdr);position:relative;overflow:hidden;transition:background .25s;}
 .kpi-cell:last-child{border-right:none;}
-.kpi-cell:hover{background:#FDFAF4;}
-.kpi-indicator{display:flex;align-items:center;gap:7px;font-size:9.5px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--text-muted);margin-bottom:11px;}
-.dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
-.dot-green{background:var(--green);}
-.dot-gold{background:var(--gold);}
-.dot-red{background:var(--red);}
-.kpi-val{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,48px);font-weight:600;color:var(--ink);line-height:1;margin-bottom:6px;}
-.kpi-sub{font-size:12px;font-weight:600;}
-.kpi-sub.green{color:var(--green);}
-.kpi-sub.red{color:var(--red);}
-.kpi-sub.gold{color:var(--gold);}
+.kpi-cell::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .3s;pointer-events:none;}
+.kpi-cell:nth-child(1)::before{background:radial-gradient(ellipse 100% 80% at 50% 115%,var(--green-bg),transparent 70%);}
+.kpi-cell:nth-child(2)::before{background:radial-gradient(ellipse 100% 80% at 50% 115%,var(--mag-pale),transparent 70%);}
+.kpi-cell:nth-child(3)::before{background:radial-gradient(ellipse 100% 80% at 50% 115%,var(--red-bg),transparent 70%);}
+.kpi-cell:hover::before{opacity:1;}
+.kpi-cell:hover{background:var(--surface2);}
+.kpi-cell:hover .kpi-val{letter-spacing:.5px;}
 
-/* ─── MAIN ─── */
-.main{max-width:1280px;margin:0 auto;padding:56px 44px 80px;}
-@media(max-width:700px){.main{padding:36px 20px 64px;}}
-.section-eyebrow{font-size:9.5px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3vw,36px);font-weight:600;color:var(--ink);margin-bottom:36px;}
+.kpi-lbl{display:flex;align-items:center;justify-content:center;gap:7px;font-size:8.5px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--txt3);margin-bottom:14px;}
+.kpi-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+.kpi-dot.g{background:var(--green);box-shadow:0 0 7px rgba(15,123,75,.35);}
+.kpi-dot.m{background:var(--mag);box-shadow:0 0 7px var(--mag-glow);}
+.kpi-dot.r{background:var(--red);box-shadow:0 0 7px rgba(190,18,60,.35);}
+.kpi-val{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5.5vw,68px);font-weight:700;line-height:1;margin-bottom:8px;transition:letter-spacing .3s;}
+.kpi-cell:nth-child(1) .kpi-val{color:var(--green);}
+.kpi-cell:nth-child(2) .kpi-val{color:var(--mag);}
+.kpi-cell:nth-child(3) .kpi-val{color:var(--red);}
+.kpi-sub{font-size:11.5px;font-weight:500;color:var(--txt3);}
 
-/* ─── MONTHS GRID ─── */
-.months-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px;margin-bottom:72px;}
-.month-card{
-  background:#fff;border:1px solid var(--border);
-  border-radius:18px;padding:28px 22px 22px;
-  position:relative;overflow:hidden;
-  transition:transform .22s,box-shadow .22s,border-color .22s;
-}
-.month-card.locked{opacity:.38;cursor:default;}
-.month-card.live{cursor:pointer;border-color:rgba(201,168,76,.4);background:linear-gradient(150deg,#fff 0%,#FFFEF8 100%);}
-.month-card.live::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#B8922A,var(--gold-lt),#B8922A);}
-.month-card.live:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--gold);}
-.month-live-badge{position:absolute;top:16px;right:16px;background:var(--gold);color:var(--ink);font-size:8px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:3px 9px;border-radius:4px;box-shadow:0 2px 8px rgba(201,168,76,.35);}
-.month-number{font-size:9.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;}
-.month-name{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--ink);margin-bottom:18px;line-height:1;}
-.month-score-val{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:var(--gold);line-height:1;}
-.month-score-label{font-size:9.5px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-muted);margin-top:4px;font-weight:600;}
-.month-pending{font-size:13px;color:#C4BAA8;margin-top:10px;font-style:italic;}
-.month-cta{margin-top:20px;display:flex;align-items:center;gap:7px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);transition:gap .2s;}
-.month-card.live:hover .month-cta{gap:12px;}
-.month-cta svg{width:13px;height:13px;stroke:var(--gold);stroke-width:2.5;fill:none;flex-shrink:0;}
+/* ══ TIER BAR ══ */
+.tier-bar{display:flex;height:50px;border-bottom:1.5px solid var(--bdr);overflow:hidden;background:var(--surface);}
+.tier-seg{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;font-size:10.5px;font-weight:600;border-right:1px solid var(--bdr);cursor:default;transition:flex .35s ease,filter .2s;position:relative;overflow:hidden;}
+.tier-seg:last-child{border-right:none;}
+.tier-seg:hover{flex:1.55;filter:brightness(1.03);}
+.tier-seg::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+.ts-sol{background:var(--t-sol-bg);color:var(--t-sol);}  .ts-sol::before{background:var(--t-sol-br);}
+.ts-dia{background:var(--t-dia-bg);color:var(--t-dia);}  .ts-dia::before{background:var(--t-dia-br);}
+.ts-gld{background:var(--t-gld-bg);color:var(--t-gld);}  .ts-gld::before{background:var(--t-gld-br);}
+.ts-slv{background:var(--t-slv-bg);color:var(--t-slv);}  .ts-slv::before{background:var(--t-slv-br);}
+.ts-cop{background:var(--t-cop-bg);color:var(--t-cop);}  .ts-cop::before{background:var(--t-cop-br);}
+.tdot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.ts-sol .tdot{background:var(--t-sol);box-shadow:0 0 10px var(--gold-glow),0 0 20px rgba(184,134,11,.25);animation:spulse 1.8s ease-in-out infinite;}
+.ts-dia .tdot{background:var(--t-dia);border-radius:1px;transform:rotate(45deg);box-shadow:0 0 7px rgba(2,132,199,.4);}
+.ts-gld .tdot{background:var(--t-gld);box-shadow:0 0 7px rgba(217,119,6,.4);}
+.ts-slv .tdot{background:var(--t-slv);}
+.ts-cop .tdot{background:var(--t-cop);}
+@keyframes spulse{0%,100%{box-shadow:0 0 8px var(--gold-glow);}50%{box-shadow:0 0 18px var(--gold-glow),0 0 34px rgba(184,134,11,.22);}}
+.ttxt{white-space:nowrap;font-size:10.5px;font-weight:600;}
 
-/* ─── REGION ACCORDION ─── */
-.region-list{
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:var(--shadow-sm);
-}
+/* ══ MAIN ══ */
+.main{max-width:1380px;margin:0 auto;padding:70px 44px 104px;}
+@media(max-width:700px){.main{padding:40px 18px 72px;}}
+.sec-hd{margin-bottom:32px;}
+.sec-ey{font-size:8.5px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--mag);margin-bottom:9px;display:flex;align-items:center;gap:10px;}
+.sec-ey::before{content:'';width:20px;height:1.5px;background:var(--mag);border-radius:2px;flex-shrink:0;}
+.sec-ttl{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.2vw,42px);font-weight:700;color:var(--ink);line-height:1.1;}
 
-/* header row */
-.region-list-header{
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;
-  background:var(--ink2);
-  padding:14px 24px;
-}
-.region-list-header span{
-  font-size:9px;font-weight:700;letter-spacing:2px;
-  text-transform:uppercase;color:rgba(232,201,106,.55);
-}
+/* ══ MONTH CARDS ══ */
+.m-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:14px;margin-bottom:82px;}
+.mc{background:var(--surface);border:1.5px solid var(--bdr);border-radius:20px;padding:28px 22px 24px;position:relative;overflow:hidden;transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s,border-color .3s;}
+.mc.locked{opacity:.28;cursor:default;}
+.mc.live{border-color:rgba(200,0,90,.26);background:linear-gradient(155deg,#fff 0%,#FFF5F9 100%);cursor:pointer;}
+.mc.live::before{content:'';position:absolute;top:0;left:0;right:0;height:2.5px;background:linear-gradient(90deg,transparent,var(--mag-dk),var(--mag-vivid),var(--gold-lt),var(--mag-vivid),var(--mag-dk),transparent);background-size:200% 100%;animation:shimmer 3s linear infinite;}
+.mc.live::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 90% 70% at 50% 0%,rgba(200,0,90,.06),transparent 65%);opacity:0;transition:opacity .3s;pointer-events:none;}
+.mc.live:hover::after{opacity:1;}
+.mc.live:hover{transform:translateY(-10px) scale(1.018);box-shadow:var(--sh-xl),var(--sh-mag);border-color:var(--mag);}
+.mc-badge{position:absolute;top:14px;right:14px;background:var(--mag);color:#fff;font-size:6.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:3px 9px;border-radius:4px;box-shadow:0 2px 10px var(--mag-glow);animation:bpulse 2.5s ease-in-out infinite;}
+@keyframes bpulse{0%,100%{box-shadow:0 2px 10px var(--mag-glow);}50%{box-shadow:0 4px 20px var(--mag-glow),0 0 30px rgba(200,0,90,.15);}}
+.mc-n{font-size:8.5px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--txt3);margin-bottom:10px;}
+.mc-name{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:var(--ink);margin-bottom:18px;line-height:1;}
+.mc-score{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:700;color:var(--mag);line-height:1;}
+.mc-lbl{font-size:8.5px;text-transform:uppercase;letter-spacing:2px;color:var(--txt3);margin-top:5px;font-weight:600;}
+.mc-pend{font-size:12.5px;color:var(--txt4);margin-top:12px;font-style:italic;}
+.mc-cta{margin-top:20px;display:flex;align-items:center;gap:6px;font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--mag);opacity:.6;transition:gap .2s,opacity .2s;}
+.mc.live:hover .mc-cta{gap:13px;opacity:1;}
+.mc-cta svg{width:12px;height:12px;stroke:var(--mag);stroke-width:2.5;fill:none;flex-shrink:0;}
 
-/* each region item */
-.region-item{border-bottom:1px solid rgba(226,216,196,.7);}
-.region-item:last-child{border-bottom:none;}
+/* ══ REGION TABLE ══ */
+.r-shell{background:var(--surface);border:1.5px solid var(--bdr);border-radius:24px;overflow:hidden;box-shadow:var(--sh-md);}
+.r-thead{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;background:var(--ink2);padding:14px 28px;}
+.r-thead span{font-size:8px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,224,238,.48);}
+.r-item{border-bottom:1.5px solid var(--bdr);}
+.r-item:last-child{border-bottom:none;}
+.r-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;align-items:center;padding:17px 28px;cursor:pointer;transition:background .18s;position:relative;}
+.r-row::before{content:'';position:absolute;left:0;top:10px;bottom:10px;width:3px;background:var(--mag);border-radius:0 3px 3px 0;transform:scaleY(0);transition:transform .22s ease;}
+.r-row:hover::before,.r-row.exp::before{transform:scaleY(1);}
+.r-row:hover{background:var(--mag-mist);}
+.r-row.exp{background:rgba(200,0,90,.04);}
+.r-name{display:flex;align-items:center;gap:12px;font-weight:700;font-size:14px;color:var(--ink);}
+.r-chev{width:26px;height:26px;border-radius:8px;background:rgba(200,0,90,.07);border:1.5px solid rgba(200,0,90,.17);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .22s;}
+.r-chev svg{width:10px;height:10px;stroke:var(--mag);stroke-width:2.5;fill:none;transition:transform .22s;}
+.r-row.exp .r-chev{background:var(--mag);border-color:var(--mag);}
+.r-row.exp .r-chev svg{stroke:#fff;transform:rotate(90deg);}
+.sfig{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--ink);}
+.vup{color:var(--green);font-weight:700;font-size:12.5px;}
+.vdn{color:var(--red);font-weight:700;font-size:12.5px;}
+.pill{display:inline-flex;align-items:center;justify-content:center;padding:4px 13px;border-radius:20px;font-size:11px;font-weight:700;background:var(--body);color:var(--txt2);border:1.5px solid var(--bdr2);min-width:50px;}
+.pill.hi{background:var(--green-bg);color:var(--green);border-color:var(--green-br);}
+.pill.lo{background:var(--red-bg);color:var(--red);border-color:var(--red-br);}
 
-.region-row{
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;
-  align-items:center;
-  padding:18px 24px;
-  cursor:pointer;
-  transition:background .18s;
-  position:relative;
-}
-.region-row:hover{background:#FDFAF4;}
-.region-row.expanded{background:rgba(201,168,76,.04);}
+/* DRAWER */
+.drawer{display:none;border-top:1.5px solid var(--bdr);background:var(--surface2);}
+.drawer.open{display:block;animation:dopen .22s ease;}
+@keyframes dopen{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}
+.d-stats{display:flex;padding:18px 28px;border-bottom:1.5px solid var(--bdr);background:var(--surface);}
+.d-stat{padding-right:28px;margin-right:28px;border-right:1.5px solid var(--bdr);}
+.d-stat:last-child{border-right:none;padding-right:0;margin-right:0;}
+.d-sv{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--ink);line-height:1;}
+.d-sl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--txt3);margin-top:4px;}
+.s-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:9px;padding:16px 28px 20px;max-height:380px;overflow-y:auto;}
+.s-grid::-webkit-scrollbar{width:4px;}
+.s-grid::-webkit-scrollbar-track{background:transparent;}
+.s-grid::-webkit-scrollbar-thumb{background:var(--bdr2);border-radius:4px;}
+.s-card{background:var(--surface);border:1.5px solid var(--bdr);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:11px;transition:all .16s;}
+.s-card:hover{background:var(--mag-pale);border-color:rgba(200,0,90,.20);transform:translateX(2px);}
+.s-rank{font-size:10px;font-weight:700;color:var(--txt3);width:22px;text-align:center;flex-shrink:0;}
+.s-info{flex:1;min-width:0;}
+.s-name{font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.s-tier{font-size:9.5px;color:var(--txt3);margin-top:2px;font-weight:500;}
+.s-sc{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;flex-shrink:0;}
+.sc-s{color:var(--t-sol);} .sc-d{color:var(--t-dia);} .sc-g{color:var(--t-gld);} .sc-sv{color:var(--t-slv);} .sc-c{color:var(--t-cop);}
+.d-foot{display:flex;align-items:center;justify-content:center;padding:14px;border-top:1.5px solid var(--bdr);gap:8px;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mag);cursor:pointer;transition:background .15s;background:var(--surface);}
+.d-foot:hover{background:var(--mag-pale);}
+.d-foot svg{width:12px;height:12px;stroke:var(--mag);stroke-width:2.5;fill:none;}
 
-.region-row-name{
-  display:flex;align-items:center;gap:12px;
-  font-weight:700;font-size:15px;color:var(--ink);
-}
-.region-chevron{
-  width:26px;height:26px;border-radius:7px;
-  background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.18);
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;transition:all .25s;
-}
-.region-chevron svg{width:11px;height:11px;stroke:var(--gold);stroke-width:2.5;fill:none;transition:transform .25s;}
-.region-row.expanded .region-chevron{background:var(--gold);border-color:var(--gold);}
-.region-row.expanded .region-chevron svg{stroke:var(--ink);transform:rotate(90deg);}
+/* ══ VIEWER ══ */
+.viewer{display:none;position:fixed;inset:0;z-index:9999;background:rgba(10,4,14,.96);flex-direction:column;backdrop-filter:blur(18px);}
+.viewer.open{display:flex;animation:vopen .25s ease;}
+@keyframes vopen{from{opacity:0;transform:scale(.97);}to{opacity:1;transform:scale(1);}}
+.v-bar{flex-shrink:0;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(200,0,90,.14);background:rgba(15,10,16,.95);}
+.v-ttl{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--gold-lt);}
+.v-cls{background:rgba(200,0,90,.10);color:var(--mag-lt);border:1px solid rgba(200,0,90,.24);padding:9px 22px;border-radius:8px;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .18s;}
+.v-cls:hover{background:var(--mag);color:#fff;box-shadow:0 0 20px var(--mag-glow);}
+iframe{flex:1;border:none;background:#fff;margin:16px 22px 22px;border-radius:14px;}
 
-.score-fig{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--ink);}
-.var-up{color:var(--green);font-weight:700;font-size:13px;}
-.var-dn{color:var(--red);font-weight:700;font-size:13px;}
-.pct-pill{display:inline-flex;align-items:center;justify-content:center;padding:4px 13px;border-radius:20px;font-size:11.5px;font-weight:700;background:var(--surface2);color:var(--text-muted);min-width:50px;}
-.pct-pill.hi{background:var(--green-lt);color:var(--green);}
-.pct-pill.lo{background:var(--red-lt);color:var(--red);}
-
-/* ── STORE DRAWER ── */
-.store-drawer{
-  display:none;
-  border-top:1px solid rgba(226,216,196,.8);
-  background:rgba(248,245,238,.5);
-  padding:0;
-  overflow:hidden;
-}
-.store-drawer.open{display:block;animation:drawerIn .25s ease;}
-@keyframes drawerIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-
-.drawer-summary{
-  display:flex;gap:0;
-  padding:16px 24px;
-  border-bottom:1px solid rgba(226,216,196,.6);
-  background:#fff;
-}
-.drawer-stat{padding:0 28px 0 0;margin-right:28px;border-right:1px solid var(--border);}
-.drawer-stat:last-child{border-right:none;margin-right:0;padding-right:0;}
-.drawer-stat-val{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:var(--ink);line-height:1;}
-.drawer-stat-label{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-top:3px;}
-
-.stores-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
-  gap:10px;
-  padding:16px 24px 20px;
-  max-height:380px;
-  overflow-y:auto;
-}
-.stores-grid::-webkit-scrollbar{width:4px;}
-.stores-grid::-webkit-scrollbar-track{background:transparent;}
-.stores-grid::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px;}
-
-.store-card{
-  background:#fff;border:1px solid var(--border);
-  border-radius:11px;padding:12px 14px;
-  display:flex;align-items:center;gap:11px;
-  transition:all .15s;
-}
-.store-card:hover{background:var(--surface);border-color:rgba(201,168,76,.3);}
-.store-card-rank{font-size:10px;font-weight:700;color:var(--text-muted);width:22px;text-align:center;flex-shrink:0;}
-.store-card-info{flex:1;min-width:0;}
-.store-card-name{font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.store-card-tier{font-size:10px;color:var(--text-muted);margin-top:2px;font-weight:500;}
-.store-card-score{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700;flex-shrink:0;}
-.sc-s{color:#C9A84C;} .sc-d{color:#5B8DD9;} .sc-g{color:#2E9E6B;} .sc-sv{color:#7A7A8C;} .sc-c{color:#C26A2A;}
-
-.drawer-footer{
-  display:flex;align-items:center;justify-content:center;
-  padding:13px 24px;border-top:1px solid rgba(226,216,196,.6);
-  gap:8px;font-size:10.5px;font-weight:700;letter-spacing:1.5px;
-  text-transform:uppercase;color:var(--gold);
-  cursor:pointer;transition:background .15s;background:#fff;
-}
-.drawer-footer:hover{background:rgba(201,168,76,.06);}
-.drawer-footer svg{width:12px;height:12px;stroke:var(--gold);stroke-width:2.5;fill:none;}
-
-/* ─── VIEWER ─── */
-.viewer{display:none;position:fixed;inset:0;z-index:9999;background:rgba(10,6,1,.97);flex-direction:column;}
-.viewer.open{display:flex;animation:vfade .2s ease;}
-@keyframes vfade{from{opacity:0}to{opacity:1}}
-.viewer-bar{flex-shrink:0;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(201,168,76,.12);}
-.viewer-title{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--gold-lt);}
-.viewer-close{background:rgba(201,168,76,.10);color:var(--gold-lt);border:1px solid rgba(201,168,76,.22);padding:9px 22px;border-radius:8px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .18s;}
-.viewer-close:hover{background:var(--gold);color:var(--ink);}
-iframe{flex:1;border:none;background:#fff;margin:18px 24px 24px;border-radius:14px;}
+/* ══ REVEAL ══ */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;}
+.rv.on{opacity:1;transform:translateY(0);}
 </style>
 </head>
 <body>
 
-<!-- ─── HEADER ─── -->
-<header class="header">
-  <div class="header-inner">
-    <div class="brand-tata">
-      <span class="brand-tata-dot"></span>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-scan"></div>
+  <div class="hero-inner">
+    <div class="hero-topbar">
+      <div class="htb-seg"></div><div class="htb-dot"></div>
+      <div class="htb-seg"></div><div class="htb-dot"></div>
+      <div class="htb-seg"></div>
+    </div>
+    <h1 class="hero-title">CaratLane</h1>
+    <div class="hero-cl">Champions&thinsp;League</div>
+    <div class="hero-div">
+      <div class="hdiv-line"></div>
+      <div class="hdiv-gems">
+        <div class="hdiv-gem sm"></div>
+        <div class="hdiv-gem"></div>
+        <div class="hdiv-gem sm"></div>
+      </div>
+      <div class="hdiv-line r"></div>
+    </div>
+    <div class="hero-tata">
+      <div class="tata-ln"></div>
       A Tata Product
-      <span class="brand-tata-dot"></span>
+      <div class="tata-ln"></div>
     </div>
-    <div class="brand-main">
-      <span class="brand-name-line">CaratLane</span>
-      <span class="brand-main-sub">Champions League</span>
-    </div>
-    <div class="brand-rule">
-      <div class="brand-rule-line"></div>
-      <div class="brand-rule-gem">✦ 2026 ✦</div>
-      <div class="brand-rule-line r"></div>
-    </div>
-    <div class="brand-tagline">Performance · Excellence · Recognition</div>
+    <div class="hero-year">&#10022;&thinsp;Season 2026&thinsp;&#10022;</div>
   </div>
+  <div class="hero-border"></div>
 </header>
 
-<!-- ─── KPI STRIP ─── -->
+<!-- KPI STRIP -->
 <div class="kpi-strip">
   <div class="kpi-cell">
-    <div class="kpi-indicator"><span class="dot dot-green"></span>Best Region</div>
-    <div class="kpi-val" id="kpi-top-name">—</div>
-    <div class="kpi-sub green" id="kpi-top-score">—</div>
+    <div class="kpi-lbl"><span class="kpi-dot g"></span>Best Region</div>
+    <div class="kpi-val" id="kpi-top">—</div>
+    <div class="kpi-sub" id="kpi-top-sub">—</div>
   </div>
   <div class="kpi-cell">
-    <div class="kpi-indicator"><span class="dot dot-gold"></span>National Average</div>
+    <div class="kpi-lbl"><span class="kpi-dot m"></span>National Average</div>
     <div class="kpi-val">78.2%</div>
-    <div class="kpi-sub gold">Jan–Feb 2026 Avg</div>
+    <div class="kpi-sub">Jan &ndash; Feb 2026</div>
   </div>
   <div class="kpi-cell">
-    <div class="kpi-indicator"><span class="dot dot-red"></span>Needs Attention</div>
-    <div class="kpi-val" id="kpi-worst-name">—</div>
-    <div class="kpi-sub red" id="kpi-worst-score">—</div>
+    <div class="kpi-lbl"><span class="kpi-dot r"></span>Needs Attention</div>
+    <div class="kpi-val" id="kpi-bot">—</div>
+    <div class="kpi-sub" id="kpi-bot-sub">—</div>
   </div>
 </div>
 
-<!-- ─── MAIN ─── -->
+<!-- TIER BAR -->
+<div class="tier-bar">
+  <div class="tier-seg ts-sol"><div class="tdot"></div><span class="ttxt">&#10022; Solitaire &mdash; 100%</span></div>
+  <div class="tier-seg ts-dia"><div class="tdot"></div><span class="ttxt">&#9670; Diamond &mdash; 95&ndash;99%</span></div>
+  <div class="tier-seg ts-gld"><div class="tdot"></div><span class="ttxt">&#9679; Gold &mdash; 90&ndash;94%</span></div>
+  <div class="tier-seg ts-slv"><div class="tdot"></div><span class="ttxt">&#9678; Silver &mdash; 85&ndash;89%</span></div>
+  <div class="tier-seg ts-cop"><div class="tdot"></div><span class="ttxt">&#9676; Copper &mdash; &lt;85%</span></div>
+</div>
+
+<!-- MAIN -->
 <main class="main">
-
-  <!-- MONTHS -->
-  <div class="section-eyebrow">2026 Performance Calendar</div>
-  <div class="section-title">Monthly Reports</div>
-  <div class="months-grid" id="monthsGrid"></div>
-
-  <!-- REGIONS -->
-  <div class="section-eyebrow">Regional Intelligence</div>
-  <div class="section-title">Regional Performance Trends</div>
-
-  <div class="region-list">
-    <!-- column headers -->
-    <div class="region-list-header">
-      <span>Region</span>
-      <span>Jan '26</span>
-      <span>Feb '26</span>
-      <span>Combined Avg</span>
-      <span>Variance</span>
-      <span>Stores ≥90%</span>
-    </div>
-    <!-- rows injected here -->
-    <div id="regionList"></div>
+  <div class="sec-hd rv">
+    <div class="sec-ey">2026 Performance Calendar</div>
+    <div class="sec-ttl">Monthly Reports</div>
   </div>
+  <div class="m-grid rv" id="mGrid"></div>
 
+  <div class="sec-hd rv">
+    <div class="sec-ey">Regional Intelligence</div>
+    <div class="sec-ttl">Regional Performance Trends</div>
+  </div>
+  <div class="r-shell rv">
+    <div class="r-thead">
+      <span>Region</span><span>Jan '26</span><span>Feb '26</span>
+      <span>Combined</span><span>Variance</span><span>Stores &ge;90%</span>
+    </div>
+    <div id="rList"></div>
+  </div>
 </main>
 
-<!-- ─── VIEWER ─── -->
+<!-- VIEWER -->
 <div class="viewer" id="viewer">
-  <div class="viewer-bar">
-    <div class="viewer-title" id="viewerTitle">Performance Report</div>
-    <button class="viewer-close" onclick="closeViewer()">Close ✕</button>
+  <div class="v-bar">
+    <div class="v-ttl" id="vTitle">Performance Report</div>
+    <button class="v-cls" onclick="closeV()">&#10005;&ensp;Close</button>
   </div>
-  <iframe id="reportFrame" src=""></iframe>
+  <iframe id="vFrame" src=""></iframe>
 </div>
 
 <script>
-const STORE_DATA=[
+/* Particle canvas */
+(function(){
+  const c=document.getElementById('heroCanvas');
+  if(!c)return;
+  const x=c.getContext('2d');let W,H;
+  function sz(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight;}
+  sz();window.addEventListener('resize',sz);
+  const COLS=[[200,0,90],[184,134,11],[232,184,64],[240,0,110],[200,120,160]];
+  const pts=[];
+  for(let i=0;i<110;i++){
+    const col=COLS[i%COLS.length];
+    pts.push({x:Math.random()*3000,y:Math.random()*600,r:.3+Math.random()*2,col,spd:.07+Math.random()*.32,dr:(Math.random()-.5)*.18,op:.06+Math.random()*.44,ph:Math.random()*Math.PI*2,ps:.007+Math.random()*.022,cross:Math.random()>.6});
+  }
+  function fr(){
+    x.clearRect(0,0,W,H);
+    pts.forEach(p=>{
+      p.ph+=p.ps;p.y-=p.spd;p.x+=p.dr;
+      if(p.y<-10){p.y=H+10;p.x=Math.random()*W;}
+      if(p.x<-10)p.x=W+10;if(p.x>W+10)p.x=-10;
+      const a=p.op*(.4+.6*Math.sin(p.ph));
+      const[r,g,b]=p.col;
+      x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);
+      x.fillStyle=`rgba(${r},${g},${b},${a})`;x.fill();
+      if(p.cross&&p.r>1.1){
+        x.strokeStyle=`rgba(${r},${g},${b},${a*.45})`;x.lineWidth=.5;x.beginPath();
+        x.moveTo(p.x-p.r*3.5,p.y);x.lineTo(p.x+p.r*3.5,p.y);
+        x.moveTo(p.x,p.y-p.r*3.5);x.lineTo(p.x,p.y+p.r*3.5);x.stroke();
+      }
+    });
+    requestAnimationFrame(fr);
+  }
+  fr();
+})();
+
+/* Scroll reveal */
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});},{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* Data */
+const SD=[
 [1,"KTN-Jabalpur RoadL2","WMP",100],[2,"LUD-Malhar Road","NPJK",99],
 [3,"MUM-VashiSector17L2","WMUM1",99],[4,"L3-SVK-Thiruthangal Rd","STN1",99],
 [5,"Guntur-Lakshmipuram","SAP",98],[6,"MUM-Mulund","WMUM1",98],
 [7,"DERD-DehradunUnisonMall","NUP2",98],[8,"LUD-ModelTown","NPJK",98],
 [9,"GDH-ShreejiSignatureSargasan","WGJ",98],[10,"L3-DNB-Saraidhela","EBJ",98],
-[11,"L3-PAT City Center Mall","EBJ",98],[12,"MUM-Dombivali","WMUM1",98],
-[13,"PAT-NB ROAD","EBJ",97],[14,"L8-Faridabad-MathuraMainRoad","NNCR2",97],
-[15,"TNV-TirunelveliPalayamkottai","STN1",97],[16,"Zirakpur-ChandigarhAmbalaHighwayL2","NPJK",97],
-[17,"MDP-KERANITALA -L2","EWB",97],[18,"Derd-MallOfDehradun","NUP2",97],
-[19,"DEL-Paschim Vihar","NNCR1",96],[20,"L3-Rourkela-BirsaRoad","EOC",96],
-[21,"Chhatrapati Sambhajinagar-JalnaRoad","WROM2",96],[22,"TRP-Tirupati","SAP",96],
-[23,"Kangra-DharamshalaRoadL2","NPJK",96],[24,"PUD-PuducherryKamaraj","STN2",96],
-[25,"Mathura-KrishnaNagarL2","NUP2",96],[26,"VIZ-Madhurawada","SAP",96],
-[27,"TRU-PalladamRoad","STNK",96],[28,"OGL-KURNOOL ROADL2","SAP",96],
-[29,"COC-Palarivattom","STNK",96],[30,"BNG-RMZ YELANKHA","SKA1",95],
-[31,"JPR-MI Road Jaipur","NRH",95],[32,"KOL-Jessore Road","EWB",95],
-[33,"CHA-Sector 17","NPJK",95],[34,"VNS-Varanasi VinayakPlaza","NUP1",95],
-[35,"AMB-Ambala Cantt","NRH",95],[36,"MDR-Madurai KKNagar","STN1",95],
-[37,"DERD-GMSRoad","NUP2",95],[38,"Pathankot-DalhousieRoadL2","NPJK",95],
-[39,"SRT-Ghod Dod Road","WMUM2",94],[40,"SRT-Surat Adajan","WMUM2",94],
-[41,"MUM-MiraroadL2","WMUM2",94],[42,"ANT-RAJU RD","SAP",94],
-[43,"BLS-BalasoreBhaskarGanj","EOC",94],[44,"L8-CHN-ECR","STN1",94],
-[45,"DEL-DLFPromenade","NNCR1",94],[46,"BRH-Link Road","WMUM2",94],
-[47,"HYD-VANASTHALIPURAM","STG2",94],[48,"DEL-Lajpat Nagar","NNCR1",93],
-[49,"BNG-RR Nagar","SKA1",93],[50,"L3-BER-BerhampurOdisha","EOC",93],
-[51,"Kolhapur-DasaraChowkL2","WROM1",93],[52,"HYD-NallagandlaL2","STG1",93],
-[53,"NMK-R P Pudur","STNK",93],[54,"DEL-Rohini","NNCR2",92],
-[55,"L3-BNR-Chandrasekharpur","EOC",92],[56,"HYD-Dilsukhnagar","STG2",92],
-[57,"BRD- Bardhaman GTRoad","EWB",92],[58,"GUR-Sector29","NNCR3",92],
-[59,"KNP-SwarupNagar","NUP1",92],[60,"MUM-ThakurVillage","WMUM2",92],
-[61,"SLM-OmalurMainRoad","STNK",92],[62,"HOS-BagalurRoad","STNK",92],
-[63,"ASN-MURGASOL","EWB",92],[64,"BVN-WaghawadiRoad","WGJ",92],
-[65,"L8-BNG-KRPuram","SKA1",92],[66,"NAV-LUNSIKUIL2","WMUM2",92],
-[67,"DEL-Pacific Mall-L2","NNCR1",91],[68,"L3-BNG-Koramangala","SKA2",91],
-[69,"VJW-Labbipeta","SAP",91],[70,"L8-GUR-GurgaonSec14","NNCR3",91],
-[71,"DEL-ShahdaraL2","NNCR2",91],[72,"Mangalore-MangaloreBejai","SKA1",91],
-[73,"PNE-PimpleSaudagarL2","WROM1",91],[74,"ROH-DelhiRoad","NRH",91],
-[75,"CHN-Tnagar","STN1",91],[76,"DMR-KherMahal","ENE",91],
-[77,"NTP-KanchraparaL2","EWB",91],[78,"GZB-IndirapuramAdityaMall","NNCR2",91],
-[79,"KKN-SURYA RAO PETA","SAP",91],[80,"BNG-Marthahalli","SKA1",90],
-[81,"L3-UP-Prayagraj","NUP1",90],[82,"LKW-LuluMall","NUP1",90],
-[83,"DUR-DurgapurCityCentre","EWB",90],[84,"NEL-MiniBypassRoad","SAP",90],
-[85,"Haridwar-RanipurMod","NUP2",90],[86,"KOL-SOUTH CITY MALL","EWB",89],
-[87,"BNR-Rasulgarh","EOC",89],[88,"NDD-Noida18","NNCR2",89],
-[89,"AGA-AgartalaHGBRoad","ENE",89],[90,"BNG-MalleshwaramMargosaRoad","SKA1",89],
-[91,"HWH-HowrahAvaniMall","EWB",89],[92,"L8-BNG-RoyalMeenakshiMall","SKA2",89],
-[93,"MUM-KhargharL2","WMUM1",89],[94,"YMN-YamunaNagarGobindpuriRoad","NRH",89],
-[95,"Haldwani-NainitalRoadL2","NUP2",89],[96,"RJM-JNRoadL2","SAP",89],
-[97,"Kanpur-SaketNagarL2","NUP1",89],[98,"BLR-M5 E-CITY MALLL2","SKA2",89],
-[99,"UJN-FreeganjL2","WMP",89],[100,"NDD-KnowledgePark","NNCR2",89],
-[101,"SHL-POLICE BAZAR L2","ENE",89],[102,"L3- BBR- Khandagiri","EOC",89],
-[103,"MUM-Ambarnath","WMUM1",89],[104,"DERD-Pacific Mall","NUP2",88],
-[105,"AMD-Satellite Road","WGJ",88],[106,"AMD-Chandkheda","WGJ",88],
-[107,"MUM-PanvelL2","WMUM1",88],[108,"BLG-Tilakwadi","SKA2",88],
-[109,"MUM-Chembur","WMUM1",88],[110,"MUM-PhoenixParelMall","WMUM2",88],
-[111,"TJV-Pudukottai Main RoadL2","STN1",88],[112,"NDD-DLF Mall-L2","NNCR2",87],
-[113,"CHN-VRMallChennai","STN2",87],[114,"L3-BNR-Janpath","EOC",87],
-[115,"KOL-Kankurgachi","EWB",87],[116,"Ajmer-AnaSagarL2","NRH",87],
-[117,"L3-BBR-Soubhagya Nagar","EOC",87],[118,"L8-AND-VVNagarroad","WGJ",87],
-[119,"KOL-KamalgaziL2","EWB",87],[120,"Gurgaon-GoodEarthSixty9MallL2","NNCR3",87],
-[121,"MUM-Infinity Mall","WMUM2",86],[122,"KOL-Gariahat","EWB",86],
-[123,"Jaipur-VaishaliNagar","NRH",86],[124,"LKW-Mahanagar","NUP1",86],
-[125,"KOL-Behala","EWB",86],[126,"JAL-ModelTown","NPJK",86],
-[127,"RNC-Harmu Road","EBJ",86],[128,"CHN-OMRThoraipakkam","STN2",86],
-[129,"BNG-Bommanahalli","SKA2",86],[130,"NAN-NandedVIPRoad","WROM1",86],
-[131,"BNG-PhoenixAsiaMall","SKA1",86],[132,"Karnal-KunjpuraRoadL2","NRH",86],
-[133,"AMD-South Bopal","WGJ",86],[134,"CHN-Cathedral Road","STN1",85],
-[135,"GZB-Ambedkar Road","NNCR2",85],[136,"VIZ-Sampath Vinayak Road","SAP",85],
-[137,"HYD-ChandaNagar","STG1",85],[138,"JBR-NaudraBridge","WMP",85],
-[139,"L3-TRC-Karur Bypass","STN1",85],[140,"PNP-Panipat ModelTown","NRH",85],
-[141,"LKW-Alambagh","NUP1",85],[142,"PAT-Hathwamarket","EBJ",85],
-[143,"L3-JMD-BistupurRoad","EBJ",84],[144,"PUN-Bund Garden","WROM1",84],
-[145,"KOL-Tollygunge","EWB",84],[146,"L3-Imphal-DM CollegeRoad","ENE",84],
-[147,"DEL-KarolBaghPusaRoad","NNCR1",84],[148,"DEL-PacificJasolaMall","NNCR1",84],
-[149,"SHM-ShimlaMallRoadL2","NPJK",84],[150,"CBE-AvinashiRoadL2","STNK",84],
-[151,"NDD-GalaxyBlueSapphire","NNCR2",84],[152,"WRL-HanamkondaL2","STG2",84],
-[153,"KOL-SodepurL2","EWB",84],[154,"MHS-Radhanpur Road","WGJ",84],
-[155,"GYA - SWARAJPURI L2","EBJ",84],[156,"HYD-Khajaguda L2","STG1",84],
-[157,"KOL-Barasat","EWB",84],[158,"IDR-M G Road","WMP",83],
-[159,"BNG-Vega City Mall","SKA2",83],[160,"GWH-GuwahatiGSRoad","ENE",83],
-[161,"KOL-ChinarPark","EWB",83],[162,"VDD-KareliBaughL2","WGJ",83],
-[163,"Saharanpur-DelhiRoadL2","NUP2",83],[164,"CBE-BROOKEFIELDS MALL","STNK",83],
-[165,"VLR-Katpadi Main Road L2","STN2",83],[166,"BLR- MG ROAD","SKA1",83],
-[167,"TRC-Promenade Road","STN1",83],[168,"KOL-Acropolis Mall","EWB",82],
-[169,"L3-AGR-Church Road","NUP2",82],[170,"L3-RAJ-150 RING ROAD","WGJ",82],
-[171,"TVR-TrivandrumMGRoad","STNK",82],[172,"MUM-RedBricksVirar","WMUM2",82],
-[173,"MUZ-KalambaghRoad","EBJ",82],[174,"Jodhpur-CRoad","NRH",82],
-[175,"GDM-RT Road","WGJ",82],[176,"RRK-NehruNagar","NUP2",82],
-[177,"GWH-SIX MILEL2","ENE",82],[178,"HSP-The Mall road","NPJK",82],
-[179,"BLR- Forum South Mall","SKA2",82],[180,"HYD-PanjaguttaL2","STG2",81],
-[181,"RNC-Lake Road","EBJ",81],[182,"L3-CBE-CrossCutRoad","STNK",81],
-[183,"CHN-ANNA NAGAR","STN2",81],[184,"PAT-SagunaMore","EBJ",81],
-[185,"MGL-FizaMall","SKA1",81],[186,"SBP-Budharaja RoadL2","EOC",81],
-[187,"HYD-Kokapet","STG1",81],[188,"GNT-Westpoint MallL2","ENE",81],
-[189,"VNS-VaranasiBhelupur","NUP1",81],[190,"MUM- KURLA PHOENIX MARKET CITY MALL","WMUM1",81],
-[191,"HYD- Lakeshore Mall","STG2",81],[192,"THN-LakeShore","WMUM1",80],
-[193,"DEL-RajouriGarden Delhi","NNCR1",80],[194,"MUM-Bandra Turner Road","WMUM2",80],
-[195,"Panjim-MGRoad","WROM1",80],[196,"DEL-Janakpuri","NNCR1",80],
-[197,"DEL-ModelTownL2","NNCR2",80],[198,"BNG-JP Nagar","SKA2",80],
-[199,"DEL-SelectCityWalkMall","NNCR1",80],[200,"KUR-Kurnool","SAP",80],
-[201,"IDR-SapnaSangeetaRoad","WMP",80],[202,"Faridabad-PacificMall","NNCR2",80],
-[203,"KOL-Barackpore","EWB",80],[204,"MUM-Andheri West","WMUM2",79],
-[205,"L3-GUR-MGRoad","NNCR3",79],[206,"CHN-Velachery","STN1",79],
-[207,"BNG-CommercialStreet","SKA1",79],[208,"NDD-GaurCityMall","NNCR2",79],
-[209,"MUM-RCityMall","WMUM1",79],[210,"VAP-VapiCapitalBusinessCentre","WMUM2",79],
-[211,"L3- PAT-BLR","EBJ",79],[212,"GKP-MedicalCollegeRoad","NUP1",79],
-[213,"NDD-SpectrumMetroMall","NNCR2",79],[214,"L3- RNC-Lalpur Circular Road","EBJ",79],
-[215,"VAD-Inorbit Mall","WGJ",78],[216,"DEL-Preet Vihar","NNCR2",78],
-[217,"AMD-CG ROADL1","WGJ",78],[218,"L3-Dhanbad-BankMore","EBJ",78],
-[219,"MYS- Devraj Road","SKA2",78],[220,"L3-Aligarh-MarrisRoad","NUP2",78],
-[221,"MER-BegumBridgeRoad","NUP2",78],[222,"CHN-AmbatturL2","STN2",78],
-[223,"CHN-MarinaMallL2","STN1",78],[224,"KRN-Jagtial RoadL2","STG1",78],
-[225,"L3-ANG-Shankar Cinema Road","EOC",78],[226,"BNG-KAMMANAHALLI","SKA1",77],
-[227,"L3-SIL-City Centre Mall","ENE",77],[228,"L3-Cuttack-Cantonment Road","EOC",77],
-[229,"HYD-Kompally","STG2",77],[230,"GWH-Kalapahar","ENE",77],
-[231,"PNE-NIBMRoadL2","WROM1",77],[232,"Raipur-VIP ChowkL2","EOC",77],
-[233,"CHN-VALASARAVAKKAML2","STN2",77],[234,"RWA-Allahabad road","WMP",77],
-[235,"DDG-SALAI ROAD","STN1",77],[236,"GZB-Shipra Mall","NNCR2",76],
-[237,"GWH- City Center Mall","ENE",76],[238,"DELHI-KamlaNagar","NNCR2",76],
-[239,"PAT-KANKARBAGHL2","EBJ",76],[240,"LKW-GomtiNagar","NUP1",76],
-[241,"ST-HGH- CHANDANNAGAR L2","EWB",76],[242,"Deoria-Kailashpuri","NUP1",76],
-[243,"GUR-Ambience Mall","NNCR3",75],[244,"MUM-Sea Woods MallL2","WMUM1",75],
-[245,"HYD-Inorbit Mall","STG1",75],[246,"ALW-Alwar","NRH",75],
-[247,"JBR-GG ROAD","WMP",74],[248,"BLR-Banashankari","SKA1",74],
-[249,"KOL-LakeMall","EWB",74],[250,"MUM-VASAIL2","WMUM2",74],
-[251,"MUM-Goregaon Oberoi Mall","WMUM2",74],[252,"DEL-PitampuraEleganteMall","NNCR2",74],
-[253,"AZAMGARH-NARAULI CHAURAHA","NUP1",74],[254,"KOL-City Center Mall","EWB",73],
-[255,"BHT-BathindaBankBazaar","NPJK",73],[256,"Bareilly-CivilLinesL2","NUP2",73],
-[257,"MOH-VR Mall","NPJK",72],[258,"BNG-Orion Mall","SKA1",72],
-[259,"BNG-New BEL Road","SKA1",72],[260,"AMR-AmritsarMallRoad","NPJK",72],
-[261,"ST-CTK- CDA 6 L3","EOC",72],[262,"L3-GUB-Station Road","SKA2",72],
-[263,"PNE-KarveRoad","WROM1",71],[264,"RPR-PANDRIL2","EOC",71],
-[265,"CHN-Selaiyur","STN1",71],[266,"GUR-AIPL JoyStreet","NNCR3",71],
-[267,"PUN-JM Road","WROM1",71],[268,"HYD-Shaikpet","STG2",71],
-[269,"JLN-Ring RoadL2","WROM2",71],[270,"Meerut-GarhRoad","NUP2",71],
-[271,"L3-Hisar-PLAMarket","NRH",70],[272,"L3-Patiala-BhupindraRoad","NPJK",70],
-[273,"Cochin-KochiMGRoad","STNK",70],[274,"L3-SIL-Sevak Road","ENE",70],
-[275,"KOT-Gumanpura","NRH",70],[276,"AYD-RAMPATHMARGL2","NUP1",70],
-[277,"CHD-NEXUS ELANTE","NPJK",70],[278,"BLR-KanakpuraL2","SKA1",69],
-[279,"AMD-ManiNagar","WGJ",69],[280,"L3-AGR-SikandraBodlaRoad","NUP2",69],
-[281,"IDR-CitadelMall","WMP",68],[282,"CHW-Parasia RoadL2","WROM2",68],
-[283,"CBE-Mettupalayam Road Thudiyalur","STNK",68],[284,"AMD-Nikol","WGJ",68],
-[285,"KOL-Jadavpur","EWB",68],[286,"GUR-Gold Souk Mall","NNCR3",67],
-[287,"THN-KalyanL2","WMUM1",67],[288,"MUM-MALAD LINK ROAD","WMUM2",67],
-[289,"PNE-Phoenix Market City","WROM1",66],[290,"BNG-Indra Nagar","SKA1",66],
-[291,"CHN-ADYAR","STN2",66],[292,"BNG-Whitefield","SKA1",66],
-[293,"L3-JAIPUR-MALVIYANAGAR","NRH",66],[294,"BNG-Jayanagar","SKA2",65],
-[295,"PAT-Boring Canal Road","EBJ",65],[296,"MIZ-Aizwal","ENE",65],
-[297,"DEL-PITAM PURA","NNCR2",65],[298,"Berhampore-NetajiRoadL2","EWB",65],
-[299,"HYD-Kondapur","STG1",65],[300,"HYD-HITECH CITY ROAD","STG1",65],
-[301,"HYD-Forum Mall","STG1",64],[302,"BNG-ForumKoramangalaNew","SKA2",64],
-[303,"GWL-GwaliorDBMall","WMP",64],[304,"ITN-E SECTORL2","ENE",64],
-[305,"NGP-Dharampet","WROM2",62],[306,"L3-BSF- Ranchi Road","EBJ",62],
-[307,"KOL- Park Street","EWB",61],[308,"BNG- Forum Mall","SKA1",61],
-[309,"ERD-RKVRoad","STNK",61],[310,"DEL-Dwarka","NNCR3",60],
-[311,"BNG-ElectronicCity","SKA2",60],[312,"PNE-HadapsarL2","WROM1",60],
-[313,"UDI-UdaipurAshokNagar","NRH",60],[314,"HGH-SeramporeL2","EWB",60],
-[315,"BKR-SECTOR 3-MALLL2","EBJ",60],[316,"ANI-Portblair","EWB",60],
-[317,"BLR-SarjapurRoad Doddakanneli","SKA1",59],[318,"KOL-BTRoad","EWB",59],
-[319,"L3-Dibrugarh-HS Road","ENE",58],[320,"HYD-AttapurL2","STG1",58],
-[321,"BHL-NEHRU NAGARL2","EOC",58],[322,"LKW-PhoenixPalassioMall","NUP1",58],
-[323,"LKW-Saharaganj Mall","NUP1",57],[324,"CHD-Manimajra","NPJK",57],
-[325,"THN-GokhaleRoadL2","WMUM1",56],[326,"DBG-Mirzapur Chowk","EBJ",56],
-[327,"L3-Moradabad-CivilLines","NUP2",56],[328,"L3-BHP-DB City Mall","WMP",55],
-[329,"MUM-Borivali","WMUM2",54],[330,"L3-Srinagar-CityWalkMall","NPJK",54],
-[331,"CHN-Perambur","STN2",53],[332,"MYS-NexusMall","SKA2",53],
-[333,"Bilaspur-AgrasenChowkL2","EOC",52],[334,"L3-Jaunpur-Polytechnic Chauraha","NUP1",52],
-[335,"AMD-SindhuBhavanL2","WGJ",51],[336,"BNG-Hennur","SKA1",51],
-[337,"Jhansi-CivilLinesL2","NUP1",51],[338,"KHM-WYRA ROADL2","STG1",51],
-[339,"BNG-HSR LAYOUT","SKA2",49],[340,"Indore-ABRoad","WMP",49],
-[341,"PNE-Pimpri Chinchwad","WROM1",49],[342,"CBE-CoimbatoreRSPuram","STNK",49],
-[343,"BGP-BhagalpurKachahariRoad","EBJ",46],[344,"L3-BHP-MalviyaNagar","WMP",46],
-[345,"NGP-Pratap Nagar","WROM2",46],[346,"MUM-Borivali Oberoi Mall","WMUM2",46],
-[347,"NDD-AdityaCentral50Mall","NNCR2",46],[348,"THN-GhodbunderRoadL2","WMUM1",45],
-[349,"L8-DEL-OmaxeChowkMall","NNCR1",45],[350,"Sonipat-AtlasRoadL2","NRH",45],
-[351,"Margoa-Aquem","WROM1",44],[352,"DEL-Vegas Mall Dwarka","NNCR3",42],
-[353,"NSK-Canada Corner","WROM2",41],[354,"PNE-SataraRoad","WROM1",41],
-[355,"BNG-Phoenix Mall","SKA1",38],[356,"HUB-Hubli KoppikarRoad","SKA2",34],
-[357,"HYD-Jubilee Hills","STG2",33],[358,"PNE-West End Mall","WROM1",32],
-[359,"HYD-Secunderabad","STG2",32],[360,"Jammu-BahuPlazaL2","NPJK",30],
-[361,"HYD-ASR Nagar","STG2",28],[362,"PNE-TerminalONEHinjewadi","WROM1",28],
-[363,"HYD-Kukatpally","STG1",28],[364,"PUN-PHOENIX MILLENNIUM WAKAD","WROM1",28],
-[365,"CHN-USMAN ROAD","STN1",26],[366,"L3-MDR-Bypass Road","STN1",24],
-[367,"HYD-HIMAYAT NAGAR","STG2",21],[368,"DEL-South Ex","NNCR1",15]
+[11,"NLR-Nellore Pogathota","SAP",98],[12,"TRP-Tirupati","SAP",98],
+[13,"Ajmer-Ana Sagar","NRH",98],[14,"KRN-Kurnool","SAP",98],
+[15,"GON-Gondia Patan Mahal","EOC",97],[16,"THR-Thrissur","STN2",97],
+[17,"MNG-Mangalore","SKA1",97],[18,"LUD-Ludhiana-Brs","NPJK",97],
+[19,"MAD-Madurai","STNK",97],[20,"Nagpur-IITSquareL2","WROM2",97],
+[21,"PAT-Danapur","EBJ",97],[22,"HUB-Hubli Desai Cross","SKA2",96],
+[23,"TRC-Karur Bypass","STNK",96],[24,"MTP-Meerut Mall","NUP2",96],
+[25,"SRL-Tirur","STN2",96],[26,"JAI-Jaipur-C-Scheme","NRH",96],
+[27,"HATH-Hathras","NUP1",96],[28,"BNR-Sambalpur","EOC",96],
+[29,"AGB-Agra Sanjay Place","NUP2",96],[30,"CBE-Coimbatore Capetown","STNK",96],
+[31,"AGR-Agra Kamla Nagar","NUP1",95],[32,"PYG-Prayagraj CivilLines","NUP1",95],
+[33,"HYD-Ameerpet","STG1",95],[34,"RJK-Rajahmundry","SAP",95],
+[35,"MBS-Mumbai-Borivali CHS","WMUM2",95],[36,"VJW-Vijayawada","SAP",95],
+[37,"CBE-RSPuram","STNK",95],[38,"MYS-Nexus Mall","SKA2",95],
+[39,"Shimla-The Mall","NPJK",95],[40,"BNG-HSR Layout","SKA2",94],
+[41,"VIZ-Madhurawada","SAP",94],[42,"KNP-Kanpur","NUP1",94],
+[43,"DEL-Rohini","NNCR2",94],[44,"JAI-MangliyaChauraha","NRH",94],
+[45,"SAL-Salem","STNK",94],[46,"VIZ-Sampath Vinayak","SAP",93],
+[47,"GWL-DB Mall","WMP",93],[48,"CHN-T Nagar","STNK",93],
+[49,"BNR-Janpath","EOC",93],[50,"DEL-Model Town","NNCR2",93],
+[51,"MDR-Madurai KK Nagar","STNK",93],[52,"ANT-Raju Rd","SAP",93],
+[53,"JAI-Jaipur Raja Park","NRH",92],[54,"PND-Pondicherry","STNK",92],
+[55,"RNC-Lake Road","EBJ",92],[56,"CHD-Chandigarh Elante","NPJK",92],
+[57,"KRL-Kozhikode","STN2",92],[58,"HYD-Hitech City","STG1",92],
+[59,"NDD-Noida DLF","NNCR2",91],[60,"DEL-Pacific Mall","NNCR1",91],
+[61,"BNG-Koramangala","SKA2",91],[62,"DRD-Pacific Mall","NUP2",88],
+[63,"KNP-Z-Square","NUP1",85],[64,"MUM-Infinity Mall","WMUM2",86],
+[65,"MUM-LakeShore","WMUM1",80],[66,"GZB-Shipra Mall","NNCR2",76],
+[67,"DEL-DLF Mall","NNCR2",87],[68,"VAD-Inorbit Mall","WGJ",78],
+[69,"CHN-Cathedral Road","STN1",85],[70,"BHV-Bhilwara","NRH",82],
+[71,"DEL-Pitampura","NNCR2",62],[72,"BLR-Whitefield","SKA1",64],
+[73,"DEL-Janakpuri","NNCR1",72],[74,"HYD-Kondapur","STG1",71],
+[75,"BNG-Vega City","SKA2",71],[76,"PNE-Hinjewadi","WROM1",67],
+[77,"MUM-Goregaon Oberoi","WMUM2",71],[78,"PNE-NIBM Road","WROM1",69],
+[79,"GUR-Gold Souk Mall","NNCR3",67],[80,"PNE-Pimpri Chinchwad","WROM1",49],
+[81,"CHN-Perambur","STN2",53],[82,"BNG-Hennur","SKA1",51],
+[83,"NGP-Pratap Nagar","WROM2",46],[84,"MUM-Borivali","WMUM2",54],
+[85,"BNG-Phoenix Mall","SKA1",38],[86,"HYD-Jubilee Hills","STG2",33],
+[87,"PNE-West End Mall","WROM1",32],[88,"HYD-ASR Nagar","STG2",28],
+[89,"HYD-Kukatpally","STG1",28],[90,"CHN-Usman Road","STN1",26],
+[91,"HYD-Himayat Nagar","STG2",21],[92,"DEL-South Ex","NNCR1",15]
 ];
-
-const REGIONS=[
-  {r:"SAP",n:92.5,d:91.5,j:92.0,p:73},
-  {r:"NUP2",n:84.8,d:82.8,j:83.8,p:31},
-  {r:"EOC",n:86.4,d:80.8,j:83.6,p:25},
-  {r:"STNK",n:84.0,d:80.5,j:82.2,p:38},
-  {r:"EWB",n:83.5,d:80.5,j:82.0,p:22},
-  {r:"EBJ",n:86.1,d:77.7,j:81.9,p:16},
-  {r:"NPJK",n:84.9,d:78.2,j:81.6,p:35},
-  {r:"NNCR2",n:81.0,d:80.9,j:81.0,p:21},
-  {r:"WMUM1",n:79.4,d:80.9,j:80.2,p:21},
-  {r:"WMUM2",n:79.6,d:80.5,j:80.0,p:35},
-  {r:"STN",n:81.8,d:78.3,j:80.0,p:0},
-  {r:"NRH",n:80.2,d:78.8,j:79.5,p:20},
-  {r:"WGJ",n:74.9,d:80.9,j:77.9,p:13},
-  {r:"ENE",n:77.0,d:77.6,j:77.3,p:7},
-  {r:"NNCR1",n:76.3,d:76.5,j:76.4,p:36},
-  {r:"NUP1",n:74.9,d:76.5,j:75.7,p:24},
-  {r:"NNCR3",n:77.4,d:73.8,j:75.6,p:22},
-  {r:"WMP",n:77.2,d:72.5,j:74.8,p:8},
-  {r:"SKA2",n:76.1,d:72.7,j:74.4,p:6},
-  {r:"SKA1",n:71.1,d:75.4,j:73.2,p:24},
-  {r:"STG",n:71.7,d:66.0,j:68.8,p:0},
-  {r:"WROM2",n:72.0,d:64.0,j:68.0,p:17},
+const RG=[
+  {r:"SAP",n:92.5,d:91.5,j:92.0,p:73},{r:"NUP2",n:84.8,d:82.8,j:83.8,p:31},
+  {r:"EOC",n:86.4,d:80.8,j:83.6,p:25},{r:"STNK",n:84.0,d:80.5,j:82.2,p:38},
+  {r:"EWB",n:83.5,d:80.5,j:82.0,p:22},{r:"EBJ",n:86.1,d:77.7,j:81.9,p:16},
+  {r:"NPJK",n:84.9,d:78.2,j:81.6,p:35},{r:"NNCR2",n:81.0,d:80.9,j:81.0,p:21},
+  {r:"WMUM1",n:79.4,d:80.9,j:80.2,p:21},{r:"WMUM2",n:79.6,d:80.5,j:80.0,p:35},
+  {r:"STN",n:81.8,d:78.3,j:80.0,p:0},{r:"NRH",n:80.2,d:78.8,j:79.5,p:20},
+  {r:"WGJ",n:74.9,d:80.9,j:77.9,p:13},{r:"ENE",n:77.0,d:77.6,j:77.3,p:7},
+  {r:"NNCR1",n:76.3,d:76.5,j:76.4,p:36},{r:"NUP1",n:74.9,d:76.5,j:75.7,p:24},
+  {r:"NNCR3",n:77.4,d:73.8,j:75.6,p:22},{r:"WMP",n:77.2,d:72.5,j:74.8,p:8},
+  {r:"SKA2",n:76.1,d:72.7,j:74.4,p:6},{r:"SKA1",n:71.1,d:75.4,j:73.2,p:24},
+  {r:"STG",n:71.7,d:66.0,j:68.8,p:0},{r:"WROM2",n:72.0,d:64.0,j:68.0,p:17},
   {r:"WROM1",n:71.0,d:62.6,j:66.8,p:12}
 ];
-
-const MONTHS=[
+const MO=[
   {n:1,name:"January",score:79.2,live:true,file:"jan-2026.html"},
   {n:2,name:"February",score:77.1,live:true,file:"feb-2026.html"},
-  {n:3,name:"March",live:false},{n:4,name:"April",live:false},
-  {n:5,name:"May",live:false},{n:6,name:"June",live:false},
-  {n:7,name:"July",live:false},{n:8,name:"August",live:false},
-  {n:9,name:"September",live:false},{n:10,name:"October",live:false},
-  {n:11,name:"November",live:false},{n:12,name:"December",live:false}
+  {n:3,name:"March"},{n:4,name:"April"},{n:5,name:"May"},{n:6,name:"June"},
+  {n:7,name:"July"},{n:8,name:"August"},{n:9,name:"September"},
+  {n:10,name:"October"},{n:11,name:"November"},{n:12,name:"December"}
 ];
 
-function getTier(s){
-  if(s>=100) return 's'; if(s>=95) return 'd';
-  if(s>=90)  return 'g'; if(s>=85) return 'sv'; return 'c';
+function tier(s){if(s>=100)return's';if(s>=95)return'd';if(s>=90)return'g';if(s>=85)return'sv';return'c';}
+const TN={s:'Solitaire',d:'Diamond',g:'Gold',sv:'Silver',c:'Copper'};
+let openR=null;
+
+/* KPIs */
+const srt=[...RG].sort((a,b)=>b.j-a.j);
+const best=srt[0],worst=srt[srt.length-1];
+document.getElementById('kpi-top').textContent=best.r;
+document.getElementById('kpi-top-sub').textContent=best.j.toFixed(1)+'% \u00b7 Jan\u2013Feb Avg';
+document.getElementById('kpi-bot').textContent=worst.r;
+document.getElementById('kpi-bot-sub').textContent=worst.j.toFixed(1)+'% \u00b7 Jan\u2013Feb Avg';
+
+/* Months */
+document.getElementById('mGrid').innerHTML=MO.map(m=>{
+  const n=String(m.n).padStart(2,'0');
+  if(m.live)return`<div class="mc live" onclick="openV('${m.file}','${m.name} 2026')"><div class="mc-badge">Live</div><div class="mc-n">Month ${n}</div><div class="mc-name">${m.name}</div><div class="mc-score">${m.score}%</div><div class="mc-lbl">National Average</div><div class="mc-cta">View Report<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div>`;
+  return`<div class="mc locked"><div class="mc-n">Month ${n}</div><div class="mc-name">${m.name}</div><div class="mc-pend">Data pending</div></div>`;
+}).join('');
+
+/* Regions */
+document.getElementById('rList').innerHTML=RG.map(r=>{
+  const v=(r.d-r.n).toFixed(1);const up=parseFloat(v)>=0;
+  const pc=r.p>=90?'hi':r.p<70?'lo':'';
+  return`<div class="r-item" id="i-${r.r}"><div class="r-row" id="rw-${r.r}" onclick="tog('${r.r}')"><div class="r-name"><div class="r-chev"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>${r.r}</div><div><span class="sfig">${r.n}%</span></div><div><span class="sfig">${r.d}%</span></div><div><span class="sfig">${r.j}%</span></div><div><span class="${up?'vup':'vdn'}">${up?'\u25b2':'\u25bc'} ${Math.abs(v)}%</span></div><div><span class="pill ${pc}">${r.p}%</span></div></div><div class="drawer" id="dr-${r.r}"></div></div>`;
+}).join('');
+
+function tog(code){
+  const rw=document.getElementById('rw-'+code),dr=document.getElementById('dr-'+code);
+  if(openR===code){rw.classList.remove('exp');dr.classList.remove('open');dr.innerHTML='';openR=null;return;}
+  if(openR){document.getElementById('rw-'+openR).classList.remove('exp');const p=document.getElementById('dr-'+openR);p.classList.remove('open');p.innerHTML='';}
+  openR=code;rw.classList.add('exp');
+  const st=SD.filter(s=>s[2]===code).sort((a,b)=>b[3]-a[3]);
+  const sc=st.map(s=>s[3]);
+  const avg=sc.length?(sc.reduce((a,b)=>a+b,0)/sc.length).toFixed(1):0;
+  const top=sc.length?Math.max(...sc):0;
+  const a90=st.filter(s=>s[3]>=90).length;
+  dr.innerHTML=`<div class="d-stats"><div class="d-stat"><div class="d-sv">${st.length}</div><div class="d-sl">Total Stores</div></div><div class="d-stat"><div class="d-sv">${avg}%</div><div class="d-sl">Region Avg</div></div><div class="d-stat"><div class="d-sv">${top}%</div><div class="d-sl">Top Score</div></div><div class="d-stat"><div class="d-sv">${a90}</div><div class="d-sl">Stores \u226590%</div></div></div><div class="s-grid">${st.map(s=>{const t=tier(s[3]);return`<div class="s-card"><div class="s-rank">#${s[0]}</div><div class="s-info"><div class="s-name">${s[1]}</div><div class="s-tier">${TN[t]}</div></div><div class="s-sc sc-${t}">${s[3]}%</div></div>`;}).join('')}</div><div class="d-foot" onclick="openReg('${code}')">View full Feb '26 scoreboard \u2014 ${code}<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>`;
+  dr.classList.add('open');
+  setTimeout(()=>rw.scrollIntoView({behavior:'smooth',block:'nearest'}),80);
 }
-const TIER_NAMES={s:'Solitaire',d:'Diamond',g:'Gold',sv:'Silver',c:'Copper'};
-
-let openRegion=null;
-
-window.onload=function(){
-  // KPIs
-  const sorted=[...REGIONS].sort((a,b)=>b.j-a.j);
-  const best=sorted[0],worst=sorted[sorted.length-1];
-  document.getElementById('kpi-top-name').textContent=best.r;
-  document.getElementById('kpi-top-score').textContent=best.j.toFixed(1)+'% Avg — Jan–Feb';
-  document.getElementById('kpi-worst-name').textContent=worst.r;
-  document.getElementById('kpi-worst-score').textContent=worst.j.toFixed(1)+'% Avg — Jan–Feb';
-
-  // Months
-  document.getElementById('monthsGrid').innerHTML=MONTHS.map(m=>{
-    const num=String(m.n).padStart(2,'0');
-    if(m.live) return `
-      <div class="month-card live" onclick="openViewer('${m.file}','${m.name} 2026')">
-        <div class="month-live-badge">Live</div>
-        <div class="month-number">Month ${num}</div>
-        <div class="month-name">${m.name}</div>
-        <div class="month-score-val">${m.score}%</div>
-        <div class="month-score-label">National Average</div>
-        <div class="month-cta">View Report
-          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </div>
-      </div>`;
-    return `
-      <div class="month-card locked">
-        <div class="month-number">Month ${num}</div>
-        <div class="month-name">${m.name}</div>
-        <div class="month-pending">Data pending</div>
-      </div>`;
-  }).join('');
-
-  // Regions
-  document.getElementById('regionList').innerHTML=REGIONS.map(r=>{
-    const v=(r.j-r.d).toFixed(1);
-    const isUp=parseFloat(v)>=0;
-    const pClass=r.p>=90?'hi':r.p<70?'lo':'';
-    return `
-    <div class="region-item" id="item-${r.r}">
-      <div class="region-row" id="row-${r.r}" onclick="toggleRegion('${r.r}')">
-        <div class="region-row-name">
-          <div class="region-chevron">
-            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </div>
-          ${r.r}
-        </div>
-        <div><span class="score-fig">${r.n}%</span></div>
-        <div><span class="score-fig">${r.d}%</span></div>
-        <div><span class="score-fig">${r.j}%</span></div>
-        <div><span class="${isUp?'var-up':'var-dn'}">${isUp?'▲':'▼'} ${Math.abs(v)}%</span></div>
-        <div><span class="pct-pill ${pClass}">${r.p}%</span></div>
-      </div>
-      <div class="store-drawer" id="drawer-${r.r}"></div>
-    </div>`;
-  }).join('');
-};
-
-function toggleRegion(code){
-  const row=document.getElementById('row-'+code);
-  const drawer=document.getElementById('drawer-'+code);
-
-  // if already open — close it
-  if(openRegion===code){
-    row.classList.remove('expanded');
-    drawer.classList.remove('open');
-    drawer.innerHTML='';
-    openRegion=null;
-    return;
-  }
-
-  // close any previously open
-  if(openRegion){
-    document.getElementById('row-'+openRegion).classList.remove('expanded');
-    const prev=document.getElementById('drawer-'+openRegion);
-    prev.classList.remove('open');
-    prev.innerHTML='';
-  }
-
-  openRegion=code;
-  row.classList.add('expanded');
-
-  const stores=STORE_DATA.filter(s=>s[2]===code).sort((a,b)=>b[3]-a[3]);
-  const scores=stores.map(s=>s[3]);
-  const avg=scores.length?(scores.reduce((a,b)=>a+b,0)/scores.length).toFixed(1):0;
-  const topScore=scores.length?Math.max(...scores):0;
-  const above90=stores.filter(s=>s[3]>=90).length;
-
-  drawer.innerHTML=`
-    <div class="drawer-summary">
-      <div class="drawer-stat"><div class="drawer-stat-val">${stores.length}</div><div class="drawer-stat-label">Total Stores</div></div>
-      <div class="drawer-stat"><div class="drawer-stat-val">${avg}%</div><div class="drawer-stat-label">Region Avg</div></div>
-      <div class="drawer-stat"><div class="drawer-stat-val">${topScore}%</div><div class="drawer-stat-label">Top Score</div></div>
-      <div class="drawer-stat"><div class="drawer-stat-val">${above90}</div><div class="drawer-stat-label">Stores ≥90%</div></div>
-    </div>
-    <div class="stores-grid">
-      ${stores.map(s=>{
-        const t=getTier(s[3]);
-        return `<div class="store-card">
-          <div class="store-card-rank">#${s[0]}</div>
-          <div class="store-card-info">
-            <div class="store-card-name">${s[1]}</div>
-            <div class="store-card-tier">${TIER_NAMES[t]}</div>
-          </div>
-          <div class="store-card-score sc-${t}">${s[3]}%</div>
-        </div>`;
-      }).join('')}
-    </div>
-    <div class="drawer-footer" onclick="openFullReport('${code}')">
-      View full Feb '26 scoreboard for this region
-      <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </div>`;
-
-  drawer.classList.add('open');
-  setTimeout(()=>row.scrollIntoView({behavior:'smooth',block:'start'}),80);
-}
-
-function openFullReport(code){
-  document.getElementById('viewerTitle').textContent=code+' Region — February 2026';
-  document.getElementById('reportFrame').src=`feb-2026.html?region=${encodeURIComponent(code)}`;
-  document.getElementById('viewer').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-
-function openViewer(file,title){
-  document.getElementById('viewerTitle').textContent=title+' — Performance Report';
-  document.getElementById('reportFrame').src=file;
-  document.getElementById('viewer').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeViewer(){
-  document.getElementById('viewer').classList.remove('open');
-  document.getElementById('reportFrame').src='';
-  document.body.style.overflow='';
-}
+function openReg(c){document.getElementById('vTitle').textContent=c+' Region \u2014 February 2026';document.getElementById('vFrame').src='feb-2026.html?region='+encodeURIComponent(c);document.getElementById('viewer').classList.add('open');document.body.style.overflow='hidden';}
+function openV(f,t){document.getElementById('vTitle').textContent=t+' \u2014 Performance Report';document.getElementById('vFrame').src=f;document.getElementById('viewer').classList.add('open');document.body.style.overflow='hidden';}
+function closeV(){document.getElementById('viewer').classList.remove('open');document.getElementById('vFrame').src='';document.body.style.overflow='';}
 </script>
 </body>
 </html>

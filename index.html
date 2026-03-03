@@ -3,475 +3,278 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CaratLane Executive Hub — 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>CaratLane CCL 2026 — Executive Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --gold: #C9A84C;
   --gold-lt: #E8C96A;
-  --gold-pale: rgba(201,168,76,0.1);
   --ink: #0F0A04;
-  --ink2: #1E1508;
-  --surface: #FAFAF7;
-  --surface2: #F2EDE2;
-  --green: #1E6B3F;
-  --red: #A8260F;
-  --border: rgba(201,168,76,0.18);
-  --text-muted: #8A7A65;
-  --shadow: 0 1px 4px rgba(15,10,4,0.06), 0 8px 32px rgba(15,10,4,0.08);
-  --shadow-lg: 0 2px 8px rgba(15,10,4,0.1), 0 20px 60px rgba(15,10,4,0.16);
+  --ink2: #1A1005;
+  --surface: #F8F5EE;
+  --surface2: #EEE8D8;
+  --green: #1A5C35;
+  --green-lt: #C8E6D4;
+  --red: #9B2111;
+  --border: #E2D8C4;
+  --text-muted: #8A7A62;
+  --shadow-sm: 0 1px 3px rgba(15,10,4,0.07), 0 4px 16px rgba(15,10,4,0.07);
+  --shadow: 0 2px 8px rgba(15,10,4,0.08), 0 12px 40px rgba(15,10,4,0.10);
+  --shadow-lg: 0 4px 16px rgba(15,10,4,0.12), 0 24px 64px rgba(15,10,4,0.18);
 }
 * { box-sizing:border-box; margin:0; padding:0; }
 html { scroll-behavior:smooth; }
 body { font-family:'Outfit',sans-serif; background:var(--surface); color:var(--ink); -webkit-font-smoothing:antialiased; }
 
-/* ── HEADER ── */
+/* HEADER */
 .header {
-  background: var(--ink2);
-  position: relative; overflow: hidden;
-  padding: 56px 40px 48px;
-  text-align: center;
+  background:var(--ink2);
+  padding:52px 48px 44px;
+  text-align:center;
+  position:relative; overflow:hidden;
 }
 .header::before {
-  content:'';
-  position:absolute; inset:0;
-  background: radial-gradient(ellipse 70% 60% at 50% -10%, rgba(201,168,76,0.22) 0%, transparent 70%);
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(ellipse 80% 55% at 50% -5%, rgba(201,168,76,0.20) 0%, transparent 65%);
   pointer-events:none;
 }
-.header-wordmark {
+.header::after {
+  content:''; position:absolute; bottom:0; left:50%; transform:translateX(-50%);
+  width:180px; height:1px;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.brand-name {
   font-family:'Cormorant Garamond',serif;
-  font-size: clamp(36px,6vw,64px);
-  font-weight: 700;
-  color: var(--gold-lt);
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  line-height: 1;
+  font-size:clamp(40px,6vw,72px); font-weight:700;
+  letter-spacing:8px; color:var(--gold-lt);
+  line-height:1; text-transform:uppercase;
 }
-.header-byline {
-  font-size: 11px; letter-spacing: 5px; text-transform: uppercase;
-  color: rgba(232,201,106,0.45);
-  margin-top: 10px; font-weight: 400;
+.brand-tata {
+  font-size:10px; letter-spacing:5px; text-transform:uppercase;
+  color:rgba(232,201,106,0.38); margin-top:8px; font-weight:400;
 }
-.header-divider {
-  width: 48px; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  margin: 24px auto;
-}
-.header-title {
+.brand-rule { width:40px; height:1px; margin:22px auto; background:linear-gradient(90deg, transparent, rgba(201,168,76,0.6), transparent); }
+.brand-sub {
   font-family:'Cormorant Garamond',serif;
-  font-size: clamp(16px,2.5vw,22px);
-  font-weight: 400; font-style: italic;
-  color: rgba(232,201,106,0.7);
-  letter-spacing: 1px;
+  font-size:clamp(14px,2vw,18px); font-style:italic; font-weight:400;
+  color:rgba(232,201,106,0.55); letter-spacing:1px;
 }
 
-/* ── ALERTS ── */
-.alerts-section {
-  background: var(--ink);
-  border-bottom: 1px solid var(--border);
-  padding: 24px 40px;
-}
-.alerts-label {
-  font-size: 10px; font-weight: 700;
-  letter-spacing: 2.5px; text-transform: uppercase;
-  color: rgba(232,201,106,0.5);
-  margin-bottom: 14px;
-}
-.alerts-row { display:flex; flex-wrap:wrap; gap:10px; }
-.alert-chip {
-  padding: 8px 16px;
-  background: rgba(201,168,76,0.08);
-  border: 1px solid rgba(201,168,76,0.2);
-  border-radius: 8px;
-  font-size: 12.5px;
-  color: rgba(232,201,106,0.85);
-  line-height: 1.4;
-}
-.alert-chip.warn {
-  border-color: rgba(168,38,15,0.35);
-  background: rgba(168,38,15,0.08);
-  color: rgba(240,160,150,0.9);
-}
+/* KPI STRIP */
+.kpi-strip { display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--border); }
+@media(max-width:640px){ .kpi-strip{grid-template-columns:1fr;} }
+.kpi-cell { padding:30px 36px; border-right:1px solid var(--border); }
+.kpi-cell:last-child { border-right:none; }
+.kpi-indicator { display:flex; align-items:center; gap:7px; font-size:10px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; }
+.dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+.dot-green { background:var(--green); }
+.dot-gold  { background:var(--gold); }
+.dot-red   { background:var(--red); }
+.kpi-val { font-family:'Cormorant Garamond',serif; font-size:clamp(26px,3.5vw,44px); font-weight:600; color:var(--ink); line-height:1; margin-bottom:5px; }
+.kpi-sub { font-size:12.5px; font-weight:600; }
+.kpi-sub.green { color:var(--green); }
+.kpi-sub.red   { color:var(--red); }
+.kpi-sub.gold  { color:var(--gold); }
 
-/* ── KPI ROW ── */
-.kpi-row {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 0;
-  border-bottom: 1px solid #E8E0CC;
-}
-@media(max-width:700px){ .kpi-row{grid-template-columns:1fr;} }
+/* MAIN */
+.main { max-width:1380px; margin:0 auto; padding:52px 40px 72px; }
+@media(max-width:700px){ .main{padding:32px 20px 60px;} }
+.section-eyebrow { font-size:10px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; }
+.section-title { font-family:'Cormorant Garamond',serif; font-size:clamp(24px,3vw,34px); font-weight:600; color:var(--ink); margin-bottom:32px; }
 
-.kpi-block {
-  padding: 36px 40px;
-  border-right: 1px solid #E8E0CC;
-  position: relative;
-  transition: background 0.2s;
-}
-.kpi-block:last-child { border-right:none; }
-.kpi-block:hover { background: #FDFAF4; }
-.kpi-block-label {
-  font-size: 11px; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 12px;
-  display:flex; align-items:center; gap:6px;
-}
-.kpi-dot { width:7px; height:7px; border-radius:50%; }
-.kpi-dot.green { background:var(--green); }
-.kpi-dot.red { background:var(--red); }
-.kpi-dot.gold { background:var(--gold); }
-
-.kpi-block-name {
-  font-family:'Cormorant Garamond',serif;
-  font-size: clamp(28px,3.5vw,42px);
-  font-weight: 600;
-  color: var(--ink);
-  line-height: 1; margin-bottom:8px;
-}
-.kpi-block-sub {
-  font-size: 13px; font-weight: 600;
-}
-.kpi-block-sub.green { color:var(--green); }
-.kpi-block-sub.red { color:var(--red); }
-.kpi-block-sub.gold { color:var(--gold); }
-
-/* ── CONTAINER ── */
-.container { max-width:1360px; margin:0 auto; padding:48px 40px; }
-@media(max-width:700px){ .container{padding:32px 20px;} }
-
-/* ── SECTION ── */
-.section-label {
-  font-size: 10px; font-weight: 700;
-  letter-spacing: 3px; text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 20px;
-}
-.section-heading {
-  font-family:'Cormorant Garamond',serif;
-  font-size: 28px; font-weight: 600;
-  color: var(--ink);
-  margin-bottom: 28px;
-}
-
-/* ── REGION TABLE ── */
-.table-shell {
-  background:#fff;
-  border:1px solid #E8E0CC;
-  border-radius:16px;
-  overflow:hidden;
-  box-shadow:var(--shadow);
-  margin-bottom:56px;
-}
-.table-outer { overflow-x:auto; }
-table { width:100%; border-collapse:collapse; min-width:700px; }
-thead tr { background:var(--ink2); }
-th {
-  padding:14px 20px;
-  font-size:10px; font-weight:700;
-  letter-spacing:1.5px; text-transform:uppercase;
-  color:rgba(232,201,106,0.65);
-  text-align:left; white-space:nowrap;
-}
-td { padding:16px 20px; border-bottom:1px solid #F2EDE2; font-size:14px; }
-tbody tr:last-child td { border-bottom:none; }
-tbody tr:hover td { background:#FDFAF4; }
-.cluster-name { font-weight:700; color:var(--ink); }
-.score-num { font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:700; }
-.var-up { color:var(--green); font-weight:700; }
-.var-dn { color:var(--red); font-weight:700; }
-.pct-badge {
-  display:inline-block;
-  padding:3px 10px;
-  background:var(--surface2);
-  border-radius:6px;
-  font-size:12px; font-weight:700;
-  color:var(--text-muted);
-}
-.pct-badge.high { background:#D4EDDF; color:var(--green); }
-.pct-badge.low { background:#F5E0DC; color:var(--red); }
-
-/* ── ROADMAP GRID ── */
-.roadmap-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
-  gap:16px;
-}
+/* MONTHS GRID */
+.months-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:14px; margin-bottom:64px; }
 
 .month-card {
-  background:#fff;
-  border:1px solid #E8E0CC;
-  border-radius:14px;
-  padding:24px 20px;
-  transition:all 0.2s;
-  position:relative;
-  overflow:hidden;
+  background:#fff; border:1px solid var(--border);
+  border-radius:16px; padding:26px 22px 22px;
+  position:relative; overflow:hidden;
+  transition:transform 0.22s, box-shadow 0.22s, border-color 0.22s;
 }
+.month-card.locked { opacity:0.42; cursor:default; }
 .month-card.live {
   cursor:pointer;
-  border-color: rgba(201,168,76,0.4);
+  border-color:rgba(201,168,76,0.45);
+  background:linear-gradient(145deg, #fff 0%, #fffdf6 100%);
 }
-.month-card.live:hover {
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-lg);
-  border-color:var(--gold);
-}
-.month-card.pending { opacity:0.48; }
 .month-card.live::before {
-  content:'';
-  position:absolute; top:0; left:0; right:0; height:3px;
-  background:linear-gradient(90deg, var(--gold), var(--gold-lt));
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg, var(--gold), var(--gold-lt), var(--gold));
 }
+.month-card.live:hover { transform:translateY(-5px); box-shadow:var(--shadow-lg); border-color:var(--gold); }
+.month-live-badge {
+  position:absolute; top:14px; right:14px;
+  background:var(--gold); color:var(--ink);
+  font-size:8px; font-weight:800; letter-spacing:1px; text-transform:uppercase;
+  padding:3px 8px; border-radius:4px;
+}
+.month-number { font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--text-muted); margin-bottom:8px; }
+.month-name { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:600; color:var(--ink); margin-bottom:16px; line-height:1; }
+.month-score-val { font-family:'Cormorant Garamond',serif; font-size:38px; font-weight:700; color:var(--gold); line-height:1; }
+.month-score-label { font-size:10px; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); margin-top:3px; font-weight:500; }
+.month-pending { font-size:13px; color:#C4BAA8; margin-top:8px; }
+.month-cta { margin-top:18px; display:flex; align-items:center; gap:6px; font-size:10.5px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); }
+.month-cta svg { width:12px; height:12px; stroke:var(--gold); stroke-width:2.5; fill:none; }
 
-.month-num {
-  font-size:10px; font-weight:700;
-  letter-spacing:2px; text-transform:uppercase;
-  color:var(--text-muted);
-  margin-bottom:8px;
-}
-.month-name {
-  font-family:'Cormorant Garamond',serif;
-  font-size:22px; font-weight:600;
-  color:var(--ink);
-  margin-bottom:14px;
-}
-.month-score {
-  font-family:'Cormorant Garamond',serif;
-  font-size:32px; font-weight:700;
-  line-height:1;
-  color:var(--gold);
-}
-.month-score-label { font-size:10px; color:var(--text-muted); margin-top:2px; }
-.month-pending-score { font-size:13px; color:#C0B8A8; margin-top:4px; }
-.month-cta {
-  margin-top:16px;
-  font-size:11px; font-weight:700;
-  letter-spacing:1.5px; text-transform:uppercase;
-  color:var(--gold);
-  display:flex; align-items:center; gap:6px;
-}
-.month-cta::after { content:'→'; }
+/* REGION TABLE */
+.table-wrap { background:#fff; border:1px solid var(--border); border-radius:18px; overflow:hidden; box-shadow:var(--shadow-sm); }
+.table-scroll { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; min-width:640px; }
+thead tr { background:var(--ink2); }
+th { padding:14px 20px; font-size:9.5px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:rgba(232,201,106,0.60); text-align:left; white-space:nowrap; }
+td { padding:15px 20px; border-bottom:1px solid #F0EAD8; font-size:14px; }
+tbody tr:last-child td { border-bottom:none; }
+tbody tr:hover td { background:#FDFAF4; }
+.cluster-label { font-weight:700; color:var(--ink); }
+.score-fig { font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:600; color:var(--ink); }
+.var-up { color:var(--green); font-weight:700; font-size:13px; }
+.var-dn { color:var(--red); font-weight:700; font-size:13px; }
+.pct-pill { display:inline-block; padding:3px 11px; border-radius:20px; font-size:11.5px; font-weight:700; background:var(--surface2); color:var(--text-muted); }
+.pct-pill.hi { background:var(--green-lt); color:var(--green); }
+.pct-pill.lo { background:#F5DADA; color:var(--red); }
 
-/* ── VIEWER OVERLAY ── */
-.overlay {
-  display:none; position:fixed; inset:0; z-index:9999;
-  background:rgba(15,10,4,0.97);
-  flex-direction:column;
-  backdrop-filter:blur(12px);
-  animation:fadeIn 0.2s ease;
-}
-.overlay.open { display:flex; }
-@keyframes fadeIn { from{opacity:0} to{opacity:1} }
-
-.overlay-header {
-  padding:20px 32px;
-  display:flex; justify-content:space-between; align-items:center;
-  border-bottom:1px solid rgba(201,168,76,0.15);
-  flex-shrink:0;
-}
-.overlay-title {
-  font-family:'Cormorant Garamond',serif;
-  font-size:20px; font-weight:600;
-  color:var(--gold-lt);
-  letter-spacing:1px;
-}
-.overlay-close {
-  background:rgba(201,168,76,0.12);
-  color:var(--gold-lt);
-  border:1px solid rgba(201,168,76,0.25);
-  padding:10px 22px;
-  border-radius:8px;
-  font-size:12px; font-weight:700;
-  letter-spacing:1.5px; text-transform:uppercase;
-  cursor:pointer;
-  font-family:'Outfit',sans-serif;
-  transition:all 0.2s;
-}
-.overlay-close:hover { background:var(--gold); color:var(--ink); }
-
-iframe { flex:1; border:none; background:#fff; margin:20px 24px 24px; border-radius:12px; }
+/* VIEWER */
+.viewer { display:none; position:fixed; inset:0; z-index:9999; background:rgba(10,6,1,0.96); flex-direction:column; }
+.viewer.open { display:flex; animation:vfade 0.2s ease; }
+@keyframes vfade { from{opacity:0} to{opacity:1} }
+.viewer-bar { flex-shrink:0; padding:18px 28px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(201,168,76,0.12); }
+.viewer-title { font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:600; color:var(--gold-lt); }
+.viewer-close { background:rgba(201,168,76,0.10); color:var(--gold-lt); border:1px solid rgba(201,168,76,0.22); padding:9px 20px; border-radius:8px; font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; cursor:pointer; font-family:'Outfit',sans-serif; transition:all 0.18s; }
+.viewer-close:hover { background:var(--gold); color:var(--ink); }
+iframe { flex:1; border:none; background:#fff; margin:18px 22px 22px; border-radius:12px; }
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
-<div class="header">
-  <div class="header-wordmark">CaratLane</div>
-  <div class="header-byline">A Tata Product · Executive Intelligence Hub</div>
-  <div class="header-divider"></div>
-  <div class="header-title">2026 Performance Command Center</div>
-</div>
+<header class="header">
+  <div class="brand-name">CaratLane</div>
+  <div class="brand-tata">A Tata Product</div>
+  <div class="brand-rule"></div>
+  <div class="brand-sub">Champions Compliance League — 2026</div>
+</header>
 
-<!-- ALERTS -->
-<div class="alerts-section">
-  <div class="alerts-label">Intelligence Alerts</div>
-  <div class="alerts-row" id="alertsRow"></div>
-</div>
-
-<!-- KPI BLOCKS -->
-<div class="kpi-row">
-  <div class="kpi-block">
-    <div class="kpi-block-label"><span class="kpi-dot green"></span>Top Cluster</div>
-    <div class="kpi-block-name" id="top-name">—</div>
-    <div class="kpi-block-sub green" id="top-score">—</div>
+<div class="kpi-strip">
+  <div class="kpi-cell">
+    <div class="kpi-indicator"><span class="dot dot-green"></span>Best Cluster</div>
+    <div class="kpi-val" id="kpi-top-name">—</div>
+    <div class="kpi-sub green" id="kpi-top-score">—</div>
   </div>
-  <div class="kpi-block">
-    <div class="kpi-block-label"><span class="kpi-dot gold"></span>National Average</div>
-    <div class="kpi-block-name">79.2%</div>
-    <div class="kpi-block-sub gold">January 2026 Snapshot</div>
+  <div class="kpi-cell">
+    <div class="kpi-indicator"><span class="dot dot-gold"></span>National Average</div>
+    <div class="kpi-val">79.2%</div>
+    <div class="kpi-sub gold">January 2026</div>
   </div>
-  <div class="kpi-block">
-    <div class="kpi-block-label"><span class="kpi-dot red"></span>Priority Cluster</div>
-    <div class="kpi-block-name" id="worst-name">—</div>
-    <div class="kpi-block-sub red" id="worst-score">—</div>
+  <div class="kpi-cell">
+    <div class="kpi-indicator"><span class="dot dot-red"></span>Needs Attention</div>
+    <div class="kpi-val" id="kpi-worst-name">—</div>
+    <div class="kpi-sub red" id="kpi-worst-score">—</div>
   </div>
 </div>
 
-<!-- MAIN -->
-<div class="container">
+<main class="main">
+  <div class="section-eyebrow">2026 Performance Calendar</div>
+  <div class="section-title">Monthly Reports</div>
+  <div class="months-grid" id="monthsGrid"></div>
 
-  <!-- REGIONAL TABLE -->
-  <div class="section-label">Regional Intelligence</div>
-  <div class="section-heading">Cluster Performance Trends</div>
-  <div class="table-shell">
-    <div class="table-outer">
+  <div class="section-eyebrow">Regional Intelligence</div>
+  <div class="section-title">Cluster Performance Trends</div>
+  <div class="table-wrap">
+    <div class="table-scroll">
       <table>
-        <thead>
-          <tr>
-            <th>Cluster</th>
-            <th>Nov '25</th>
-            <th>Dec '25</th>
-            <th>Jan '26</th>
-            <th>Variance</th>
-            <th>Stores ≥90%</th>
-          </tr>
-        </thead>
+        <thead><tr>
+          <th>Cluster</th><th>Nov '25</th><th>Dec '25</th><th>Jan '26</th><th>Variance</th><th>Stores ≥90%</th>
+        </tr></thead>
         <tbody id="regionBody"></tbody>
       </table>
     </div>
   </div>
+</main>
 
-  <!-- ROADMAP -->
-  <div class="section-label">2026 Roadmap</div>
-  <div class="section-heading">Monthly Performance Trajectory</div>
-  <div class="roadmap-grid" id="roadmapGrid"></div>
-
-</div>
-
-<!-- VIEWER -->
-<div class="overlay" id="overlay">
-  <div class="overlay-header">
-    <div class="overlay-title" id="overlayTitle">Performance Intelligence Report</div>
-    <button class="overlay-close" onclick="closeViewer()">Close ✕</button>
+<div class="viewer" id="viewer">
+  <div class="viewer-bar">
+    <div class="viewer-title" id="viewerTitle">Performance Report</div>
+    <button class="viewer-close" onclick="closeViewer()">Close ✕</button>
   </div>
   <iframe id="reportFrame" src=""></iframe>
 </div>
 
 <script>
 const REGIONS = [
-  {r:"SAP",  n:84.2, d:90.1, j:93.0, p:"95%"},
-  {r:"EBJ",  n:66.5, d:74.3, j:87.2, p:"94%"},
-  {r:"EOC",  n:76.1, d:79.4, j:87.1, p:"93%"},
-  {r:"NPJK", n:83.4, d:82.1, j:85.3, p:"95%"},
-  {r:"NUP2", n:68.7, d:80.2, j:84.1, p:"92%"},
-  {r:"STNK", n:72.3, d:81.5, j:83.4, p:"94%"},
-  {r:"EWB",  n:63.0, d:78.0, j:83.0, p:"90%"},
-  {r:"SKA1", n:59.0, d:63.0, j:70.0, p:"48%"}
+  {r:"SAP",n:84.2,d:90.1,j:93.0,p:95},
+  {r:"EBJ",n:66.5,d:74.3,j:87.2,p:94},
+  {r:"EOC",n:76.1,d:79.4,j:87.1,p:93},
+  {r:"NPJK",n:83.4,d:82.1,j:85.3,p:95},
+  {r:"NUP2",n:68.7,d:80.2,j:84.1,p:92},
+  {r:"STNK",n:72.3,d:81.5,j:83.4,p:94},
+  {r:"EWB",n:63.0,d:78.0,j:83.0,p:90},
+  {r:"SKA1",n:59.0,d:63.0,j:70.0,p:48}
 ];
 
 const MONTHS = [
-  {name:"January",  n:1,  score:79.2, live:true,  file:"jan-2026.html"},
-  {name:"February", n:2,  live:false},
-  {name:"March",    n:3,  live:false},
-  {name:"April",    n:4,  live:false},
-  {name:"May",      n:5,  live:false},
-  {name:"June",     n:6,  live:false},
-  {name:"July",     n:7,  live:false},
-  {name:"August",   n:8,  live:false},
-  {name:"September",n:9,  live:false},
-  {name:"October",  n:10, live:false},
-  {name:"November", n:11, live:false},
-  {name:"December", n:12, live:false},
+  {n:1,name:"January",score:79.2,live:true,file:"jan-2026.html"},
+  {n:2,name:"February",live:false},{n:3,name:"March",live:false},
+  {n:4,name:"April",live:false},{n:5,name:"May",live:false},
+  {n:6,name:"June",live:false},{n:7,name:"July",live:false},
+  {n:8,name:"August",live:false},{n:9,name:"September",live:false},
+  {n:10,name:"October",live:false},{n:11,name:"November",live:false},
+  {n:12,name:"December",live:false}
 ];
 
 function init() {
-  // KPI blocks
   const sorted = [...REGIONS].sort((a,b)=>b.j-a.j);
-  document.getElementById('top-name').textContent = sorted[0].r + ' Cluster';
-  document.getElementById('top-score').textContent = sorted[0].j.toFixed(1) + '% — Elite';
-  const worst = sorted[sorted.length-1];
-  document.getElementById('worst-name').textContent = worst.r + ' Cluster';
-  document.getElementById('worst-score').textContent = worst.j.toFixed(1) + '% — Action Required';
+  const best = sorted[0], worst = sorted[sorted.length-1];
+  document.getElementById('kpi-top-name').textContent = best.r + ' Cluster';
+  document.getElementById('kpi-top-score').textContent = best.j.toFixed(1) + '% — Elite Performance';
+  document.getElementById('kpi-worst-name').textContent = worst.r + ' Cluster';
+  document.getElementById('kpi-worst-score').textContent = worst.j.toFixed(1) + '% — Action Required';
 
-  // Alerts
-  const drops = REGIONS.filter(r => (r.j - r.d) < 0);
-  const alertsRow = document.getElementById('alertsRow');
-  if(drops.length) {
-    drops.forEach(r => {
-      const chip = document.createElement('div');
-      chip.className = 'alert-chip warn';
-      chip.textContent = `${r.r}: Month-on-month decline detected — intervention required`;
-      alertsRow.appendChild(chip);
-    });
-  }
-  const risingClusters = REGIONS.filter(r => (r.j - r.d) >= 5);
-  risingClusters.forEach(r => {
-    const chip = document.createElement('div');
-    chip.className = 'alert-chip';
-    chip.textContent = `${r.r}: Strong recovery +${(r.j-r.d).toFixed(1)}pts MoM`;
-    alertsRow.appendChild(chip);
-  });
-  if(!drops.length && !risingClusters.length) {
-    alertsRow.innerHTML = '<div class="alert-chip">All regions showing stable performance for January 2026</div>';
-  }
+  document.getElementById('monthsGrid').innerHTML = MONTHS.map(m => {
+    const num = String(m.n).padStart(2,'0');
+    if (m.live) return `
+      <div class="month-card live" onclick="openViewer('${m.file}','${m.name} 2026')">
+        <div class="month-live-badge">Live</div>
+        <div class="month-number">Month ${num}</div>
+        <div class="month-name">${m.name}</div>
+        <div class="month-score-val">${m.score}%</div>
+        <div class="month-score-label">National Average</div>
+        <div class="month-cta">View Report
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </div>`;
+    return `
+      <div class="month-card locked">
+        <div class="month-number">Month ${num}</div>
+        <div class="month-name">${m.name}</div>
+        <div class="month-pending">Data pending</div>
+      </div>`;
+  }).join('');
 
-  // Region table
   document.getElementById('regionBody').innerHTML = REGIONS.map(r => {
     const v = (r.j - r.d).toFixed(1);
     const isUp = parseFloat(v) >= 0;
-    const pct = parseFloat(r.p);
-    const pctClass = pct >= 90 ? 'high' : pct < 70 ? 'low' : '';
+    const pClass = r.p >= 90 ? 'hi' : r.p < 70 ? 'lo' : '';
     return `<tr>
-      <td><span class="cluster-name">${r.r} Cluster</span></td>
-      <td class="score-num">${r.n}%</td>
-      <td class="score-num">${r.d}%</td>
-      <td class="score-num">${r.j}%</td>
-      <td class="${isUp?'var-up':'var-dn'}">${isUp?'▲':'▼'} ${Math.abs(v)}%</td>
-      <td><span class="pct-badge ${pctClass}">${r.p}</span></td>
+      <td><span class="cluster-label">${r.r}</span></td>
+      <td><span class="score-fig">${r.n}%</span></td>
+      <td><span class="score-fig">${r.d}%</span></td>
+      <td><span class="score-fig">${r.j}%</span></td>
+      <td><span class="${isUp?'var-up':'var-dn'}">${isUp?'▲':'▼'} ${Math.abs(v)}%</span></td>
+      <td><span class="pct-pill ${pClass}">${r.p}%</span></td>
     </tr>`;
-  }).join('');
-
-  // Roadmap
-  document.getElementById('roadmapGrid').innerHTML = MONTHS.map(m => {
-    if(m.live) return `
-      <div class="month-card live" onclick="openViewer('${m.file}','${m.name} 2026')">
-        <div class="month-num">Month ${m.n.toString().padStart(2,'0')}</div>
-        <div class="month-name">${m.name}</div>
-        <div class="month-score">${m.score}%</div>
-        <div class="month-score-label">National Average</div>
-        <div class="month-cta">View Intelligence Report</div>
-      </div>`;
-    return `
-      <div class="month-card pending">
-        <div class="month-num">Month ${m.n.toString().padStart(2,'0')}</div>
-        <div class="month-name">${m.name}</div>
-        <div class="month-pending-score">Data Pending</div>
-      </div>`;
   }).join('');
 }
 
 function openViewer(file, title) {
-  document.getElementById('overlayTitle').textContent = title + ' — Performance Report';
+  document.getElementById('viewerTitle').textContent = title + ' — Intelligence Report';
   document.getElementById('reportFrame').src = file;
-  document.getElementById('overlay').classList.add('open');
+  document.getElementById('viewer').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 function closeViewer() {
-  document.getElementById('overlay').classList.remove('open');
+  document.getElementById('viewer').classList.remove('open');
   document.getElementById('reportFrame').src = '';
   document.body.style.overflow = '';
 }
-
 window.onload = init;
 </script>
 </body>

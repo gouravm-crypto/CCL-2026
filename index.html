@@ -3,159 +3,393 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CaratLane CCL 2026 — Executive Hub</title>
+<title>CaratLane Champions League 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --gold: #C9A84C;
-  --gold-lt: #E8C96A;
-  --ink: #0F0A04;
-  --ink2: #1A1005;
-  --surface: #F8F5EE;
-  --surface2: #EEE8D8;
-  --green: #1A5C35;
-  --green-lt: #C8E6D4;
-  --red: #9B2111;
-  --border: #E2D8C4;
-  --text-muted: #8A7A62;
-  --shadow-sm: 0 1px 3px rgba(15,10,4,0.07), 0 4px 16px rgba(15,10,4,0.07);
-  --shadow: 0 2px 8px rgba(15,10,4,0.08), 0 12px 40px rgba(15,10,4,0.10);
-  --shadow-lg: 0 4px 16px rgba(15,10,4,0.12), 0 24px 64px rgba(15,10,4,0.18);
+  --gold:#C9A84C; --gold-lt:#E8C96A; --gold-pale:rgba(201,168,76,0.08);
+  --ink:#0F0A04; --ink2:#1A1005; --ink3:#251808;
+  --surface:#F8F5EE; --surface2:#EEE8D8;
+  --green:#1A5C35; --green-lt:#C8E6D4;
+  --red:#9B2111; --red-lt:#F5DADA;
+  --border:#E2D8C4; --border2:rgba(226,216,196,0.6);
+  --text-muted:#8A7A62;
+  --shadow-sm:0 1px 3px rgba(15,10,4,.06),0 4px 20px rgba(15,10,4,.07);
+  --shadow:0 2px 8px rgba(15,10,4,.08),0 14px 48px rgba(15,10,4,.10);
+  --shadow-lg:0 4px 20px rgba(15,10,4,.13),0 28px 72px rgba(15,10,4,.20);
 }
-* { box-sizing:border-box; margin:0; padding:0; }
-html { scroll-behavior:smooth; }
-body { font-family:'Outfit',sans-serif; background:var(--surface); color:var(--ink); -webkit-font-smoothing:antialiased; }
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Outfit',sans-serif;background:var(--surface);color:var(--ink);-webkit-font-smoothing:antialiased;}
 
-/* HEADER */
-.header {
+/* ─── HEADER ─── */
+.header{
   background:var(--ink2);
-  padding:52px 48px 44px;
+  padding:60px 48px 50px;
   text-align:center;
-  position:relative; overflow:hidden;
+  position:relative;overflow:hidden;
 }
-.header::before {
-  content:''; position:absolute; inset:0;
-  background:radial-gradient(ellipse 80% 55% at 50% -5%, rgba(201,168,76,0.20) 0%, transparent 65%);
+.header::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%,rgba(201,168,76,.22) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 30% at 20% 110%,rgba(201,168,76,.06) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 30% at 80% 110%,rgba(201,168,76,.06) 0%,transparent 60%);
   pointer-events:none;
 }
-.header::after {
-  content:''; position:absolute; bottom:0; left:50%; transform:translateX(-50%);
-  width:180px; height:1px;
-  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+/* subtle texture */
+.header::after{
+  content:'';position:absolute;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events:none;opacity:.4;
 }
-.brand-name {
+.header-inner{position:relative;z-index:1;}
+.brand-diamond{
+  display:inline-flex;align-items:center;gap:18px;
+  margin-bottom:18px;
+}
+.brand-diamond-gem{
+  width:32px;height:32px;opacity:.6;
+}
+.brand-name{
   font-family:'Cormorant Garamond',serif;
-  font-size:clamp(40px,6vw,72px); font-weight:700;
-  letter-spacing:8px; color:var(--gold-lt);
-  line-height:1; text-transform:uppercase;
+  font-size:clamp(44px,7vw,80px);font-weight:700;
+  letter-spacing:10px;color:var(--gold-lt);
+  line-height:1;text-transform:uppercase;
 }
-.brand-tata {
-  font-size:10px; letter-spacing:5px; text-transform:uppercase;
-  color:rgba(232,201,106,0.38); margin-top:8px; font-weight:400;
+.brand-tata{
+  font-size:10px;letter-spacing:6px;text-transform:uppercase;
+  color:rgba(232,201,106,.32);margin-top:10px;font-weight:300;
 }
-.brand-rule { width:40px; height:1px; margin:22px auto; background:linear-gradient(90deg, transparent, rgba(201,168,76,0.6), transparent); }
-.brand-sub {
+.brand-rule{
+  display:flex;align-items:center;gap:14px;
+  width:280px;margin:24px auto;
+}
+.brand-rule-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.45));}
+.brand-rule-line.r{background:linear-gradient(90deg,rgba(201,168,76,.45),transparent);}
+.brand-rule-gem{font-size:10px;color:rgba(201,168,76,.55);}
+.brand-sub{
   font-family:'Cormorant Garamond',serif;
-  font-size:clamp(14px,2vw,18px); font-style:italic; font-weight:400;
-  color:rgba(232,201,106,0.55); letter-spacing:1px;
+  font-size:clamp(15px,2vw,20px);font-style:italic;font-weight:400;
+  color:rgba(232,201,106,.48);letter-spacing:1.5px;
 }
 
-/* KPI STRIP */
-.kpi-strip { display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--border); }
-@media(max-width:640px){ .kpi-strip{grid-template-columns:1fr;} }
-.kpi-cell { padding:30px 36px; border-right:1px solid var(--border); }
-.kpi-cell:last-child { border-right:none; }
-.kpi-indicator { display:flex; align-items:center; gap:7px; font-size:10px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; }
-.dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
-.dot-green { background:var(--green); }
-.dot-gold  { background:var(--gold); }
-.dot-red   { background:var(--red); }
-.kpi-val { font-family:'Cormorant Garamond',serif; font-size:clamp(26px,3.5vw,44px); font-weight:600; color:var(--ink); line-height:1; margin-bottom:5px; }
-.kpi-sub { font-size:12.5px; font-weight:600; }
-.kpi-sub.green { color:var(--green); }
-.kpi-sub.red   { color:var(--red); }
-.kpi-sub.gold  { color:var(--gold); }
-
-/* MAIN */
-.main { max-width:1380px; margin:0 auto; padding:52px 40px 72px; }
-@media(max-width:700px){ .main{padding:32px 20px 60px;} }
-.section-eyebrow { font-size:10px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; }
-.section-title { font-family:'Cormorant Garamond',serif; font-size:clamp(24px,3vw,34px); font-weight:600; color:var(--ink); margin-bottom:32px; }
-
-/* MONTHS GRID */
-.months-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:14px; margin-bottom:64px; }
-
-.month-card {
-  background:#fff; border:1px solid var(--border);
-  border-radius:16px; padding:26px 22px 22px;
-  position:relative; overflow:hidden;
-  transition:transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+/* ─── KPI STRIP ─── */
+.kpi-strip{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  background:#fff;
+  border-bottom:1px solid var(--border);
 }
-.month-card.locked { opacity:0.42; cursor:default; }
-.month-card.live {
+@media(max-width:640px){.kpi-strip{grid-template-columns:1fr;}}
+.kpi-cell{
+  padding:32px 40px;
+  border-right:1px solid var(--border);
+  position:relative;transition:background .2s;
+}
+.kpi-cell:last-child{border-right:none;}
+.kpi-cell:hover{background:#FDFAF4;}
+.kpi-indicator{
+  display:flex;align-items:center;gap:8px;
+  font-size:9.5px;font-weight:700;letter-spacing:3px;
+  text-transform:uppercase;color:var(--text-muted);
+  margin-bottom:12px;
+}
+.dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.dot-green{background:var(--green);}
+.dot-gold{background:var(--gold);}
+.dot-red{background:var(--red);}
+.kpi-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(28px,3.5vw,48px);font-weight:600;
+  color:var(--ink);line-height:1;margin-bottom:6px;
+}
+.kpi-sub{font-size:12px;font-weight:600;letter-spacing:.3px;}
+.kpi-sub.green{color:var(--green);}
+.kpi-sub.red{color:var(--red);}
+.kpi-sub.gold{color:var(--gold);}
+
+/* ─── MAIN ─── */
+.main{max-width:1400px;margin:0 auto;padding:56px 44px 80px;}
+@media(max-width:700px){.main{padding:36px 20px 64px;}}
+.section-eyebrow{
+  font-size:9.5px;font-weight:700;letter-spacing:3.5px;
+  text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;
+}
+.section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(26px,3vw,36px);font-weight:600;
+  color:var(--ink);margin-bottom:36px;letter-spacing:-.3px;
+}
+
+/* ─── MONTHS GRID ─── */
+.months-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(195px,1fr));
+  gap:14px;margin-bottom:72px;
+}
+.month-card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:18px;padding:28px 24px 24px;
+  position:relative;overflow:hidden;
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+}
+.month-card.locked{opacity:.38;cursor:default;}
+.month-card.live{
   cursor:pointer;
-  border-color:rgba(201,168,76,0.45);
-  background:linear-gradient(145deg, #fff 0%, #fffdf6 100%);
+  border-color:rgba(201,168,76,.4);
+  background:linear-gradient(150deg,#FFFFFF 0%,#FFFEF8 100%);
 }
-.month-card.live::before {
-  content:''; position:absolute; top:0; left:0; right:0; height:3px;
-  background:linear-gradient(90deg, var(--gold), var(--gold-lt), var(--gold));
+.month-card.live::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,#B8922A,var(--gold-lt),#B8922A);
 }
-.month-card.live:hover { transform:translateY(-5px); box-shadow:var(--shadow-lg); border-color:var(--gold); }
-.month-live-badge {
-  position:absolute; top:14px; right:14px;
-  background:var(--gold); color:var(--ink);
-  font-size:8px; font-weight:800; letter-spacing:1px; text-transform:uppercase;
-  padding:3px 8px; border-radius:4px;
+.month-card.live:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow-lg);
+  border-color:var(--gold);
 }
-.month-number { font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--text-muted); margin-bottom:8px; }
-.month-name { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:600; color:var(--ink); margin-bottom:16px; line-height:1; }
-.month-score-val { font-family:'Cormorant Garamond',serif; font-size:38px; font-weight:700; color:var(--gold); line-height:1; }
-.month-score-label { font-size:10px; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); margin-top:3px; font-weight:500; }
-.month-pending { font-size:13px; color:#C4BAA8; margin-top:8px; }
-.month-cta { margin-top:18px; display:flex; align-items:center; gap:6px; font-size:10.5px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); }
-.month-cta svg { width:12px; height:12px; stroke:var(--gold); stroke-width:2.5; fill:none; }
+.month-live-badge{
+  position:absolute;top:16px;right:16px;
+  background:var(--gold);color:var(--ink);
+  font-size:8px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;
+  padding:3px 9px;border-radius:4px;
+  box-shadow:0 2px 8px rgba(201,168,76,.4);
+}
+.month-number{
+  font-size:9.5px;font-weight:700;letter-spacing:2.5px;
+  text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;
+}
+.month-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:24px;font-weight:600;color:var(--ink);
+  margin-bottom:18px;line-height:1;
+}
+.month-score-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:40px;font-weight:700;color:var(--gold);line-height:1;
+}
+.month-score-label{
+  font-size:9.5px;text-transform:uppercase;letter-spacing:1.5px;
+  color:var(--text-muted);margin-top:4px;font-weight:600;
+}
+.month-pending{font-size:13px;color:#C4BAA8;margin-top:10px;font-style:italic;}
+.month-cta{
+  margin-top:20px;display:flex;align-items:center;gap:7px;
+  font-size:10px;font-weight:700;letter-spacing:2px;
+  text-transform:uppercase;color:var(--gold);
+  transition:gap .2s;
+}
+.month-card.live:hover .month-cta{gap:11px;}
+.month-cta svg{width:13px;height:13px;stroke:var(--gold);stroke-width:2.5;fill:none;flex-shrink:0;}
 
-/* REGION TABLE */
-.table-wrap { background:#fff; border:1px solid var(--border); border-radius:18px; overflow:hidden; box-shadow:var(--shadow-sm); }
-.table-scroll { overflow-x:auto; }
-table { width:100%; border-collapse:collapse; min-width:640px; }
-thead tr { background:var(--ink2); }
-th { padding:14px 20px; font-size:9.5px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:rgba(232,201,106,0.60); text-align:left; white-space:nowrap; }
-td { padding:15px 20px; border-bottom:1px solid #F0EAD8; font-size:14px; }
-tbody tr:last-child td { border-bottom:none; }
-tbody tr:hover td { background:#FDFAF4; }
-.cluster-label { font-weight:700; color:var(--ink); }
-.score-fig { font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:600; color:var(--ink); }
-.var-up { color:var(--green); font-weight:700; font-size:13px; }
-.var-dn { color:var(--red); font-weight:700; font-size:13px; }
-.pct-pill { display:inline-block; padding:3px 11px; border-radius:20px; font-size:11.5px; font-weight:700; background:var(--surface2); color:var(--text-muted); }
-.pct-pill.hi { background:var(--green-lt); color:var(--green); }
-.pct-pill.lo { background:#F5DADA; color:var(--red); }
+/* ─── REGION TABLE ─── */
+.table-wrap{
+  background:#fff;border:1px solid var(--border);
+  border-radius:20px;overflow:hidden;
+  box-shadow:var(--shadow-sm);
+}
+.table-scroll{overflow-x:auto;}
+table{width:100%;border-collapse:collapse;min-width:680px;}
+thead tr{background:var(--ink2);}
+th{
+  padding:15px 22px;
+  font-size:9px;font-weight:700;letter-spacing:2.5px;
+  text-transform:uppercase;color:rgba(232,201,106,.55);
+  text-align:left;white-space:nowrap;
+}
+td{padding:0;border-bottom:1px solid rgba(242,237,224,.8);}
+tbody tr:last-child td{border-bottom:none;}
 
-/* VIEWER */
-.viewer { display:none; position:fixed; inset:0; z-index:9999; background:rgba(10,6,1,0.96); flex-direction:column; }
-.viewer.open { display:flex; animation:vfade 0.2s ease; }
-@keyframes vfade { from{opacity:0} to{opacity:1} }
-.viewer-bar { flex-shrink:0; padding:18px 28px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(201,168,76,0.12); }
-.viewer-title { font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:600; color:var(--gold-lt); }
-.viewer-close { background:rgba(201,168,76,0.10); color:var(--gold-lt); border:1px solid rgba(201,168,76,0.22); padding:9px 20px; border-radius:8px; font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; cursor:pointer; font-family:'Outfit',sans-serif; transition:all 0.18s; }
-.viewer-close:hover { background:var(--gold); color:var(--ink); }
-iframe { flex:1; border:none; background:#fff; margin:18px 22px 22px; border-radius:12px; }
+/* clickable rows */
+.region-row{
+  display:contents;cursor:pointer;
+}
+.region-row td{
+  padding:17px 22px;
+  transition:background .15s;
+}
+.region-row:hover td{background:#FDFAF4;}
+.region-row:hover .region-name-cell::after{
+  opacity:1;transform:translateX(0);
+}
+
+.region-name-cell{
+  display:flex;align-items:center;gap:10px;
+  font-weight:700;color:var(--ink);font-size:14.5px;
+  position:relative;
+}
+.region-name-cell::after{
+  content:'View stores →';
+  font-size:10px;font-weight:600;letter-spacing:1px;
+  color:var(--gold);
+  opacity:0;transform:translateX(-6px);
+  transition:all .2s;white-space:nowrap;
+}
+.region-click-hint{
+  width:22px;height:22px;border-radius:6px;
+  background:var(--gold-pale);border:1px solid rgba(201,168,76,.2);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  transition:background .15s;
+}
+.region-row:hover .region-click-hint{background:rgba(201,168,76,.18);}
+.region-click-hint svg{width:10px;height:10px;stroke:var(--gold);stroke-width:2.5;fill:none;}
+
+.score-fig{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;font-weight:600;color:var(--ink);
+}
+.var-up{color:var(--green);font-weight:700;font-size:13px;}
+.var-dn{color:var(--red);font-weight:700;font-size:13px;}
+.pct-pill{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:4px 13px;border-radius:20px;
+  font-size:11.5px;font-weight:700;
+  background:var(--surface2);color:var(--text-muted);
+  min-width:52px;
+}
+.pct-pill.hi{background:var(--green-lt);color:var(--green);}
+.pct-pill.lo{background:var(--red-lt);color:var(--red);}
+
+/* ─── REGION DRILL-DOWN PANEL ─── */
+.region-panel{
+  display:none;
+  background:#fff;border:1px solid rgba(201,168,76,.3);
+  border-radius:20px;margin-top:2px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  animation:panelIn .28s ease;
+}
+.region-panel.open{display:block;}
+@keyframes panelIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+
+.panel-header{
+  background:var(--ink3);
+  padding:20px 28px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.panel-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:600;color:var(--gold-lt);
+  display:flex;align-items:center;gap:12px;
+}
+.panel-region-badge{
+  background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.25);
+  color:var(--gold-lt);font-family:'Outfit',sans-serif;
+  font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  padding:4px 12px;border-radius:6px;
+}
+.panel-close{
+  background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.18);
+  color:rgba(232,201,106,.7);
+  padding:7px 16px;border-radius:7px;
+  font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  cursor:pointer;font-family:'Outfit',sans-serif;transition:all .18s;
+}
+.panel-close:hover{background:rgba(201,168,76,.2);color:var(--gold-lt);}
+
+.panel-stats{
+  display:flex;gap:0;
+  border-bottom:1px solid var(--border);
+}
+.panel-stat{
+  padding:16px 24px;border-right:1px solid var(--border);
+  flex:1;min-width:0;
+}
+.panel-stat:last-child{border-right:none;}
+.panel-stat-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:26px;font-weight:700;color:var(--ink);line-height:1;
+}
+.panel-stat-label{font-size:10px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-top:3px;}
+
+.panel-stores-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:12px;padding:20px 24px 24px;
+  max-height:420px;overflow-y:auto;
+}
+.panel-stores-grid::-webkit-scrollbar{width:5px;}
+.panel-stores-grid::-webkit-scrollbar-track{background:transparent;}
+.panel-stores-grid::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px;}
+
+.store-mini{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:12px;padding:14px 16px;
+  display:flex;align-items:center;gap:12px;
+  transition:background .15s;
+}
+.store-mini:hover{background:#FDFAF4;}
+.store-mini-rank{
+  font-size:10px;font-weight:700;color:var(--text-muted);
+  width:22px;flex-shrink:0;text-align:center;
+}
+.store-mini-info{flex:1;min-width:0;}
+.store-mini-name{font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.store-mini-score{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;font-weight:700;flex-shrink:0;
+}
+.score-s{color:var(--gold);}
+.score-d{color:#5B8DD9;}
+.score-g{color:#2E9E6B;}
+.score-sv{color:#7A7A8C;}
+.score-c{color:#C26A2A;}
+
+.panel-open-full{
+  display:flex;align-items:center;justify-content:center;
+  padding:14px;border-top:1px solid var(--border);
+  gap:8px;font-size:11px;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--gold);cursor:pointer;
+  transition:background .15s;
+}
+.panel-open-full:hover{background:var(--gold-pale);}
+.panel-open-full svg{width:12px;height:12px;stroke:var(--gold);stroke-width:2.5;fill:none;}
+
+/* ─── VIEWER OVERLAY ─── */
+.viewer{display:none;position:fixed;inset:0;z-index:9999;background:rgba(10,6,1,.97);flex-direction:column;}
+.viewer.open{display:flex;animation:vfade .22s ease;}
+@keyframes vfade{from{opacity:0}to{opacity:1}}
+.viewer-bar{
+  flex-shrink:0;padding:18px 32px;
+  display:flex;justify-content:space-between;align-items:center;
+  border-bottom:1px solid rgba(201,168,76,.12);
+}
+.viewer-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:19px;font-weight:600;color:var(--gold-lt);letter-spacing:.5px;
+}
+.viewer-close{
+  background:rgba(201,168,76,.10);color:var(--gold-lt);
+  border:1px solid rgba(201,168,76,.22);
+  padding:9px 22px;border-radius:8px;
+  font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+  cursor:pointer;font-family:'Outfit',sans-serif;transition:all .18s;
+}
+.viewer-close:hover{background:var(--gold);color:var(--ink);}
+iframe{flex:1;border:none;background:#fff;margin:18px 24px 24px;border-radius:14px;}
 </style>
 </head>
 <body>
 
+<!-- ─── HEADER ─── -->
 <header class="header">
-  <div class="brand-name">CaratLane</div>
-  <div class="brand-tata">A Tata Product</div>
-  <div class="brand-rule"></div>
-  <div class="brand-sub">Champions Compliance League — 2026</div>
+  <div class="header-inner">
+    <div class="brand-name">CaratLane</div>
+    <div class="brand-tata">A Tata Product</div>
+    <div class="brand-rule">
+      <div class="brand-rule-line"></div>
+      <div class="brand-rule-gem">◆</div>
+      <div class="brand-rule-line r"></div>
+    </div>
+    <div class="brand-sub">Champions League — 2026</div>
+  </div>
 </header>
 
+<!-- ─── KPI STRIP ─── -->
 <div class="kpi-strip">
   <div class="kpi-cell">
-    <div class="kpi-indicator"><span class="dot dot-green"></span>Best Cluster</div>
+    <div class="kpi-indicator"><span class="dot dot-green"></span>Best Region</div>
     <div class="kpi-val" id="kpi-top-name">—</div>
     <div class="kpi-sub green" id="kpi-top-score">—</div>
   </div>
@@ -171,25 +405,55 @@ iframe { flex:1; border:none; background:#fff; margin:18px 22px 22px; border-rad
   </div>
 </div>
 
+<!-- ─── MAIN ─── -->
 <main class="main">
+
+  <!-- MONTHS -->
   <div class="section-eyebrow">2026 Performance Calendar</div>
   <div class="section-title">Monthly Reports</div>
   <div class="months-grid" id="monthsGrid"></div>
 
+  <!-- REGIONAL -->
   <div class="section-eyebrow">Regional Intelligence</div>
-  <div class="section-title">Cluster Performance Trends</div>
+  <div class="section-title">Regional Performance Trends</div>
   <div class="table-wrap">
     <div class="table-scroll">
-      <table>
-        <thead><tr>
-          <th>Cluster</th><th>Nov '25</th><th>Dec '25</th><th>Jan '26</th><th>Variance</th><th>Stores ≥90%</th>
-        </tr></thead>
+      <table id="regionTable">
+        <thead>
+          <tr>
+            <th>Region</th>
+            <th>Nov '25</th>
+            <th>Dec '25</th>
+            <th>Jan '26</th>
+            <th>Variance</th>
+            <th>Stores ≥90%</th>
+          </tr>
+        </thead>
         <tbody id="regionBody"></tbody>
       </table>
     </div>
   </div>
+
+  <!-- DRILL-DOWN PANEL -->
+  <div class="region-panel" id="regionPanel">
+    <div class="panel-header">
+      <div class="panel-title">
+        <span id="panelRegionName">Region</span>
+        <span class="panel-region-badge" id="panelRegionCode">—</span>
+      </div>
+      <button class="panel-close" onclick="closePanel()">Close ✕</button>
+    </div>
+    <div class="panel-stats" id="panelStats"></div>
+    <div class="panel-stores-grid" id="panelStores"></div>
+    <div class="panel-open-full" onclick="openFullReport()">
+      View full Jan '26 scoreboard filtered to this region
+      <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </div>
+  </div>
+
 </main>
 
+<!-- ─── VIEWER ─── -->
 <div class="viewer" id="viewer">
   <div class="viewer-bar">
     <div class="viewer-title" id="viewerTitle">Performance Report</div>
@@ -199,7 +463,184 @@ iframe { flex:1; border:none; background:#fff; margin:18px 22px 22px; border-rad
 </div>
 
 <script>
-const REGIONS = [
+// ── STORE DATA (from jan-2026) ──
+const STORE_DATA=[
+[1,"Kangra-Dharamshala Road","NPJK",100],[2,"KTN-Jabalpur Road","WMP",100],
+[3,"GZB-Indirapuram Aditya Mall","NNCR2",100],[4,"PAT City Center Mall","EBJ",100],
+[5,"MUM-Mulund","WMUM1",99.5],[6,"PNP-Panipat Model Town","NRH",99.5],
+[7,"MUM-Dombivali","WMUM1",99],[8,"CHN-Cathedral Road","STNK",98.5],
+[9,"DEL-Rohini","NNCR2",98.5],[10,"JBR-Naudra Bridge","WMP",98],
+[11,"TRP-Tirupati","SAP",98],[12,"PUD-Puducherry Kamaraj","STNK",98],
+[13,"Ajmer-Ana Sagar","NRH",98],[14,"BHT-Bathinda Bank Bazaar","NPJK",98],
+[15,"TNV-Tirunelveli Palayamkottai","STNK",98],[16,"NEL-Mini Bypass Road","SAP",98],
+[17,"NAV-LUNSIKUI","WMUM2",98],[18,"BRH-Link Road","WMUM2",98],
+[19,"HYD-VANASTHALIPURAM","STG",98],[20,"KOL-Gariahat","EWB",97],
+[21,"BBR-Soubhagya Nagar","EOC",97],[22,"KOL-Jessore Road","EWB",96],
+[23,"TRC-Karur Bypass","STNK",96],[24,"LUD-Model Town","NPJK",96],
+[25,"DNB-Saraidhela","EBJ",96],[26,"DEL-Lajpat Nagar","NNCR1",95],
+[27,"GWH-City Center Mall","ENE",95],[28,"PAT-Boring Canal Road","EBJ",95],
+[29,"Rourkela-Birsa Road","EOC",95],[30,"Imphal-DM College Road","ENE",95],
+[31,"Faridabad-Mathura Road","NNCR2",95],[32,"Bardhaman GT Road","EWB",95],
+[33,"HYD-Kompally","STG",95],[34,"SHM-Shimla Mall Road","NPJK",95],
+[35,"PAT-BLR","EBJ",95],[36,"GKP-Medical College Road","NUP1",95],
+[37,"Faridabad-Pacific Mall","NNCR2",95],[38,"PAT-Hathwa Market","EBJ",95],
+[39,"PAT-NB ROAD","EBJ",94],[40,"DEL-Paschim Vihar","NNCR1",94],
+[41,"Dhanbad-Bank More","EBJ",94],[42,"BNR-Chandrasekharpur","EOC",94],
+[43,"MDR-Madurai KK Nagar","STNK",94],[44,"ANT-RAJU RD","SAP",94],
+[45,"HWH-Howrah Avani Mall","EWB",94],[46,"BNG-Royal Meenakshi Mall","SKA2",94],
+[47,"CBE-Avinashi Road","STN",94],[48,"MUM-Chembur","WMUM1",94],
+[49,"Zirakpur-Ambala Highway","NPJK",94],[50,"BHL-NEHRU NAGAR","EOC",94],
+[51,"KKN-SURYA RAO PETA","SAP",94],[52,"JMD-Bistupur Road","EBJ",93],
+[53,"AMD-Satellite Road","WGJ",93],[54,"Hisar-PLA Market","NRH",93],
+[55,"BNR-Janpath","EOC",93],[56,"DEL-Model Town","NNCR2",93],
+[57,"JAL-Model Town","NPJK",93],[58,"MUM-Panvel","WMUM1",93],
+[59,"PAT-Saguna More","EBJ",93],[60,"MUM-Mira Road","WMUM2",93],
+[61,"Kurnool","SAP",93],[62,"KOT-Gumanpura","NRH",93],
+[63,"TRU-Palladam Road","STN",93],[64,"SBP-Budharaja Road","EOC",93],
+[65,"KOL-Barasat","EWB",93],[66,"BNR-Khandagiri","EOC",93],
+[67,"LKW-Saharaganj Mall","NUP1",92],[68,"JPR-MI Road Jaipur","NRH",92],
+[69,"DELHI-Kamla Nagar","NNCR2",92],[70,"GUR-MG Road","NNCR3",92],
+[71,"VIZ-Sampath Vinayak Road","SAP",92],[72,"Dibrugarh-HS Road","ENE",92],
+[73,"AGA-Agartala HGB Road","ENE",92],[74,"KOL-Chinar Park","EWB",92],
+[75,"Chhatrapati Sambhajinagar","WROM2",92],[76,"SLM-Omalur Main Road","STN",92],
+[77,"ROH-Delhi Road","NRH",92],[78,"GDH-Shreeji Signature","WGJ",92],
+[79,"TJV-Pudukottai Main Road","STNK",92],[80,"VLR-Katpadi Main Road","STNK",92],
+[81,"Derd-Mall Of Dehradun","NUP2",92],[82,"CHA-Sector 17","NPJK",91],
+[83,"MYS-Devraj Road","SKA2",91],[84,"SRT-Ghod Dod Road","WMUM2",91],
+[85,"KOL-Behala","EWB",91],[86,"VNS-Varanasi Vinayak Plaza","NUP1",91],
+[87,"DEL-Pacific Jasola Mall","NNCR1",91],[88,"Haridwar-Ranipur Mod","NUP2",91],
+[89,"RJM-JN Road","SAP",91],[90,"CHN-VALASARAVAKKAM","STNK",91],
+[91,"RRK-Nehru Nagar","NUP2",91],[92,"HYD-Panjagutta","STG",90],
+[93,"CHN-VR Mall Chennai","STNK",90],[94,"VJW-Labbipeta","SAP",90],
+[95,"THN-Gokhale Road","WMUM1",90],[96,"MUM-Bandra Turner Road","WMUM2",90],
+[97,"MER-Begum Bridge Road","NUP2",90],[98,"SRT-Surat Adajan","WMUM2",90],
+[99,"CHN-OMR Thoraipakkam","STNK",90],[100,"BLS-Balasore Bhaskar Ganj","EOC",90],
+[101,"VIZ-Madhurawada","SAP",90],[102,"CHN-Tnagar","STNK",90],
+[103,"Jodhpur-C Road","NRH",90],[104,"WRL-Hanamkonda","STG",90],
+[105,"KOL-Jadavpur","EWB",90],[106,"KOL-Sodepur","EWB",90],
+[107,"IDR-M G Road","WMP",89],[108,"AGR-Church Road","NUP2",89],
+[109,"LKW-Mahanagar","NUP1",89],[110,"Srinagar-City Walk Mall","NPJK",89],
+[111,"KOL-BT Road","EWB",89],[112,"MUM-R City Mall","WMUM1",89],
+[113,"LKW-Gomti Nagar","NUP1",89],[114,"NAN-Nanded VIP Road","WROM1",89],
+[115,"NDD-Galaxy Blue Sapphire","NNCR2",89],[116,"UDI-Udaipur Ashok Nagar","NRH",89],
+[117,"NTP-Kanchrapara","EWB",89],[118,"MDP-KERANITALA","EWB",89],
+[119,"NMK-R P Pudur","STN",89],[120,"BNG-RMZ YELANKHA","SKA1",88],
+[121,"AMD-Chandkheda","WGJ",88],[122,"HYD-Chanda Nagar","STG",88],
+[123,"HUB-Hubli Koppikar Road","SKA2",88],[124,"RNC-Harmu Road","EBJ",88],
+[125,"KOL-Lake Mall","EWB",88],[126,"ERD-RKV Road","STN",88],
+[127,"MUM-VASAI","WMUM2",88],[128,"GZB-Shipra Mall","NNCR2",87],
+[129,"DEL-Dwarka","NNCR3",87],[130,"BNR-Rasulgarh","EOC",87],
+[131,"HYD-Kokapet","STG",87],[132,"BKR-SECTOR 3-MALL","EBJ",87],
+[133,"RWA-Allahabad road","WMP",87],[134,"BLR-Forum South Mall","SKA2",87],
+[135,"KOL-Barackpore","EWB",87],[136,"NDD-Noida 18","NNCR2",86],
+[137,"MOH-VR Mall","NPJK",86],[138,"BLG-Tilakwadi","SKA2",86],
+[139,"Kolhapur-Dasara Chowk","WROM1",86],[140,"Pathankot-Dalhousie Road","NPJK",86],
+[141,"HSP-The Mall road","NPJK",86],[142,"GUR-Ambience Mall","NNCR3",85],
+[143,"DEL-Preet Vihar","NNCR2",85],[144,"GZB-Ambedkar Road","NNCR2",85],
+[145,"GUR-Gurgaon Sec 14","NNCR3",85],[146,"Guntur-Lakshmipuram","SAP",85],
+[147,"BNG-Malleshwaram","SKA1",85],[148,"SIL-Sevak Road","ENE",85],
+[149,"IDR-Citadel Mall","WMP",85],[150,"DERD-GMS Road","NUP2",85],
+[151,"BNG-KR Puram","SKA1",85],[152,"VNS-Bhelupur","NUP1",85],
+[153,"BNG-Forum Mall","SKA1",85],[154,"AGR-Sikandra Bodla Road","NUP2",85],
+[155,"TRC-Promenade Road","STNK",85],[156,"AMD-CG ROAD","WGJ",84],
+[157,"PUN-Bund Garden","WROM1",84],[158,"KOL-Tollygunge","EWB",84],
+[159,"DERD-Unison Mall","NUP2",84],[160,"MUZ-Kalambagh Road","EBJ",84],
+[161,"DMR-Kher Mahal","ENE",84],[162,"UJN-Freeganj","WMP",84],
+[163,"JLN-Ring Road","WROM2",84],[164,"KOL-Acropolis Mall","EWB",83],
+[165,"CBE-Cross Cut Road","STN",83],[166,"BNG-New BEL Road","SKA1",83],
+[167,"BNG-Commercial Street","SKA1",83],[168,"PNE-Karve Road","WROM1",83],
+[169,"Aligarh-Marris Road","NUP2",83],[170,"Bareilly-Civil Lines","NUP2",83],
+[171,"Karnal-Kunjpura Road","NRH",83],[172,"MUM-Andheri West","WMUM2",82],
+[173,"Patiala-Bhupindra Road","NPJK",82],[174,"RPR-PANDRI","EOC",82],
+[175,"AMD-Sindhu Bhavan","WGJ",82],[176,"MUM-Kharghar","WMUM1",82],
+[177,"BGP-Bhagalpur","EBJ",82],[178,"HYD-Nallagandla","STG",82],
+[179,"MUM-Borivali Oberoi","WMUM2",82],[180,"MUM-Sea Woods Mall","WMUM1",81],
+[181,"Mathura-Krishna Nagar","NUP2",81],[182,"AND-VV Nagar Road","WGJ",81],
+[183,"MUM-Vashi Sector 17","WMUM1",81],[184,"Saharanpur-Delhi Road","NUP2",81],
+[185,"HGH-CHANDANNAGAR","EWB",81],[186,"AZAMGARH-NARAULI","NUP1",81],
+[187,"NDD-DLF Mall","NNCR2",80],[188,"DEL-PITAM PURA","NNCR2",80],
+[189,"Indore-AB Road","WMP",80],[190,"CHN-Selaiyur","STNK",80],
+[191,"BNG-JP Nagar","SKA2",80],[192,"MUM-Red Bricks Virar","WMUM2",80],
+[193,"LKW-Alambagh","NUP1",80],[194,"Moradabad-Civil Lines","NUP2",80],
+[195,"BLR-M5 E-CITY","SKA2",80],[196,"CBE-BROOKEFIELDS","STN",80],
+[197,"HYD-Jubilee Hills","STG",79],[198,"PNE-Phoenix Market","WROM1",79],
+[199,"KOL-SOUTH CITY","EWB",79],[200,"BNG-Marthahalli","SKA1",79],
+[201,"CHN-ADYAR","STNK",79],[202,"PNE-Hadapsar","WROM1",79],
+[203,"MUM-Thakur Village","WMUM2",79],[204,"PNE-Satara Road","WROM1",79],
+[205,"Haldwani-Nainital","NUP2",79],[206,"CHN-Marina Mall","STNK",79],
+[207,"CBE-Thudiyalur","STN",79],[208,"NDD-Aditya Central","NNCR2",79],
+[209,"SIL-City Centre","ENE",78],[210,"DEL-Rajouri Garden","NNCR1",78],
+[211,"DEL-Vegas Mall","NNCR3",78],[212,"CHN-ANNA NAGAR","STNK",78],
+[213,"BNG-Electronic City","SKA2",78],[214,"DEL-Karol Bagh","NNCR1",78],
+[215,"HOS-Bagalur Road","STN",78],[216,"Meerut-Garh Road","NUP2",78],
+[217,"BLR-Sarjapur Road","SKA1",76],[218,"BNG-Jayanagar","SKA2",76],
+[219,"Mangalore-Bejai","SKA1",76],[220,"Kochi-MG Road","STN",76],
+[221,"BER-Berhampur","EOC",76],[222,"PNE-Pimple Saudagar","WROM1",76],
+[223,"BSF-Ranchi Road","EBJ",76],[224,"Jaipur-Vaishali","NRH",75],
+[225,"Jammu-Bahu Plaza","NPJK",75],[226,"DEL-Pacific Mall","NNCR1",74],
+[227,"UP-Prayagraj","NUP1",74],[228,"NGP-Dharampet","WROM2",74],
+[229,"KOL-Kankurgachi","EWB",74],[230,"KNP-Swarup Nagar","NUP1",74],
+[231,"YMN-Gobindpuri","NRH",74],[232,"AMD-Mani Nagar","WGJ",74],
+[233,"CHW-Parasia Road","WROM2",74],[234,"AMD-South Bopal","WGJ",74],
+[235,"GYA-SWARAJPURI","EBJ",74],[236,"COC-Palarivattom","STN",74],
+[237,"KOL-Park Street","EWB",73],[238,"BNG-KAMMANAHALLI","SKA1",73],
+[239,"BNG-Orion Mall","SKA1",73],[240,"Bilaspur-Agrasen","EOC",73],
+[241,"GUR-AIPL JoyStreet","NNCR3",73],[242,"GWL-Gwalior DB Mall","WMP",73],
+[243,"CTK-CDA 6","EOC",73],[244,"AMD-Nikol","WGJ",73],
+[245,"HYD-HIMAYAT NAGAR","STG",72],[246,"KOL-City Center","EWB",72],
+[247,"BLR-Banashankari","SKA1",72],[248,"DEL-Janakpuri","NNCR1",72],
+[249,"KOL-Kamalgazi","EWB",72],[250,"MHS-Radhanpur Road","WGJ",72],
+[251,"ANI-Portblair","EWB",72],[252,"BNG-Vega City Mall","SKA2",71],
+[253,"PNE-Pimpri Chinchwad","WROM1",71],[254,"VDD-KareliBaugh","WGJ",71],
+[255,"CHN-Perambur","STNK",71],[256,"MYS-Nexus Mall","SKA2",71],
+[257,"CHN-Ambattur","STNK",71],[258,"MUM-Goregaon Oberoi","WMUM2",71],
+[259,"SHL-POLICE BAZAR","ENE",71],[260,"CHD-Manimajra","NPJK",70],
+[261,"BNG-Forum Koramangala","SKA2",70],[262,"PUN-JM Road","WROM1",70],
+[263,"NDD-Spectrum Metro","NNCR2",70],[264,"GNT-Westpoint Mall","ENE",70],
+[265,"CBE-RSPuram","STN",69],[266,"TVR-Trivandrum","STN",69],
+[267,"DBG-Mirzapur Chowk","EBJ",69],[268,"PNE-NIBMRoad","WROM1",69],
+[269,"Raipur-VIP Chowk","EOC",69],[270,"MGL-Fiza Mall","SKA1",69],
+[271,"ITN-E SECTOR","ENE",69],[272,"MUM-MALAD LINK","WMUM2",69],
+[273,"LKW-Palassio Mall","NUP1",69],[274,"BNG-Forum Mall SKA1","SKA1",68],
+[275,"PAT-KANKARBAGH","EBJ",68],[276,"BLR-Kanakpura","SKA1",68],
+[277,"HYD-Kondapur","STG",68],[278,"BNG-Bommanahalli","SKA2",68],
+[279,"HYD-Forum Mall","STG",67],[280,"VAD-Inorbit Mall","WGJ",67],
+[281,"HYD-ASR Nagar","STG",67],[282,"Panjim-MGRoad","WROM1",67],
+[283,"PNE-Hinjewadi","WROM1",67],[284,"DEL-DLFPromenade","NNCR1",67],
+[285,"AYD-RAMPATHMARG","NUP1",67],[286,"PUN-PHOENIX WAKAD","WROM1",67],
+[287,"RNC-Lake Road","EBJ",66],[288,"JBR-GG ROAD","WMP",66],
+[289,"MIZ-Aizwal","ENE",66],[290,"CHN-Velachery","STNK",66],
+[291,"AMB-Ambala Cantt","NRH",66],[292,"GUR-Sector 29","NNCR3",66],
+[293,"SVK-Thiruthangal Rd","STNK",66],[294,"BNG-Indra Nagar","SKA1",65],
+[295,"VAP-Vapi Business","WMUM2",65],[296,"KRN-Jagtial Road","STG",65],
+[297,"LUD-Malhar Road","NPJK",64],[298,"BNG-Whitefield","SKA1",64],
+[299,"HYD-Shaikpet","STG",64],[300,"NDD-Knowledge Park","NNCR2",62],
+[301,"HYD-Khajaguda","STG",62],[302,"DEL-Pitampura Mall","NNCR2",62],
+[303,"BHP-DB City Mall","WMP",61],[304,"NDD-Gaur City Mall","NNCR2",61],
+[305,"HYD-Kukatpally","STG",61],[306,"GWH-Kalapahar","ENE",61],
+[307,"ASN-MURGASOL","EWB",61],[308,"GWH-GS Road","ENE",60],
+[309,"GWH-SIX MILE","ENE",60],[310,"CHN-USMAN ROAD","STNK",60],
+[311,"BLR-MG ROAD","SKA1",60],[312,"BNG-Phoenix Mall","SKA1",59],
+[313,"ALW-Alwar","NRH",59],[314,"THN-Lake Shore","WMUM1",58],
+[315,"RAJ-150 RING ROAD","WGJ",58],[316,"THN-Kalyan","WMUM1",58],
+[317,"HYD-HITECH ROAD","STG",58],[318,"BNG-Jayanagar b","SKA2",57],
+[319,"BNG-RR Nagar","SKA1",57],[320,"HYD-Inorbit Mall","STG",56],
+[321,"NSK-Canada Corner","WROM2",56],[322,"THN-Ghodbunder","WMUM1",56],
+[323,"DUR-City Centre","EWB",56],[324,"IDR-Sapna Sangeeta","WMP",56],
+[325,"KHM-WYRA ROAD","STG",56],[326,"PNE-West End Mall","WROM1",54],
+[327,"AMR-Amritsar","NPJK",54],[328,"MUM-Phoenix Parel","WMUM2",54],
+[329,"GUR-Good Earth Mall","NNCR3",53],[330,"NGP-Pratap Nagar","WROM2",52],
+[331,"HYD-Attapur","STG",52],[332,"MUM-KURLA PHOENIX","WMUM1",52],
+[333,"Sonipat-Atlas Road","NRH",51],[334,"HYD-Secunderabad","STG",49],
+[335,"JAIPUR-MALVIYA NAGAR","NRH",49],[336,"BNG-Hennur","SKA1",48],
+[337,"BHP-Malviya Nagar","WMP",48],[338,"BNG-Phoenix Asia","SKA1",48],
+[339,"BNG-HSR LAYOUT","SKA2",44],[340,"MUM-Borivali","WMUM2",44],
+[341,"DEL-Shahdara","NNCR2",40],[342,"BVN-Waghawadi Road","WGJ",39],
+[343,"DEL-Omaxe Chowk","NNCR1",38],[344,"Jhansi-Civil Lines","NUP1",31],
+[345,"Kanpur-Saket Nagar","NUP1",31],[346,"Margoa-Aquem","WROM1",16]
+];
+
+const REGIONS=[
   {r:"SAP",n:84.2,d:90.1,j:93.0,p:95},
   {r:"EBJ",n:66.5,d:74.3,j:87.2,p:94},
   {r:"EOC",n:76.1,d:79.4,j:87.1,p:93},
@@ -210,7 +651,7 @@ const REGIONS = [
   {r:"SKA1",n:59.0,d:63.0,j:70.0,p:48}
 ];
 
-const MONTHS = [
+const MONTHS=[
   {n:1,name:"January",score:79.2,live:true,file:"jan-2026.html"},
   {n:2,name:"February",live:false},{n:3,name:"March",live:false},
   {n:4,name:"April",live:false},{n:5,name:"May",live:false},
@@ -220,17 +661,34 @@ const MONTHS = [
   {n:12,name:"December",live:false}
 ];
 
-function init() {
-  const sorted = [...REGIONS].sort((a,b)=>b.j-a.j);
-  const best = sorted[0], worst = sorted[sorted.length-1];
-  document.getElementById('kpi-top-name').textContent = best.r + ' Cluster';
-  document.getElementById('kpi-top-score').textContent = best.j.toFixed(1) + '% — Elite Performance';
-  document.getElementById('kpi-worst-name').textContent = worst.r + ' Cluster';
-  document.getElementById('kpi-worst-score').textContent = worst.j.toFixed(1) + '% — Action Required';
+let activeRegion=null;
+let pendingRegionFilter=null;
 
-  document.getElementById('monthsGrid').innerHTML = MONTHS.map(m => {
-    const num = String(m.n).padStart(2,'0');
-    if (m.live) return `
+// ── TIER ──
+function getTier(s){
+  if(s>=100) return 's';
+  if(s>=95)  return 'd';
+  if(s>=90)  return 'g';
+  if(s>=85)  return 'sv';
+  return 'c';
+}
+function tierLabel(s){
+  return {s:'Solitaire',d:'Diamond',g:'Gold',sv:'Silver',c:'Copper'}[getTier(s)];
+}
+
+window.onload=function(){
+  // KPIs
+  const sorted=[...REGIONS].sort((a,b)=>b.j-a.j);
+  const best=sorted[0],worst=sorted[sorted.length-1];
+  document.getElementById('kpi-top-name').textContent=best.r;
+  document.getElementById('kpi-top-score').textContent=best.j.toFixed(1)+'% — Elite Performance';
+  document.getElementById('kpi-worst-name').textContent=worst.r;
+  document.getElementById('kpi-worst-score').textContent=worst.j.toFixed(1)+'% — Action Required';
+
+  // Months
+  document.getElementById('monthsGrid').innerHTML=MONTHS.map(m=>{
+    const num=String(m.n).padStart(2,'0');
+    if(m.live) return `
       <div class="month-card live" onclick="openViewer('${m.file}','${m.name} 2026')">
         <div class="month-live-badge">Live</div>
         <div class="month-number">Month ${num}</div>
@@ -249,12 +707,20 @@ function init() {
       </div>`;
   }).join('');
 
-  document.getElementById('regionBody').innerHTML = REGIONS.map(r => {
-    const v = (r.j - r.d).toFixed(1);
-    const isUp = parseFloat(v) >= 0;
-    const pClass = r.p >= 90 ? 'hi' : r.p < 70 ? 'lo' : '';
-    return `<tr>
-      <td><span class="cluster-label">${r.r}</span></td>
+  // Region table
+  document.getElementById('regionBody').innerHTML=REGIONS.map(r=>{
+    const v=(r.j-r.d).toFixed(1);
+    const isUp=parseFloat(v)>=0;
+    const pClass=r.p>=90?'hi':r.p<70?'lo':'';
+    return `<tr class="region-row" onclick="openRegionPanel('${r.r}')">
+      <td>
+        <div class="region-name-cell">
+          <div class="region-click-hint">
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+          ${r.r}
+        </div>
+      </td>
       <td><span class="score-fig">${r.n}%</span></td>
       <td><span class="score-fig">${r.d}%</span></td>
       <td><span class="score-fig">${r.j}%</span></td>
@@ -262,20 +728,81 @@ function init() {
       <td><span class="pct-pill ${pClass}">${r.p}%</span></td>
     </tr>`;
   }).join('');
+};
+
+// ── REGION PANEL ──
+function openRegionPanel(code){
+  if(activeRegion===code){closePanel();return;}
+  activeRegion=code;
+
+  const stores=STORE_DATA.filter(s=>s[2]===code).sort((a,b)=>b[3]-a[3]);
+  const scores=stores.map(s=>s[3]);
+  const avg=scores.length?(scores.reduce((a,b)=>a+b,0)/scores.length).toFixed(1):0;
+  const best=scores.length?Math.max(...scores):0;
+  const above90=stores.filter(s=>s[3]>=90).length;
+
+  document.getElementById('panelRegionName').textContent=code+' Region';
+  document.getElementById('panelRegionCode').textContent=code;
+
+  document.getElementById('panelStats').innerHTML=`
+    <div class="panel-stat"><div class="panel-stat-val">${stores.length}</div><div class="panel-stat-label">Stores</div></div>
+    <div class="panel-stat"><div class="panel-stat-val">${avg}%</div><div class="panel-stat-label">Region Avg</div></div>
+    <div class="panel-stat"><div class="panel-stat-val">${best}%</div><div class="panel-stat-label">Top Score</div></div>
+    <div class="panel-stat"><div class="panel-stat-val">${above90}</div><div class="panel-stat-label">Stores ≥90%</div></div>`;
+
+  document.getElementById('panelStores').innerHTML=stores.map(s=>{
+    const t=getTier(s[3]);
+    return `<div class="store-mini">
+      <div class="store-mini-rank">#${s[0]}</div>
+      <div class="store-mini-info">
+        <div class="store-mini-name">${s[1]}</div>
+        <div style="font-size:10px;color:var(--text-muted);margin-top:2px;">${tierLabel(s[3])}</div>
+      </div>
+      <div class="store-mini-score score-${t}">${s[3]}%</div>
+    </div>`;
+  }).join('');
+
+  // highlight active row
+  document.querySelectorAll('.region-row').forEach(r=>r.style.background='');
+  const rows=document.querySelectorAll('.region-row');
+  rows.forEach(row=>{
+    if(row.querySelector('.region-name-cell')?.textContent.includes(code)){
+      row.querySelectorAll('td').forEach(td=>td.style.background='rgba(201,168,76,0.06)');
+    }
+  });
+
+  const panel=document.getElementById('regionPanel');
+  panel.classList.add('open');
+  pendingRegionFilter=code;
+  setTimeout(()=>panel.scrollIntoView({behavior:'smooth',block:'nearest'}),50);
 }
 
-function openViewer(file, title) {
-  document.getElementById('viewerTitle').textContent = title + ' — Intelligence Report';
-  document.getElementById('reportFrame').src = file;
+function closePanel(){
+  document.getElementById('regionPanel').classList.remove('open');
+  document.querySelectorAll('.region-row td').forEach(td=>td.style.background='');
+  activeRegion=null;
+}
+
+function openFullReport(){
+  if(!pendingRegionFilter) return;
+  const src=`jan-2026.html?region=${encodeURIComponent(pendingRegionFilter)}`;
+  document.getElementById('viewerTitle').textContent=pendingRegionFilter+' Region — January 2026 Report';
+  document.getElementById('reportFrame').src=src;
   document.getElementById('viewer').classList.add('open');
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow='hidden';
 }
-function closeViewer() {
+
+function openViewer(file,title){
+  document.getElementById('viewerTitle').textContent=title+' — Performance Report';
+  document.getElementById('reportFrame').src=file;
+  document.getElementById('viewer').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeViewer(){
   document.getElementById('viewer').classList.remove('open');
-  document.getElementById('reportFrame').src = '';
-  document.body.style.overflow = '';
+  document.getElementById('reportFrame').src='';
+  document.body.style.overflow='';
 }
-window.onload = init;
 </script>
 </body>
 </html>

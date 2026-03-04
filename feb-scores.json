@@ -1,0 +1,3314 @@
+[
+  {
+    "code": "CLHYDJBH",
+    "score": 37.0,
+    "nps": 0.0,
+    "reviews": 21.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CLBLRPMM",
+    "score": 38.0,
+    "nps": 0.0,
+    "reviews": 13.0,
+    "ops": 12.0,
+    "km": 0.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFHYDSFM",
+    "score": 64.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 5.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDELPCM",
+    "score": 91.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 17.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLGURABM",
+    "score": 83.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFCHNCDR",
+    "score": 85.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMUMVVM",
+    "score": 80.0,
+    "nps": 20.0,
+    "reviews": 23.0,
+    "ops": 12.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLPUNPMM",
+    "score": 76.0,
+    "nps": 15.0,
+    "reviews": 20.0,
+    "ops": 12.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFNOIDIM",
+    "score": 87.0,
+    "nps": 20.0,
+    "reviews": 18.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRBLRKOR",
+    "score": 99.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLGURGSM",
+    "score": 75.0,
+    "nps": 5.0,
+    "reviews": 23.0,
+    "ops": 19.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFGZBSPM",
+    "score": 76.0,
+    "nps": 10.0,
+    "reviews": 23.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLMUMIFM",
+    "score": 94.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLPUNWEM",
+    "score": 40.0,
+    "nps": 0.0,
+    "reviews": 13.0,
+    "ops": 16.0,
+    "km": 11.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFMUMSCM",
+    "score": 75.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDDNPCM",
+    "score": 88.0,
+    "nps": 23.0,
+    "reviews": 20.0,
+    "ops": 19.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFDELDWK",
+    "score": 60.0,
+    "nps": 5.0,
+    "reviews": 21.0,
+    "ops": 19.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFLKWSGM",
+    "score": 57.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFVDDIBM",
+    "score": 78.0,
+    "nps": 25.0,
+    "reviews": 23.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFKOLAPM",
+    "score": 82.0,
+    "nps": 15.0,
+    "reviews": 23.0,
+    "ops": 20.0,
+    "km": 11.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFIDRMGR",
+    "score": 83.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLDELSTX",
+    "score": 23.0,
+    "nps": 0.0,
+    "reviews": 8.0,
+    "ops": 15.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFHYDPNG",
+    "score": 81.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 11.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLKOLPKS",
+    "score": 69.0,
+    "nps": 20.0,
+    "reviews": 18.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRKMH",
+    "score": 77.0,
+    "nps": 15.0,
+    "reviews": 16.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFDELROH",
+    "score": 92.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRJAY",
+    "score": 65.0,
+    "nps": 0.0,
+    "reviews": 21.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFKOLSCM",
+    "score": 89.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFHYDIBM",
+    "score": 75.0,
+    "nps": 10.0,
+    "reviews": 19.0,
+    "ops": 19.0,
+    "km": 13.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFDELLPN",
+    "score": 93.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRMTH",
+    "score": 90.0,
+    "nps": 20.0,
+    "reviews": 23.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBBREOM",
+    "score": 89.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDELPVR",
+    "score": 78.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRBHPDCM",
+    "score": 61.0,
+    "nps": 10.0,
+    "reviews": 21.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFHYDHIM",
+    "score": 21.0,
+    "nps": 0.0,
+    "reviews": 8.0,
+    "ops": 13.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFGZBABR",
+    "score": 85.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 5.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFNOIN18",
+    "score": 89.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRRYM",
+    "score": 95.0,
+    "nps": 25.0,
+    "reviews": 23.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CRJMDBST",
+    "score": 92.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFRNCRMR",
+    "score": 81.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 5.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFJBPGGR",
+    "score": 74.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 5.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBLRHSR",
+    "score": 49.0,
+    "nps": 0.0,
+    "reviews": 14.0,
+    "ops": 17.0,
+    "km": 5.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFJPRMIR",
+    "score": 95.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFPATNPC",
+    "score": 97.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLMUMADH",
+    "score": 87.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 17.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFGWHCCM",
+    "score": 76.0,
+    "nps": 23.0,
+    "reviews": 18.0,
+    "ops": 16.0,
+    "km": 5.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLAMDCGR",
+    "score": 84.0,
+    "nps": 15.0,
+    "reviews": 23.0,
+    "ops": 19.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRVCM",
+    "score": 83.0,
+    "nps": 15.0,
+    "reviews": 21.0,
+    "ops": 18.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFNSKCCR",
+    "score": 41.0,
+    "nps": 0.0,
+    "reviews": 0.0,
+    "ops": 15.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFKOLCC1",
+    "score": 73.0,
+    "nps": 0.0,
+    "reviews": 23.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDELKMN",
+    "score": 76.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 0.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFCHNVRM",
+    "score": 87.0,
+    "nps": 23.0,
+    "reviews": 21.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFMOHVRM",
+    "score": 72.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLBLRIND",
+    "score": 66.0,
+    "nps": 15.0,
+    "reviews": 20.0,
+    "ops": 12.0,
+    "km": 5.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFLUDMHR",
+    "score": 99.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFHYDASR",
+    "score": 28.0,
+    "nps": 0.0,
+    "reviews": 9.0,
+    "ops": 19.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CRCBECCR",
+    "score": 89.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFKOLNGB",
+    "score": 95.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRSILCCM",
+    "score": 77.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDELPCV",
+    "score": 96.0,
+    "nps": 23.0,
+    "reviews": 23.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRDNBMRE",
+    "score": 88.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRBBRCSP",
+    "score": 96.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRSKN",
+    "score": 71.0,
+    "nps": 20.0,
+    "reviews": 21.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CRPRYSPM",
+    "score": 98.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFCHDS17",
+    "score": 95.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDELRAJ",
+    "score": 90.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRORM",
+    "score": 72.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFMYSURS",
+    "score": 78.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFPATBCR",
+    "score": 65.0,
+    "nps": 10.0,
+    "reviews": 13.0,
+    "ops": 16.0,
+    "km": 11.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFCHNADR",
+    "score": 66.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 11.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBLRBEL",
+    "score": 72.0,
+    "nps": 23.0,
+    "reviews": 4.0,
+    "ops": 17.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBLPMSG",
+    "score": 60.0,
+    "nps": 10.0,
+    "reviews": 23.0,
+    "ops": 13.0,
+    "km": 14.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFNGPDHP",
+    "score": 62.0,
+    "nps": 20.0,
+    "reviews": 21.0,
+    "ops": 16.0,
+    "km": 5.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFAIZTGS",
+    "score": 65.0,
+    "nps": 20.0,
+    "reviews": 15.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFVJWMGR",
+    "score": 91.0,
+    "nps": 20.0,
+    "reviews": 23.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLPUNBUN",
+    "score": 84.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDELVGM",
+    "score": 42.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 5.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CRGURMGR",
+    "score": 87.0,
+    "nps": 20.0,
+    "reviews": 20.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLKOLGHT",
+    "score": 94.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLAMDSJR",
+    "score": 88.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 5.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRSJP",
+    "score": 59.0,
+    "nps": 5.0,
+    "reviews": 12.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBLRBSK",
+    "score": 74.0,
+    "nps": 10.0,
+    "reviews": 16.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFCHNANN",
+    "score": 81.0,
+    "nps": 15.0,
+    "reviews": 23.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFDELPTR",
+    "score": 65.0,
+    "nps": 15.0,
+    "reviews": 10.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFVIZSVR",
+    "score": 85.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFMUMTGR",
+    "score": 56.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CLMUMBOR",
+    "score": 60.0,
+    "nps": 5.0,
+    "reviews": 16.0,
+    "ops": 12.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFSRTGDR",
+    "score": 94.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRAGRCHR",
+    "score": 90.0,
+    "nps": 23.0,
+    "reviews": 23.0,
+    "ops": 16.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFCHDMMJ",
+    "score": 57.0,
+    "nps": 20.0,
+    "reviews": 10.0,
+    "ops": 14.0,
+    "km": 0.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFCHNVEL",
+    "score": 87.0,
+    "nps": 20.0,
+    "reviews": 23.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLMUMBTR",
+    "score": 88.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CRHISPLA",
+    "score": 70.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFJPRVSN",
+    "score": 86.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFBRMNTR",
+    "score": 73.0,
+    "nps": 10.0,
+    "reviews": 23.0,
+    "ops": 20.0,
+    "km": 5.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFKOLTYG",
+    "score": 84.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFHYDDSN",
+    "score": 92.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRPTLBPR",
+    "score": 78.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRRKLBIR",
+    "score": 96.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRIMPDMR",
+    "score": 90.0,
+    "nps": 25.0,
+    "reviews": 21.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBLRCMS",
+    "score": 79.0,
+    "nps": 20.0,
+    "reviews": 15.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFLKWMHN",
+    "score": 86.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFKOLBHL",
+    "score": 86.0,
+    "nps": 23.0,
+    "reviews": 20.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFPATKRB",
+    "score": 76.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRBBRJNP",
+    "score": 95.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFPUNKRV",
+    "score": 71.0,
+    "nps": 25.0,
+    "reviews": 13.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFRPRPDR",
+    "score": 71.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 17.0,
+    "km": 0.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFIDRABR",
+    "score": 56.0,
+    "nps": 0.0,
+    "reviews": 18.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CRALIMRR",
+    "score": 86.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 13.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFBLRECT",
+    "score": 60.0,
+    "nps": 5.0,
+    "reviews": 11.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBLRWFL",
+    "score": 66.0,
+    "nps": 0.0,
+    "reviews": 19.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFGWHGSR",
+    "score": 83.0,
+    "nps": 25.0,
+    "reviews": 15.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRDIBHSR",
+    "score": 68.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFVNSVPZ",
+    "score": 95.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBLRKKP",
+    "score": 71.0,
+    "nps": 15.0,
+    "reviews": 23.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFAGAHGB",
+    "score": 89.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 14.0,
+    "km": 12.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFNOIGCM",
+    "score": 79.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CAFDBMMR",
+    "score": 98.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLDELKPR",
+    "score": 92.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLPUNPCH",
+    "score": 55.0,
+    "nps": 5.0,
+    "reviews": 21.0,
+    "ops": 14.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFPJMMGR",
+    "score": 80.0,
+    "nps": 20.0,
+    "reviews": 23.0,
+    "ops": 12.0,
+    "km": 13.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CFDELJNP",
+    "score": 80.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRFKM",
+    "score": 69.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 5.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLAMDCHK",
+    "score": 88.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CAGURS14",
+    "score": 91.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 13.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFDELMDT",
+    "score": 80.0,
+    "nps": 23.0,
+    "reviews": 13.0,
+    "ops": 20.0,
+    "km": 11.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CLKOLKKG",
+    "score": 87.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFKOLCNP",
+    "score": 93.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMERBBR",
+    "score": 78.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CLHYDCDN",
+    "score": 93.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFJALMDT",
+    "score": 86.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 11.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFGUNLKP",
+    "score": 98.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFCHNSLR",
+    "score": 71.0,
+    "nps": 10.0,
+    "reviews": 23.0,
+    "ops": 18.0,
+    "km": 5.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFHUBKPR",
+    "score": 34.0,
+    "nps": 0.0,
+    "reviews": 14.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFJBPNBR",
+    "score": 85.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 17.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRCTKCTR",
+    "score": 85.0,
+    "nps": 15.0,
+    "reviews": 23.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFAMDSBN",
+    "score": 51.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 11.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CLMUMMLD",
+    "score": 100.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRSRICWM",
+    "score": 62.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLBLRMMR",
+    "score": 89.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFDELSHD",
+    "score": 81.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 13.0,
+    "km": 5.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFSRTADJ",
+    "score": 94.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFAMBCNT",
+    "score": 95.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBRDGTR",
+    "score": 92.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRRAJRIR",
+    "score": 90.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMGLBJI",
+    "score": 91.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFMUMMIR",
+    "score": 94.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFARGJLR",
+    "score": 96.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMDRKKN",
+    "score": 95.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMRGAQM",
+    "score": 44.0,
+    "nps": 10.0,
+    "reviews": 15.0,
+    "ops": 12.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFCOCMGR",
+    "score": 70.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFGURAJS",
+    "score": 71.0,
+    "nps": 15.0,
+    "reviews": 21.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRJPN",
+    "score": 80.0,
+    "nps": 15.0,
+    "reviews": 21.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFKOLBTR",
+    "score": 59.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFDDNUCM",
+    "score": 98.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFCBERSP",
+    "score": 49.0,
+    "nps": 10.0,
+    "reviews": 20.0,
+    "ops": 19.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFALWJCR",
+    "score": 75.0,
+    "nps": 20.0,
+    "reviews": 21.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CRTRCKBR",
+    "score": 87.0,
+    "nps": 25.0,
+    "reviews": 23.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFBLRRRN",
+    "score": 93.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFPNPMDT",
+    "score": 85.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFGURS29",
+    "score": 92.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLDELSCM",
+    "score": 88.0,
+    "nps": 23.0,
+    "reviews": 23.0,
+    "ops": 16.0,
+    "km": 13.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFLKWLUM",
+    "score": 90.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 15.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CFRNCHMR",
+    "score": 86.0,
+    "nps": 23.0,
+    "reviews": 20.0,
+    "ops": 17.0,
+    "km": 11.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFPUNHDP",
+    "score": 60.0,
+    "nps": 15.0,
+    "reviews": 0.0,
+    "ops": 18.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFHYDKPL",
+    "score": 77.0,
+    "nps": 10.0,
+    "reviews": 20.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLPUNJMR",
+    "score": 71.0,
+    "nps": 15.0,
+    "reviews": 15.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFCHNOMR",
+    "score": 86.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFKNPSWN",
+    "score": 92.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFHYDKDP",
+    "score": 65.0,
+    "nps": 15.0,
+    "reviews": 21.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFANTRJR",
+    "score": 94.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 11.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFAMRMLR",
+    "score": 72.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 0.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CFGWLDBM",
+    "score": 64.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 17.0,
+    "km": 12.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFTRPABR",
+    "score": 96.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMUMTVK",
+    "score": 92.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFMUMGBR",
+    "score": 45.0,
+    "nps": 0.0,
+    "reviews": 18.0,
+    "ops": 12.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLMUMRCM",
+    "score": 79.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFHWHAVM",
+    "score": 89.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFKNGDSR",
+    "score": 96.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 11.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFTVRMGR",
+    "score": 84.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFDURCTC",
+    "score": 90.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 11.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFJMUBHP",
+    "score": 38.0,
+    "nps": 0.0,
+    "reviews": 23.0,
+    "ops": 15.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFPUDKMS",
+    "score": 96.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLPUNTOH",
+    "score": 28.0,
+    "nps": 0.0,
+    "reviews": 0.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CABLRRMM",
+    "score": 89.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLKOLLKM",
+    "score": 82.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 14.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBLRBMH",
+    "score": 86.0,
+    "nps": 23.0,
+    "reviews": 23.0,
+    "ops": 20.0,
+    "km": 5.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLPUNSTR",
+    "score": 41.0,
+    "nps": 0.0,
+    "reviews": 0.0,
+    "ops": 15.0,
+    "km": 15.0,
+    "elearn": 11.0
+  },
+  {
+    "code": "CFAJMANS",
+    "score": 87.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFVAPCBC",
+    "score": 79.0,
+    "nps": 20.0,
+    "reviews": 21.0,
+    "ops": 15.0,
+    "km": 10.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CLLKWGMN",
+    "score": 84.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRHEN",
+    "score": 51.0,
+    "nps": 0.0,
+    "reviews": 23.0,
+    "ops": 17.0,
+    "km": 11.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFDELPJM",
+    "score": 84.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMUMKGR",
+    "score": 89.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLHYDSCD",
+    "score": 32.0,
+    "nps": 5.0,
+    "reviews": 0.0,
+    "ops": 17.0,
+    "km": 10.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFSHMMLR",
+    "score": 84.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFPATSMO",
+    "score": 81.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFHYDSKP",
+    "score": 71.0,
+    "nps": 20.0,
+    "reviews": 13.0,
+    "ops": 19.0,
+    "km": 5.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CRSILSVR",
+    "score": 76.0,
+    "nps": 15.0,
+    "reviews": 16.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRPATBLR",
+    "score": 87.0,
+    "nps": 15.0,
+    "reviews": 23.0,
+    "ops": 19.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFIDRPCM",
+    "score": 68.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 13.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFMUMPNL",
+    "score": 88.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFNANVIP",
+    "score": 86.0,
+    "nps": 20.0,
+    "reviews": 18.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFCBEAVR",
+    "score": 94.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRBERDNR",
+    "score": 93.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 11.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFVDDKRB",
+    "score": 83.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLSBKG",
+    "score": 94.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 11.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMTHKRN",
+    "score": 96.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBGPKCR",
+    "score": 46.0,
+    "nps": 0.0,
+    "reviews": 10.0,
+    "ops": 16.0,
+    "km": 5.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRBBRSBN",
+    "score": 95.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLMUMVIR",
+    "score": 86.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 11.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFKURRSR",
+    "score": 80.0,
+    "nps": 23.0,
+    "reviews": 23.0,
+    "ops": 15.0,
+    "km": 5.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBHTBNB",
+    "score": 73.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFYMNGPR",
+    "score": 89.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 5.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFPUNPPS",
+    "score": 91.0,
+    "nps": 25.0,
+    "reviews": 20.0,
+    "ops": 17.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFLKWALB",
+    "score": 85.0,
+    "nps": 15.0,
+    "reviews": 23.0,
+    "ops": 19.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBRLCVL",
+    "score": 73.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 5.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CLHYDKKP",
+    "score": 28.0,
+    "nps": 0.0,
+    "reviews": 0.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CFKOTGMP",
+    "score": 70.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFBLGTLW",
+    "score": 88.0,
+    "nps": 25.0,
+    "reviews": 21.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CAANDVVN",
+    "score": 87.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFMUMV17",
+    "score": 99.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFTNVPKT",
+    "score": 97.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLCHNPMR",
+    "score": 57.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 12.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFNOIGBS",
+    "score": 84.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 5.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFLUDMDT",
+    "score": 98.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFGKPMCR",
+    "score": 87.0,
+    "nps": 20.0,
+    "reviews": 18.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFMYSNXM",
+    "score": 53.0,
+    "nps": 10.0,
+    "reviews": 15.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CFIDRSSR",
+    "score": 80.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 10.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFSLMOMR",
+    "score": 92.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFAMDMNG",
+    "score": 69.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 11.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFHOSBGR",
+    "score": 92.0,
+    "nps": 25.0,
+    "reviews": 21.0,
+    "ops": 19.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRBHPMVN",
+    "score": 54.0,
+    "nps": 5.0,
+    "reviews": 23.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFGWHKLP",
+    "score": 77.0,
+    "nps": 25.0,
+    "reviews": 21.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDDNGMS",
+    "score": 95.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 15.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFROHDLR",
+    "score": 91.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 11.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFVIZMDW",
+    "score": 96.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFMUZKLM",
+    "score": 82.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 14.0,
+    "km": 10.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFCHNABT",
+    "score": 84.0,
+    "nps": 20.0,
+    "reviews": 21.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFASNMGL",
+    "score": 92.0,
+    "nps": 25.0,
+    "reviews": 23.0,
+    "ops": 17.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFNGPPTN",
+    "score": 46.0,
+    "nps": 10.0,
+    "reviews": 8.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFBVNWWR",
+    "score": 92.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFNELMBR",
+    "score": 98.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFFDBPFM",
+    "score": 80.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFGDHSSS",
+    "score": 98.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFPATHBR",
+    "score": 85.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDBGMZP",
+    "score": 56.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 5.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFCHNTNR",
+    "score": 91.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLBLRPAM",
+    "score": 86.0,
+    "nps": 20.0,
+    "reviews": 21.0,
+    "ops": 19.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFUDIASN",
+    "score": 60.0,
+    "nps": 25.0,
+    "reviews": 23.0,
+    "ops": 12.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFPUNNIB",
+    "score": 83.0,
+    "nps": 25.0,
+    "reviews": 21.0,
+    "ops": 12.0,
+    "km": 13.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CFRPRVIP",
+    "score": 77.0,
+    "nps": 20.0,
+    "reviews": 15.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFJODCRD",
+    "score": 82.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 17.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFNOISPM",
+    "score": 79.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFERDRKV",
+    "score": 61.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFHRDRNP",
+    "score": 98.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMGLFZM",
+    "score": 81.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFMUMCBR",
+    "score": 88.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDMRKMH",
+    "score": 91.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFTRUPLR",
+    "score": 96.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMUMKLN",
+    "score": 67.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 11.0
+  },
+  {
+    "code": "CFKOHDAC",
+    "score": 93.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFWRLHMK",
+    "score": 88.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFHYDNLG",
+    "score": 93.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFSBPBDR",
+    "score": 91.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFKOLKMG",
+    "score": 87.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 14.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CADELOCM",
+    "score": 45.0,
+    "nps": 0.0,
+    "reviews": 15.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CACHNECR",
+    "score": 94.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CABLRKRP",
+    "score": 92.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CRMBDCVL",
+    "score": 56.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CLMUMPPM",
+    "score": 90.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFHLDNTR",
+    "score": 93.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 13.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFSONATR",
+    "score": 45.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 5.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CLDELPRM",
+    "score": 94.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFKOLSDP",
+    "score": 84.0,
+    "nps": 15.0,
+    "reviews": 20.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFHYDKOK",
+    "score": 81.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 11.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFZKPCAH",
+    "score": 97.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFNAVLSI",
+    "score": 92.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 17.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFHGHSMP",
+    "score": 60.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFSAHDLR",
+    "score": 83.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 10.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFPTKDHR",
+    "score": 95.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBKRSTM",
+    "score": 60.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 13.0,
+    "km": 12.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFKARKPR",
+    "score": 88.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFCHNMRM",
+    "score": 78.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFMUMVSI",
+    "score": 74.0,
+    "nps": 10.0,
+    "reviews": 15.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFNTPKCH",
+    "score": 91.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFGURGEM",
+    "score": 87.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFITNESC",
+    "score": 64.0,
+    "nps": 20.0,
+    "reviews": 0.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFRJMJNR",
+    "score": 89.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFKRNJGT",
+    "score": 78.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 14.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFHYDATP",
+    "score": 58.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 15.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFAYDRMP",
+    "score": 70.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 14.0,
+    "km": 14.0,
+    "elearn": 7.0
+  },
+  {
+    "code": "CFJHSCVL",
+    "score": 51.0,
+    "nps": 5.0,
+    "reviews": 15.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFKNPSKN",
+    "score": 89.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFOGLKNR",
+    "score": 96.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFCHNVLV",
+    "score": 77.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLMUMMLR",
+    "score": 77.0,
+    "nps": 20.0,
+    "reviews": 10.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFBLRMEM",
+    "score": 89.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFKTNJBR",
+    "score": 100.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFCHWPSR",
+    "score": 68.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 13.0,
+    "km": 13.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CLPUNPWM",
+    "score": 29.0,
+    "nps": 0.0,
+    "reviews": 0.0,
+    "ops": 16.0,
+    "km": 13.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFTJVPKR",
+    "score": 88.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 12.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFUJNFGJ",
+    "score": 89.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 13.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBHLNHR",
+    "score": 58.0,
+    "nps": 0.0,
+    "reviews": 10.0,
+    "ops": 18.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFJLNRRD",
+    "score": 71.0,
+    "nps": 10.0,
+    "reviews": 15.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBRHLKR",
+    "score": 94.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFGNTWPM",
+    "score": 81.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFHYDHTC",
+    "score": 65.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFAMDSBR",
+    "score": 86.0,
+    "nps": 25.0,
+    "reviews": 21.0,
+    "ops": 16.0,
+    "km": 11.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFCBEBFM",
+    "score": 83.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFVNSBLP",
+    "score": 81.0,
+    "nps": 20.0,
+    "reviews": 20.0,
+    "ops": 12.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFGDMRTR",
+    "score": 82.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 13.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLMUMBOM",
+    "score": 59.0,
+    "nps": 15.0,
+    "reviews": 5.0,
+    "ops": 13.0,
+    "km": 13.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFKHMWYR",
+    "score": 51.0,
+    "nps": 20.0,
+    "reviews": 15.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFHGHCHN",
+    "score": 76.0,
+    "nps": 15.0,
+    "reviews": 21.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CRCTKCDA",
+    "score": 80.0,
+    "nps": 25.0,
+    "reviews": 23.0,
+    "ops": 18.0,
+    "km": 14.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFMHSRUR",
+    "score": 84.0,
+    "nps": 25.0,
+    "reviews": 20.0,
+    "ops": 12.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFNOIKNP",
+    "score": 89.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 10.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFRWAALR",
+    "score": 77.0,
+    "nps": 15.0,
+    "reviews": 20.0,
+    "ops": 18.0,
+    "km": 12.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CFVLRKMR",
+    "score": 83.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 18.0,
+    "km": 12.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFGZBIAM",
+    "score": 95.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFMDPKRT",
+    "score": 97.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFGYASWP",
+    "score": 84.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRJPRMLN",
+    "score": 66.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 5.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFCOCPLV",
+    "score": 96.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFCBETUD",
+    "score": 68.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFHYDVNP",
+    "score": 94.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFRRKNHN",
+    "score": 82.0,
+    "nps": 23.0,
+    "reviews": 10.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFGWHSME",
+    "score": 82.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFKKNSRP",
+    "score": 91.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 11.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CLLKWPPM",
+    "score": 66.0,
+    "nps": 0.0,
+    "reviews": 23.0,
+    "ops": 16.0,
+    "km": 14.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFHSPMLR",
+    "score": 82.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 5.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFBLRFSM",
+    "score": 82.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 10.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CLNOIACM",
+    "score": 46.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 5.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFAMDNKL",
+    "score": 68.0,
+    "nps": 25.0,
+    "reviews": 0.0,
+    "ops": 19.0,
+    "km": 11.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFKOLJDV",
+    "score": 68.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 15.0,
+    "km": 10.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFNMKPDR",
+    "score": 93.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLMUMGOM",
+    "score": 89.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFSHLPLB",
+    "score": 89.0,
+    "nps": 25.0,
+    "reviews": 21.0,
+    "ops": 19.0,
+    "km": 13.0,
+    "elearn": 11.0
+  },
+  {
+    "code": "CFHYDKHJ",
+    "score": 81.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 8.0
+  },
+  {
+    "code": "CRSVKTHR",
+    "score": 99.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 14.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFKOLBKP",
+    "score": 80.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 10.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFMERGRH",
+    "score": 71.0,
+    "nps": 25.0,
+    "reviews": 0.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRDNBSDH",
+    "score": 98.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CFDDNDDM",
+    "score": 97.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 19.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CRBSFRNR",
+    "score": 66.0,
+    "nps": 0.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFANIPBL",
+    "score": 60.0,
+    "nps": 25.0,
+    "reviews": 0.0,
+    "ops": 16.0,
+    "km": 5.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CLCHNUSN",
+    "score": 34.0,
+    "nps": 0.0,
+    "reviews": 18.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CLBLRMGR",
+    "score": 80.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 14.0,
+    "km": 0.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFDELPEM",
+    "score": 74.0,
+    "nps": 25.0,
+    "reviews": 23.0,
+    "ops": 12.0,
+    "km": 0.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CRPATCCM",
+    "score": 98.0,
+    "nps": 23.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 15.0
+  },
+  {
+    "code": "CLMUMKPM",
+    "score": 81.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFMUMDMV",
+    "score": 98.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CFKOLBST",
+    "score": 84.0,
+    "nps": 15.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CRAGRSBR",
+    "score": 69.0,
+    "nps": 5.0,
+    "reviews": 25.0,
+    "ops": 13.0,
+    "km": 15.0,
+    "elearn": 11.0
+  },
+  {
+    "code": "CFAZMNRC",
+    "score": 74.0,
+    "nps": 20.0,
+    "reviews": 15.0,
+    "ops": 12.0,
+    "km": 15.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CRBBRKDG",
+    "score": 91.0,
+    "nps": 20.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 11.0
+  },
+  {
+    "code": "CFTRCPRC",
+    "score": 80.0,
+    "nps": 10.0,
+    "reviews": 25.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CRRNCLCR",
+    "score": 79.0,
+    "nps": 10.0,
+    "reviews": 20.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 14.0
+  },
+  {
+    "code": "CFMUMAMB",
+    "score": 89.0,
+    "nps": 25.0,
+    "reviews": 20.0,
+    "ops": 16.0,
+    "km": 15.0,
+    "elearn": 13.0
+  },
+  {
+    "code": "CRGUBSTR",
+    "score": 67.0,
+    "nps": 10.0,
+    "reviews": 15.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 12.0
+  },
+  {
+    "code": "CLCHDNEM",
+    "score": 70.0,
+    "nps": 20.0,
+    "reviews": 15.0,
+    "ops": 20.0,
+    "km": 15.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFHYDLSM",
+    "score": 78.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CRJNPPLC",
+    "score": 52.0,
+    "nps": 20.0,
+    "reviews": 0.0,
+    "ops": 17.0,
+    "km": 15.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFDDGSLR",
+    "score": 73.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 12.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CRANGSCR",
+    "score": 78.0,
+    "nps": 25.0,
+    "reviews": 25.0,
+    "ops": 16.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CFDEOKLP",
+    "score": 76.0,
+    "nps": 25.0,
+    "reviews": 20.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 0.0
+  },
+  {
+    "code": "CRMDRBPS",
+    "score": 24.0,
+    "nps": 0.0,
+    "reviews": 0.0,
+    "ops": 20.0,
+    "km": 0.0,
+    "elearn": 0.0
+  }
+]

@@ -1,0 +1,1842 @@
+[
+  {
+    "code": "CLHYDJBH",
+    "name": "CL-ST-HYD-Jubilee Hills",
+    "region": "STG2"
+  },
+  {
+    "code": "CLBLRPMM",
+    "name": "CL-ST-BNG-Phoenix Mall",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFHYDSFM",
+    "name": "CL-ST-HYD-Forum Mall",
+    "region": "STG1"
+  },
+  {
+    "code": "CFDELPCM",
+    "name": "CL-ST-DEL-Pacific Mall-L2",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CLGURABM",
+    "name": "CL-ST-GUR-Ambience Mall",
+    "region": "NNCR3"
+  },
+  {
+    "code": "CFCHNCDR",
+    "name": "CL-ST-CHN-Cathedral Road",
+    "region": "STN1"
+  },
+  {
+    "code": "CFMUMVVM",
+    "name": "CL-ST-THN-LakeShore",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CLPUNPMM",
+    "name": "CL-ST-PNE-Phoenix Market City",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFNOIDIM",
+    "name": "CL-ST-NDD-DLF Mall-L2",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CRBLRKOR",
+    "name": "CL-ST-L3-BNG-Koramangala",
+    "region": "SKA2"
+  },
+  {
+    "code": "CLGURGSM",
+    "name": "CL-ST-GUR-Gold Souk Mall",
+    "region": "NNCR3"
+  },
+  {
+    "code": "CFGZBSPM",
+    "name": "CL-ST-GZB-Shipra Mall",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CLMUMIFM",
+    "name": "CL-ST-MUM-Infinity Mall",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CLPUNWEM",
+    "name": "CL-ST-PNE-West End Mall",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFMUMSCM",
+    "name": "CL-ST-MUM-Sea Woods MallL2",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CFDDNPCM",
+    "name": "CL-ST-DERD-Pacific Mall",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFDELDWK",
+    "name": "CL-ST-DEL-Dwarka",
+    "region": "NNCR3"
+  },
+  {
+    "code": "CFLKWSGM",
+    "name": "CL-ST-LKW-Saharaganj Mall",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFVDDIBM",
+    "name": "CL-ST-VAD-Inorbit Mall",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFKOLAPM",
+    "name": "CL-ST-KOL-Acropolis Mall",
+    "region": "EWB"
+  },
+  {
+    "code": "CFIDRMGR",
+    "name": "CL-ST-IDR-M G Road",
+    "region": "WMP"
+  },
+  {
+    "code": "CLDELSTX",
+    "name": "CL-ST-DEL-South Ex",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CFHYDPNG",
+    "name": "CL-ST-HYD-PanjaguttaL2",
+    "region": "STG2"
+  },
+  {
+    "code": "CLKOLPKS",
+    "name": "CL-ST-KOL- Park Street",
+    "region": "EWB"
+  },
+  {
+    "code": "CFBLRKMH",
+    "name": "CL-ST-BNG-KAMMANAHALLI",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFDELROH",
+    "name": "CL-ST-DEL-Rohini",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFBLRJAY",
+    "name": "CL-ST-BNG-Jayanagar",
+    "region": "SKA2"
+  },
+  {
+    "code": "CFKOLSCM",
+    "name": "CL-ST-KOL-SOUTH CITY MALL",
+    "region": "EWB"
+  },
+  {
+    "code": "CFHYDIBM",
+    "name": "CL-ST-HYD-Inorbit Mall",
+    "region": "STG1"
+  },
+  {
+    "code": "CFDELLPN",
+    "name": "CL-ST-DEL-Lajpat Nagar",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CFBLRMTH",
+    "name": "CL-ST-BNG-Marthahalli",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFBBREOM",
+    "name": "CL-ST-BNR-Rasulgarh",
+    "region": "EOC"
+  },
+  {
+    "code": "CFDELPVR",
+    "name": "CL-ST-DEL-Preet Vihar",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CRBHPDCM",
+    "name": "CL-ST-L3-BHP-DB City Mall",
+    "region": "WMP"
+  },
+  {
+    "code": "CFHYDHIM",
+    "name": "CL-ST-HYD-HIMAYAT NAGAR",
+    "region": "STG2"
+  },
+  {
+    "code": "CFGZBABR",
+    "name": "CL-ST-GZB-Ambedkar Road",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFNOIN18",
+    "name": "CL-ST-NDD-Noida18",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFBLRRYM",
+    "name": "CL-ST-BNG-RMZ YELANKHA",
+    "region": "SKA1"
+  },
+  {
+    "code": "CRJMDBST",
+    "name": "CL-ST-L3-JMD-BistupurRoad",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFRNCRMR",
+    "name": "CL-ST-RNC-Lake Road",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFJBPGGR",
+    "name": "CL-ST-JBR-GG ROAD",
+    "region": "WMP"
+  },
+  {
+    "code": "CFBLRHSR",
+    "name": "CL-ST-BNG-HSR LAYOUT",
+    "region": "SKA2"
+  },
+  {
+    "code": "CFJPRMIR",
+    "name": "CL-ST-JPR-MI Road Jaipur",
+    "region": "NRH"
+  },
+  {
+    "code": "CFPATNPC",
+    "name": "CL-ST-PAT-NB ROAD",
+    "region": "EBJ"
+  },
+  {
+    "code": "CLMUMADH",
+    "name": "CL-ST-MUM-Andheri West",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFGWHCCM",
+    "name": "CL-ST-GWH- City Center Mall",
+    "region": "ENE"
+  },
+  {
+    "code": "CLAMDCGR",
+    "name": "CL-ST-AMD-CG ROADL1",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFBLRVCM",
+    "name": "CL-ST-BNG-Vega City Mall",
+    "region": "SKA2"
+  },
+  {
+    "code": "CFNSKCCR",
+    "name": "CL-ST-NSK-Canada Corner",
+    "region": "WROM2"
+  },
+  {
+    "code": "CFKOLCC1",
+    "name": "CL-ST-KOL-City Center Mall",
+    "region": "EWB"
+  },
+  {
+    "code": "CFDELKMN",
+    "name": "CL-ST-DELHI-KamlaNagar",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFCHNVRM",
+    "name": "CL-ST-CHN-VRMallChennai",
+    "region": "STN2"
+  },
+  {
+    "code": "CFMOHVRM",
+    "name": "CL-ST-MOH-VR Mall",
+    "region": "NPJK"
+  },
+  {
+    "code": "CLBLRIND",
+    "name": "CL-ST-BNG-Indra Nagar",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFLUDMHR",
+    "name": "CL-ST-LUD-Malhar Road",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFHYDASR",
+    "name": "CL-ST-HYD-ASR Nagar",
+    "region": "STG2"
+  },
+  {
+    "code": "CRCBECCR",
+    "name": "CL-ST-L3-CBE-CrossCutRoad",
+    "region": "STNK"
+  },
+  {
+    "code": "CFKOLNGB",
+    "name": "CL-ST-KOL-Jessore Road",
+    "region": "EWB"
+  },
+  {
+    "code": "CRSILCCM",
+    "name": "CL-ST-L3-SIL-City Centre Mall",
+    "region": "ENE"
+  },
+  {
+    "code": "CFDELPCV",
+    "name": "CL-ST-DEL-Paschim Vihar",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CRDNBMRE",
+    "name": "CL-ST-L3-Dhanbad-BankMore",
+    "region": "EBJ"
+  },
+  {
+    "code": "CRBBRCSP",
+    "name": "CL-ST-L3-BNR-Chandrasekharpur",
+    "region": "EOC"
+  },
+  {
+    "code": "CFBLRSKN",
+    "name": "CL-ST-BNG- Forum Mall",
+    "region": "SKA1"
+  },
+  {
+    "code": "CRPRYSPM",
+    "name": "CL-ST-L3-UP-Prayagraj",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFCHDS17",
+    "name": "CL-ST-CHA-Sector 17",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFDELRAJ",
+    "name": "CL-ST-DEL-RajouriGarden Delhi",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CFBLRORM",
+    "name": "CL-ST-BNG-Orion Mall",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFMYSURS",
+    "name": "CL-ST-MYS- Devraj Road",
+    "region": "SKA2"
+  },
+  {
+    "code": "CFPATBCR",
+    "name": "CL-ST-PAT-Boring Canal Road",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFCHNADR",
+    "name": "CL-ST-CHN-ADYAR",
+    "region": "STN2"
+  },
+  {
+    "code": "CFBLRBEL",
+    "name": "CL-ST-BNG-New BEL Road",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFBLPMSG",
+    "name": "CL-ST-Bilaspur-AgrasenChowkL2",
+    "region": "EOC"
+  },
+  {
+    "code": "CFNGPDHP",
+    "name": "CL-ST-NGP-Dharampet",
+    "region": "WROM2"
+  },
+  {
+    "code": "CFAIZTGS",
+    "name": "CL-ST-MIZ-Aizwal",
+    "region": "ENE"
+  },
+  {
+    "code": "CFVJWMGR",
+    "name": "CL-ST-VJW-Labbipeta",
+    "region": "SAP"
+  },
+  {
+    "code": "CLPUNBUN",
+    "name": "CL-ST-PUN-Bund Garden",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFDELVGM",
+    "name": "CL-ST-DEL-Vegas Mall Dwarka",
+    "region": "NNCR3"
+  },
+  {
+    "code": "CRGURMGR",
+    "name": "CL-ST-L3-GUR-MGRoad",
+    "region": "NNCR3"
+  },
+  {
+    "code": "CLKOLGHT",
+    "name": "CL-ST-KOL-Gariahat",
+    "region": "EWB"
+  },
+  {
+    "code": "CLAMDSJR",
+    "name": "CL-ST-AMD-Satellite Road",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFBLRSJP",
+    "name": "CL-ST- BLR-SarjapurRoad Doddakanneli",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFBLRBSK",
+    "name": "CL-ST-BLR-Banashankari",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFCHNANN",
+    "name": "CL-ST-CHN-ANNA NAGAR",
+    "region": "STN2"
+  },
+  {
+    "code": "CFDELPTR",
+    "name": "CL-ST-DEL-PITAM PURA",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFVIZSVR",
+    "name": "CL-ST-VIZ-Sampath Vinayak Road",
+    "region": "SAP"
+  },
+  {
+    "code": "CFMUMTGR",
+    "name": "CL-ST-THN-GokhaleRoadL2",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CLMUMBOR",
+    "name": "CL-ST-MUM-Borivali",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFSRTGDR",
+    "name": "CL-ST-SRT-Ghod Dod Road",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CRAGRCHR",
+    "name": "CL-ST-L3-AGR-Church Road",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFCHDMMJ",
+    "name": "CL-ST-CHD-Manimajra",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFCHNVEL",
+    "name": "CL-ST-CHN-Velachery",
+    "region": "STN1"
+  },
+  {
+    "code": "CLMUMBTR",
+    "name": "CL-ST-MUM-Bandra Turner Road",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CRHISPLA",
+    "name": "CL-ST-L3-Hisar-PLAMarket",
+    "region": "NRH"
+  },
+  {
+    "code": "CFJPRVSN",
+    "name": "CL-ST-Jaipur-VaishaliNagar",
+    "region": "NRH"
+  },
+  {
+    "code": "CFBRMNTR",
+    "name": "CL-ST-Berhampore-NetajiRoadL2",
+    "region": "EWB"
+  },
+  {
+    "code": "CFKOLTYG",
+    "name": "CL-ST-KOL-Tollygunge",
+    "region": "EWB"
+  },
+  {
+    "code": "CFHYDDSN",
+    "name": "CL-ST-HYD-Dilsukhnagar",
+    "region": "STG2"
+  },
+  {
+    "code": "CRPTLBPR",
+    "name": "CL-ST-L3-Patiala-BhupindraRoad",
+    "region": "NPJK"
+  },
+  {
+    "code": "CRRKLBIR",
+    "name": "CL-ST-L3-Rourkela-BirsaRoad",
+    "region": "EOC"
+  },
+  {
+    "code": "CRIMPDMR",
+    "name": "CL-ST-L3-Imphal-DM CollegeRoad",
+    "region": "ENE"
+  },
+  {
+    "code": "CFBLRCMS",
+    "name": "CL-ST-BNG-CommercialStreet",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFLKWMHN",
+    "name": "CL-ST-LKW-Mahanagar",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFKOLBHL",
+    "name": "CL-ST-KOL-Behala",
+    "region": "EWB"
+  },
+  {
+    "code": "CFPATKRB",
+    "name": "CL-ST-PAT-KANKARBAGHL2",
+    "region": "EBJ"
+  },
+  {
+    "code": "CRBBRJNP",
+    "name": "CL-ST-L3-BNR-Janpath",
+    "region": "EOC"
+  },
+  {
+    "code": "CFPUNKRV",
+    "name": "CL-ST-PNE-KarveRoad",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFRPRPDR",
+    "name": "CL-ST-RPR-PANDRIL2",
+    "region": "EOC"
+  },
+  {
+    "code": "CFIDRABR",
+    "name": "CL-ST-Indore-ABRoad",
+    "region": "WMP"
+  },
+  {
+    "code": "CRALIMRR",
+    "name": "CL-ST-L3-Aligarh-MarrisRoad",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFBLRECT",
+    "name": "CL-ST-BNG-ElectronicCity",
+    "region": "SKA2"
+  },
+  {
+    "code": "CFBLRWFL",
+    "name": "CL-ST-BNG-Whitefield",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFGWHGSR",
+    "name": "CL-ST-GWH-GuwahatiGSRoad",
+    "region": "ENE"
+  },
+  {
+    "code": "CRDIBHSR",
+    "name": "CL-ST-L3-Dibrugarh-HS Road",
+    "region": "ENE"
+  },
+  {
+    "code": "CFVNSVPZ",
+    "name": "CL-ST-VNS-Varanasi VinayakPlaza",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFBLRKKP",
+    "name": "CL-ST-BLR-KanakpuraL2",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFAGAHGB",
+    "name": "CL-ST-AGA-AgartalaHGBRoad",
+    "region": "ENE"
+  },
+  {
+    "code": "CFNOIGCM",
+    "name": "CL-ST-NDD-GaurCityMall",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CAFDBMMR",
+    "name": "CL-ST-L8-Faridabad-MathuraMainRoad",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CLDELKPR",
+    "name": "CL-ST-DEL-KarolBaghPusaRoad",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CLPUNPCH",
+    "name": "CL-ST-PNE-Pimpri Chinchwad",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFPJMMGR",
+    "name": "CL-ST-Panjim-MGRoad",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFDELJNP",
+    "name": "CL-ST-DEL-Janakpuri",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CFBLRFKM",
+    "name": "CL-ST-BNG-ForumKoramangalaNew",
+    "region": "SKA2"
+  },
+  {
+    "code": "CLAMDCHK",
+    "name": "CL-ST-AMD-Chandkheda",
+    "region": "WGJ"
+  },
+  {
+    "code": "CAGURS14",
+    "name": "CL-ST-L8-GUR-GurgaonSec14",
+    "region": "NNCR3"
+  },
+  {
+    "code": "CFDELMDT",
+    "name": "CL-ST-DEL-ModelTownL2",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CLKOLKKG",
+    "name": "CL-ST-KOL-Kankurgachi",
+    "region": "EWB"
+  },
+  {
+    "code": "CFKOLCNP",
+    "name": "CL-ST-KOL-ChinarPark",
+    "region": "EWB"
+  },
+  {
+    "code": "CFMERBBR",
+    "name": "CL-ST-MER-BegumBridgeRoad",
+    "region": "NUP2"
+  },
+  {
+    "code": "CLHYDCDN",
+    "name": "CL-ST-HYD-ChandaNagar",
+    "region": "STG1"
+  },
+  {
+    "code": "CFJALMDT",
+    "name": "CL-ST-JAL-ModelTown",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFGUNLKP",
+    "name": "CL-ST-Guntur-Lakshmipuram",
+    "region": "SAP"
+  },
+  {
+    "code": "CFCHNSLR",
+    "name": "CL-ST-CHN-Selaiyur",
+    "region": "STN1"
+  },
+  {
+    "code": "CFHUBKPR",
+    "name": "CL-ST-HUB-Hubli KoppikarRoad",
+    "region": "SKA2"
+  },
+  {
+    "code": "CFJBPNBR",
+    "name": "CL-ST-JBR-NaudraBridge",
+    "region": "WMP"
+  },
+  {
+    "code": "CRCTKCTR",
+    "name": "CL-ST-L3-Cuttack-Cantonment Road",
+    "region": "EOC"
+  },
+  {
+    "code": "CFAMDSBN",
+    "name": "CL-ST-AMD-SindhuBhavanL2",
+    "region": "WGJ"
+  },
+  {
+    "code": "CLMUMMLD",
+    "name": "CL-ST-MUM-Mulund",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CRSRICWM",
+    "name": "CL-ST-L3-Srinagar-CityWalkMall",
+    "region": "NPJK"
+  },
+  {
+    "code": "CLBLRMMR",
+    "name": "CL-ST-BNG-MalleshwaramMargosaRoad",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFDELSHD",
+    "name": "CL-ST-DEL-ShahdaraL2",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFSRTADJ",
+    "name": "CL-ST-SRT-Surat Adajan",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFAMBCNT",
+    "name": "CL-ST-AMB-Ambala Cantt",
+    "region": "NRH"
+  },
+  {
+    "code": "CFBRDGTR",
+    "name": "CL-ST-BRD- Bardhaman GTRoad",
+    "region": "EWB"
+  },
+  {
+    "code": "CRRAJRIR",
+    "name": "CL-ST-L3-RAJ-150 RING ROAD",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFMGLBJI",
+    "name": "CL-ST-Mangalore-MangaloreBejai",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFMUMMIR",
+    "name": "CL-ST-MUM-MiraroadL2",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFARGJLR",
+    "name": "CL-ST-Chhatrapati Sambhajinagar-JalnaRoad",
+    "region": "WROM2"
+  },
+  {
+    "code": "CFMDRKKN",
+    "name": "CL-ST-MDR-Madurai KKNagar",
+    "region": "STN1"
+  },
+  {
+    "code": "CFMRGAQM",
+    "name": "CL-ST-Margoa-Aquem",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFCOCMGR",
+    "name": "CL-ST-Cochin-KochiMGRoad",
+    "region": "STNK"
+  },
+  {
+    "code": "CFGURAJS",
+    "name": "CL-ST-GUR-AIPL JoyStreet",
+    "region": "NNCR3"
+  },
+  {
+    "code": "CFBLRJPN",
+    "name": "CL-ST-BNG-JP Nagar",
+    "region": "SKA2"
+  },
+  {
+    "code": "CFKOLBTR",
+    "name": "CL-ST-KOL-BTRoad",
+    "region": "EWB"
+  },
+  {
+    "code": "CFDDNUCM",
+    "name": "CL-ST-DERD-DehradunUnisonMall",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFCBERSP",
+    "name": "CL-ST-CBE-CoimbatoreRSPuram",
+    "region": "STNK"
+  },
+  {
+    "code": "CFALWJCR",
+    "name": "CL-ST-ALW-Alwar",
+    "region": "NRH"
+  },
+  {
+    "code": "CRTRCKBR",
+    "name": "CL-ST-L3-TRC-Karur Bypass",
+    "region": "STN1"
+  },
+  {
+    "code": "CFBLRRRN",
+    "name": "CL-ST-BNG-RR Nagar",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFPNPMDT",
+    "name": "CL-ST-PNP-Panipat ModelTown",
+    "region": "NRH"
+  },
+  {
+    "code": "CFGURS29",
+    "name": "CL-ST-GUR-Sector29",
+    "region": "NNCR3"
+  },
+  {
+    "code": "CLDELSCM",
+    "name": "CL-ST-DEL-SelectCityWalkMall",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CFLKWLUM",
+    "name": "CL-ST-LKW-LuluMall",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFRNCHMR",
+    "name": "CL-ST-RNC-Harmu Road",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFPUNHDP",
+    "name": "CL-ST-PNE-HadapsarL2",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFHYDKPL",
+    "name": "CL-ST-HYD-Kompally",
+    "region": "STG2"
+  },
+  {
+    "code": "CLPUNJMR",
+    "name": "CL-ST-PUN-JM Road",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFCHNOMR",
+    "name": "CL-ST-CHN-OMRThoraipakkam",
+    "region": "STN2"
+  },
+  {
+    "code": "CFKNPSWN",
+    "name": "CL-ST-KNP-SwarupNagar",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFHYDKDP",
+    "name": "CL-ST-HYD-Kondapur",
+    "region": "STG1"
+  },
+  {
+    "code": "CFANTRJR",
+    "name": "CL-ST-ANT-RAJU RD",
+    "region": "SAP"
+  },
+  {
+    "code": "CFAMRMLR",
+    "name": "CL-ST-AMR-AmritsarMallRoad",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFGWLDBM",
+    "name": "CL-ST-GWL-GwaliorDBMall",
+    "region": "WMP"
+  },
+  {
+    "code": "CFTRPABR",
+    "name": "CL-ST-TRP-Tirupati",
+    "region": "SAP"
+  },
+  {
+    "code": "CFMUMTVK",
+    "name": "CL-ST-MUM-ThakurVillage",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFMUMGBR",
+    "name": "CL-ST-THN-GhodbunderRoadL2",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CLMUMRCM",
+    "name": "CL-ST-MUM-RCityMall",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CFHWHAVM",
+    "name": "CL-ST-HWH-HowrahAvaniMall",
+    "region": "EWB"
+  },
+  {
+    "code": "CFKNGDSR",
+    "name": "CL-ST-Kangra-DharamshalaRoadL2",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFTVRMGR",
+    "name": "CL-ST-TVR-TrivandrumMGRoad",
+    "region": "STNK"
+  },
+  {
+    "code": "CFDURCTC",
+    "name": "CL-ST-DUR-DurgapurCityCentre",
+    "region": "EWB"
+  },
+  {
+    "code": "CFJMUBHP",
+    "name": "CL-ST-Jammu-BahuPlazaL2",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFPUDKMS",
+    "name": "CL-ST-PUD-PuducherryKamaraj",
+    "region": "STN2"
+  },
+  {
+    "code": "CLPUNTOH",
+    "name": "CL-ST-PNE-TerminalONEHinjewadi",
+    "region": "WROM1"
+  },
+  {
+    "code": "CABLRRMM",
+    "name": "CL-ST-L8-BNG-RoyalMeenakshiMall",
+    "region": "SKA2"
+  },
+  {
+    "code": "CLKOLLKM",
+    "name": "CL-ST-KOL-LakeMall",
+    "region": "EWB"
+  },
+  {
+    "code": "CFBLRBMH",
+    "name": "CL-ST-BNG-Bommanahalli",
+    "region": "SKA2"
+  },
+  {
+    "code": "CLPUNSTR",
+    "name": "CL-ST-PNE-SataraRoad",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFAJMANS",
+    "name": "CL-ST-Ajmer-AnaSagarL2",
+    "region": "NRH"
+  },
+  {
+    "code": "CFVAPCBC",
+    "name": "CL-ST-VAP-VapiCapitalBusinessCentre",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CLLKWGMN",
+    "name": "CL-ST-LKW-GomtiNagar",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFBLRHEN",
+    "name": "CL-ST-BNG-Hennur",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFDELPJM",
+    "name": "CL-ST-DEL-PacificJasolaMall",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CFMUMKGR",
+    "name": "CL-ST-MUM-KhargharL2",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CLHYDSCD",
+    "name": "CL-ST-HYD-Secunderabad",
+    "region": "STG2"
+  },
+  {
+    "code": "CFSHMMLR",
+    "name": "CL-ST-SHM-ShimlaMallRoadL2",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFPATSMO",
+    "name": "CL-ST-PAT-SagunaMore",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFHYDSKP",
+    "name": "CL-ST-HYD-Shaikpet",
+    "region": "STG2"
+  },
+  {
+    "code": "CRSILSVR",
+    "name": "CL-ST-L3-SIL-Sevak Road",
+    "region": "ENE"
+  },
+  {
+    "code": "CRPATBLR",
+    "name": "CL-ST-L3- PAT-BLR",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFIDRPCM",
+    "name": "CL-ST-IDR-CitadelMall",
+    "region": "WMP"
+  },
+  {
+    "code": "CFMUMPNL",
+    "name": "CL-ST-MUM-PanvelL2",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CFNANVIP",
+    "name": "CL-ST-NAN-NandedVIPRoad",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFCBEAVR",
+    "name": "CL-ST-CBE-AvinashiRoadL2",
+    "region": "STNK"
+  },
+  {
+    "code": "CRBERDNR",
+    "name": "CL-ST-L3-BER-BerhampurOdisha",
+    "region": "EOC"
+  },
+  {
+    "code": "CFVDDKRB",
+    "name": "CL-ST-VDD-KareliBaughL2",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFBLSBKG",
+    "name": "CL-ST-BLS-BalasoreBhaskarGanj",
+    "region": "EOC"
+  },
+  {
+    "code": "CFMTHKRN",
+    "name": "CL-ST-Mathura-KrishnaNagarL2",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFBGPKCR",
+    "name": "CL-ST-BGP-BhagalpurKachahariRoad",
+    "region": "EBJ"
+  },
+  {
+    "code": "CRBBRSBN",
+    "name": "CL-ST-L3-BBR-Soubhagya Nagar",
+    "region": "EOC"
+  },
+  {
+    "code": "CLMUMVIR",
+    "name": "CL-ST-MUM-RedBricksVirar",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFKURRSR",
+    "name": "CL-ST-KUR-Kurnool",
+    "region": "SAP"
+  },
+  {
+    "code": "CFBHTBNB",
+    "name": "CL-ST-BHT-BathindaBankBazaar",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFYMNGPR",
+    "name": "CL-ST-YMN-YamunaNagarGobindpuriRoad",
+    "region": "NRH"
+  },
+  {
+    "code": "CFPUNPPS",
+    "name": "CL-ST-PNE-PimpleSaudagarL2",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFLKWALB",
+    "name": "CL-ST-LKW-Alambagh",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFBRLCVL",
+    "name": "CL-ST-Bareilly-CivilLinesL2",
+    "region": "NUP2"
+  },
+  {
+    "code": "CLHYDKKP",
+    "name": "CL-ST-HYD-Kukatpally",
+    "region": "STG1"
+  },
+  {
+    "code": "CFKOTGMP",
+    "name": "CL-ST-KOT-Gumanpura",
+    "region": "NRH"
+  },
+  {
+    "code": "CFBLGTLW",
+    "name": "CL-ST-BLG-Tilakwadi",
+    "region": "SKA2"
+  },
+  {
+    "code": "CAANDVVN",
+    "name": "CL-ST-L8-AND-VVNagarroad",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFMUMV17",
+    "name": "CL-ST-MUM-VashiSector17L2",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CFTNVPKT",
+    "name": "CL-ST-TNV-TirunelveliPalayamkottai",
+    "region": "STN1"
+  },
+  {
+    "code": "CLCHNPMR",
+    "name": "CL-ST-CHN-Perambur",
+    "region": "STN2"
+  },
+  {
+    "code": "CFNOIGBS",
+    "name": "CL-ST-NDD-GalaxyBlueSapphire",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFLUDMDT",
+    "name": "CL-ST-LUD-ModelTown",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFGKPMCR",
+    "name": "CL-ST-GKP-MedicalCollegeRoad",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFMYSNXM",
+    "name": "CL-ST-MYS-NexusMall",
+    "region": "SKA2"
+  },
+  {
+    "code": "CFIDRSSR",
+    "name": "CL-ST-IDR-SapnaSangeetaRoad",
+    "region": "WMP"
+  },
+  {
+    "code": "CFSLMOMR",
+    "name": "CL-ST-SLM-OmalurMainRoad",
+    "region": "STNK"
+  },
+  {
+    "code": "CFAMDMNG",
+    "name": "CL-ST-AMD-ManiNagar",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFHOSBGR",
+    "name": "CL-ST-HOS-BagalurRoad",
+    "region": "STNK"
+  },
+  {
+    "code": "CRBHPMVN",
+    "name": "CL-ST-L3-BHP-MalviyaNagar",
+    "region": "WMP"
+  },
+  {
+    "code": "CFGWHKLP",
+    "name": "CL-ST-GWH-Kalapahar",
+    "region": "ENE"
+  },
+  {
+    "code": "CFDDNGMS",
+    "name": "CL-ST-DERD-GMSRoad",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFROHDLR",
+    "name": "CL-ST-ROH-DelhiRoad",
+    "region": "NRH"
+  },
+  {
+    "code": "CFVIZMDW",
+    "name": "CL-ST-VIZ-Madhurawada",
+    "region": "SAP"
+  },
+  {
+    "code": "CFMUZKLM",
+    "name": "CL-ST-MUZ-KalambaghRoad",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFCHNABT",
+    "name": "CL-ST-CHN-AmbatturL2",
+    "region": "STN2"
+  },
+  {
+    "code": "CFASNMGL",
+    "name": "CL-ST-ASN-MURGASOL",
+    "region": "EWB"
+  },
+  {
+    "code": "CFNGPPTN",
+    "name": "CL-ST-NGP-Pratap Nagar",
+    "region": "WROM2"
+  },
+  {
+    "code": "CFBVNWWR",
+    "name": "CL-ST-BVN-WaghawadiRoad",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFNELMBR",
+    "name": "CL-ST-NEL-MiniBypassRoad",
+    "region": "SAP"
+  },
+  {
+    "code": "CFFDBPFM",
+    "name": "CL-ST-Faridabad-PacificMall",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFGDHSSS",
+    "name": "CL-ST-GDH-ShreejiSignatureSargasan",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFPATHBR",
+    "name": "CL-ST-PAT-Hathwamarket",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFDBGMZP",
+    "name": "CL-ST-DBG-Mirzapur Chowk",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFCHNTNR",
+    "name": "CL-ST-CHN-Tnagar",
+    "region": "STN1"
+  },
+  {
+    "code": "CLBLRPAM",
+    "name": "CL-ST-BNG-PhoenixAsiaMall",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFUDIASN",
+    "name": "CL-ST-UDI-UdaipurAshokNagar",
+    "region": "NRH"
+  },
+  {
+    "code": "CFPUNNIB",
+    "name": "CL-ST-PNE-NIBMRoadL2",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFRPRVIP",
+    "name": "CL-ST-Raipur-VIP ChowkL2",
+    "region": "EOC"
+  },
+  {
+    "code": "CFJODCRD",
+    "name": "CL-ST-Jodhpur-CRoad",
+    "region": "NRH"
+  },
+  {
+    "code": "CFNOISPM",
+    "name": "CL-ST-NDD-SpectrumMetroMall",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFERDRKV",
+    "name": "CL-ST-ERD-RKVRoad",
+    "region": "STNK"
+  },
+  {
+    "code": "CFHRDRNP",
+    "name": "CL-ST-Haridwar-RanipurMod",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFMGLFZM",
+    "name": "CL-ST-MGL-FizaMall",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFMUMCBR",
+    "name": "CL-ST-MUM-Chembur",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CFDMRKMH",
+    "name": "CL-ST-DMR-KherMahal",
+    "region": "ENE"
+  },
+  {
+    "code": "CFTRUPLR",
+    "name": "CL-ST-TRU-PalladamRoad",
+    "region": "STNK"
+  },
+  {
+    "code": "CFMUMKLN",
+    "name": "CL-ST-THN-KalyanL2",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CFKOHDAC",
+    "name": "CL-ST-Kolhapur-DasaraChowkL2",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFWRLHMK",
+    "name": "CL-ST-WRL-HanamkondaL2",
+    "region": "STG2"
+  },
+  {
+    "code": "CFHYDNLG",
+    "name": "CL-ST-HYD-NallagandlaL2",
+    "region": "STG1"
+  },
+  {
+    "code": "CFSBPBDR",
+    "name": "CL-ST-SBP-Budharaja RoadL2",
+    "region": "EOC"
+  },
+  {
+    "code": "CFKOLKMG",
+    "name": "CL-ST-KOL-KamalgaziL2",
+    "region": "EWB"
+  },
+  {
+    "code": "CADELOCM",
+    "name": "CL-ST-L8-DEL-OmaxeChowkMall",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CACHNECR",
+    "name": "CL-ST-L8-CHN-ECR",
+    "region": "STN1"
+  },
+  {
+    "code": "CABLRKRP",
+    "name": "CL-ST-L8-BNG-KRPuram",
+    "region": "SKA1"
+  },
+  {
+    "code": "CRMBDCVL",
+    "name": "CL-ST-L3-Moradabad-CivilLines",
+    "region": "NUP2"
+  },
+  {
+    "code": "CLMUMPPM",
+    "name": "CL-ST-MUM-PhoenixParelMall",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFHLDNTR",
+    "name": "CL-ST-Haldwani-NainitalRoadL2",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFSONATR",
+    "name": "CL-ST-Sonipat-AtlasRoadL2",
+    "region": "NRH"
+  },
+  {
+    "code": "CLDELPRM",
+    "name": "CL-ST-DEL-DLFPromenade",
+    "region": "NNCR1"
+  },
+  {
+    "code": "CFKOLSDP",
+    "name": "CL-ST-KOL-SodepurL2",
+    "region": "EWB"
+  },
+  {
+    "code": "CFHYDKOK",
+    "name": "CL-ST-HYD-Kokapet",
+    "region": "STG1"
+  },
+  {
+    "code": "CFZKPCAH",
+    "name": "CL-ST-Zirakpur-ChandigarhAmbalaHighwayL2",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFNAVLSI",
+    "name": "CL-ST-NAV-LUNSIKUIL2",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFHGHSMP",
+    "name": "CL-ST-HGH-SeramporeL2",
+    "region": "EWB"
+  },
+  {
+    "code": "CFSAHDLR",
+    "name": "CL-ST-Saharanpur-DelhiRoadL2",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFPTKDHR",
+    "name": "CL-ST-Pathankot-DalhousieRoadL2",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFBKRSTM",
+    "name": "CL-ST-BKR-SECTOR 3-MALLL2",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFKARKPR",
+    "name": "CL-ST-Karnal-KunjpuraRoadL2",
+    "region": "NRH"
+  },
+  {
+    "code": "CFCHNMRM",
+    "name": "CL-ST-CHN-MarinaMallL2",
+    "region": "STN1"
+  },
+  {
+    "code": "CFMUMVSI",
+    "name": "CL-ST-MUM-VASAIL2",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFNTPKCH",
+    "name": "CL-ST-NTP-KanchraparaL2",
+    "region": "EWB"
+  },
+  {
+    "code": "CFGURGEM",
+    "name": "CL-ST-Gurgaon-GoodEarthSixty9MallL2",
+    "region": "NNCR3"
+  },
+  {
+    "code": "CFITNESC",
+    "name": "CL-ST-ITN-E SECTORL2",
+    "region": "ENE"
+  },
+  {
+    "code": "CFRJMJNR",
+    "name": "CL-ST-RJM-JNRoadL2",
+    "region": "SAP"
+  },
+  {
+    "code": "CFKRNJGT",
+    "name": "CL-ST-KRN-Jagtial RoadL2",
+    "region": "STG1"
+  },
+  {
+    "code": "CFHYDATP",
+    "name": "CL-ST-HYD-AttapurL2",
+    "region": "STG1"
+  },
+  {
+    "code": "CFAYDRMP",
+    "name": "CL-ST-AYD-RAMPATHMARGL2",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFJHSCVL",
+    "name": "CL-ST-Jhansi-CivilLinesL2",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFKNPSKN",
+    "name": "CL-ST-Kanpur-SaketNagarL2",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFOGLKNR",
+    "name": "CL-ST-OGL-KURNOOL ROADL2",
+    "region": "SAP"
+  },
+  {
+    "code": "CFCHNVLV",
+    "name": "CL-ST-CHN-VALASARAVAKKAML2",
+    "region": "STN2"
+  },
+  {
+    "code": "CLMUMMLR",
+    "name": "CL-ST-MUM-MALAD LINK ROAD",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFBLRMEM",
+    "name": "CL-ST-BLR-M5 E-CITY MALLL2",
+    "region": "SKA2"
+  },
+  {
+    "code": "CFKTNJBR",
+    "name": "CL-ST-KTN-Jabalpur RoadL2",
+    "region": "WMP"
+  },
+  {
+    "code": "CFCHWPSR",
+    "name": "CL-ST-CHW-Parasia RoadL2",
+    "region": "WROM2"
+  },
+  {
+    "code": "CLPUNPWM",
+    "name": "CL-ST-PUN-PHOENIX MILLENNIUM WAKAD",
+    "region": "WROM1"
+  },
+  {
+    "code": "CFTJVPKR",
+    "name": "CL-ST-TJV-Pudukottai Main RoadL2",
+    "region": "STN1"
+  },
+  {
+    "code": "CFUJNFGJ",
+    "name": "CL-ST-UJN-FreeganjL2",
+    "region": "WMP"
+  },
+  {
+    "code": "CFBHLNHR",
+    "name": "CL-ST-BHL-NEHRU NAGARL2",
+    "region": "EOC"
+  },
+  {
+    "code": "CFJLNRRD",
+    "name": "CL-ST-JLN-Ring RoadL2",
+    "region": "WROM2"
+  },
+  {
+    "code": "CFBRHLKR",
+    "name": "CL-ST-BRH-Link Road",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFGNTWPM",
+    "name": "CL-ST-GNT-Westpoint MallL2",
+    "region": "ENE"
+  },
+  {
+    "code": "CFHYDHTC",
+    "name": "CL-ST-HYD-HITECH CITY ROAD",
+    "region": "STG1"
+  },
+  {
+    "code": "CFAMDSBR",
+    "name": "CL-ST-AMD-South Bopal",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFCBEBFM",
+    "name": "CL-ST-CBE-BROOKEFIELDS MALL",
+    "region": "STNK"
+  },
+  {
+    "code": "CFVNSBLP",
+    "name": "CL-ST-VNS-VaranasiBhelupur",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFGDMRTR",
+    "name": "CL-ST-GDM-RT Road",
+    "region": "WGJ"
+  },
+  {
+    "code": "CLMUMBOM",
+    "name": "CL-ST-MUM-Borivali Oberoi Mall",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFKHMWYR",
+    "name": "CL-ST-KHM-WYRA ROADL2",
+    "region": "STG1"
+  },
+  {
+    "code": "CFHGHCHN",
+    "name": "CL- ST-HGH- CHANDANNAGAR L2",
+    "region": "EWB"
+  },
+  {
+    "code": "CRCTKCDA",
+    "name": "CL- ST-CTK- CDA 6 L3",
+    "region": "EOC"
+  },
+  {
+    "code": "CFMHSRUR",
+    "name": "CL-ST-MHS-Radhanpur Road",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFNOIKNP",
+    "name": "CL-ST-NDD-KnowledgePark",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFRWAALR",
+    "name": "CL-ST-RWA-Allahabad road",
+    "region": "WMP"
+  },
+  {
+    "code": "CFVLRKMR",
+    "name": "CL-ST-VLR-Katpadi Main Road L2",
+    "region": "STN2"
+  },
+  {
+    "code": "CFGZBIAM",
+    "name": "CL-ST-GZB-IndirapuramAdityaMall",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFMDPKRT",
+    "name": "CL-ST-MDP-KERANITALA -L2",
+    "region": "EWB"
+  },
+  {
+    "code": "CFGYASWP",
+    "name": "CL-ST-GYA - SWARAJPURI L2",
+    "region": "EBJ"
+  },
+  {
+    "code": "CRJPRMLN",
+    "name": "CL-ST-L3-JAIPUR-MALVIYANAGAR",
+    "region": "NRH"
+  },
+  {
+    "code": "CFCOCPLV",
+    "name": "CL-ST-COC-Palarivattom",
+    "region": "STNK"
+  },
+  {
+    "code": "CFCBETUD",
+    "name": "CL-ST-CBE-Mettupalayam Road Thudiyalur",
+    "region": "STNK"
+  },
+  {
+    "code": "CFHYDVNP",
+    "name": "CL-ST-HYD-VANASTHALIPURAM",
+    "region": "STG2"
+  },
+  {
+    "code": "CFRRKNHN",
+    "name": "CL-ST-RRK-NehruNagar",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFGWHSME",
+    "name": "CL-ST-GWH-SIX MILEL2",
+    "region": "ENE"
+  },
+  {
+    "code": "CFKKNSRP",
+    "name": "CL-ST-KKN-SURYA RAO PETA",
+    "region": "SAP"
+  },
+  {
+    "code": "CLLKWPPM",
+    "name": "CL-ST-LKW-PhoenixPalassioMall",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFHSPMLR",
+    "name": "CL-ST-HSP-The Mall road",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFBLRFSM",
+    "name": "CL-ST- BLR- Forum South Mall",
+    "region": "SKA2"
+  },
+  {
+    "code": "CLNOIACM",
+    "name": "CL-ST-NDD-AdityaCentral50Mall",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CFAMDNKL",
+    "name": "CL-ST-AMD-Nikol",
+    "region": "WGJ"
+  },
+  {
+    "code": "CFKOLJDV",
+    "name": "CL-ST-KOL-Jadavpur",
+    "region": "EWB"
+  },
+  {
+    "code": "CFNMKPDR",
+    "name": "CL-ST-NMK-R P Pudur",
+    "region": "STNK"
+  },
+  {
+    "code": "CLMUMGOM",
+    "name": "CL-ST-MUM-Goregaon Oberoi Mall",
+    "region": "WMUM2"
+  },
+  {
+    "code": "CFSHLPLB",
+    "name": "CL-ST-SHL-POLICE BAZAR L2",
+    "region": "ENE"
+  },
+  {
+    "code": "CFHYDKHJ",
+    "name": "CL-ST-HYD-Khajaguda L2",
+    "region": "STG1"
+  },
+  {
+    "code": "CRSVKTHR",
+    "name": "CL-ST-L3-SVK-Thiruthangal Rd",
+    "region": "STN1"
+  },
+  {
+    "code": "CFKOLBKP",
+    "name": "CL-ST-KOL-Barackpore",
+    "region": "EWB"
+  },
+  {
+    "code": "CFMERGRH",
+    "name": "CL-ST-Meerut-GarhRoad",
+    "region": "NUP2"
+  },
+  {
+    "code": "CRDNBSDH",
+    "name": "CL-ST-L3-DNB-Saraidhela",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFDDNDDM",
+    "name": "CL-ST-Derd-MallOfDehradun",
+    "region": "NUP2"
+  },
+  {
+    "code": "CRBSFRNR",
+    "name": "CL-ST-L3-BSF- Ranchi Road",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFANIPBL",
+    "name": "CL-ST-ANI-Portblair",
+    "region": "EWB"
+  },
+  {
+    "code": "CLCHNUSN",
+    "name": "CL-ST-CHN-USMAN ROAD",
+    "region": "STN1"
+  },
+  {
+    "code": "CLBLRMGR",
+    "name": "CL-ST-BLR- MG ROAD",
+    "region": "SKA1"
+  },
+  {
+    "code": "CFDELPEM",
+    "name": "CL-ST-DEL-PitampuraEleganteMall",
+    "region": "NNCR2"
+  },
+  {
+    "code": "CRPATCCM",
+    "name": "CL-ST-L3-PAT City Center Mall",
+    "region": "EBJ"
+  },
+  {
+    "code": "CLMUMKPM",
+    "name": "CL-ST-MUM- KURLA PHOENIX MARKET CITY MALL",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CFMUMDMV",
+    "name": "CL-ST-MUM-Dombivali",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CFKOLBST",
+    "name": "CL-ST-KOL-Barasat",
+    "region": "EWB"
+  },
+  {
+    "code": "CRAGRSBR",
+    "name": "CL-ST-L3-AGR-SikandraBodlaRoad",
+    "region": "NUP2"
+  },
+  {
+    "code": "CFAZMNRC",
+    "name": "CL-ST-AZAMGARH-NARAULI CHAURAHA",
+    "region": "NUP1"
+  },
+  {
+    "code": "CRBBRKDG",
+    "name": "CL-ST-L3- BBR- Khandagiri",
+    "region": "EOC"
+  },
+  {
+    "code": "CFTRCPRC",
+    "name": "CL-ST-TRC-Promenade Road",
+    "region": "STN1"
+  },
+  {
+    "code": "CRRNCLCR",
+    "name": "CL-ST-L3- RNC-Lalpur Circular Road",
+    "region": "EBJ"
+  },
+  {
+    "code": "CFMUMAMB",
+    "name": "CL-ST-MUM-Ambarnath",
+    "region": "WMUM1"
+  },
+  {
+    "code": "CRGUBSTR",
+    "name": "CL-ST-L3-GUB-Station Road",
+    "region": "SKA2"
+  },
+  {
+    "code": "CLCHDNEM",
+    "name": "CL-ST-CHD-NEXUS ELANTE",
+    "region": "NPJK"
+  },
+  {
+    "code": "CFHYDLSM",
+    "name": "CL-ST-HYD- Lakeshore Mall",
+    "region": "STG2"
+  },
+  {
+    "code": "CRJNPPLC",
+    "name": "CL-ST-L3-Jaunpur-Polytechnic Chauraha",
+    "region": "NUP1"
+  },
+  {
+    "code": "CFDDGSLR",
+    "name": "CL-ST-DDG-SALAI ROAD",
+    "region": "STN1"
+  },
+  {
+    "code": "CRANGSCR",
+    "name": "CL-ST-L3-ANG-Shankar Cinema Road",
+    "region": "EOC"
+  },
+  {
+    "code": "CFDEOKLP",
+    "name": "CL-ST-Deoria-Kailashpuri",
+    "region": "NUP1"
+  },
+  {
+    "code": "CRMDRBPS",
+    "name": "CL-ST-L3-MDR-Bypass Road",
+    "region": "STN1"
+  }
+]
